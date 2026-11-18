@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.llamly/wordpress",
+  "title": "Llamly: connect WordPress to the AI you already use",
+  "description": "Connect WordPress to Claude, ChatGPT, Cursor or Codex, safely. Every change logged, one-click undo.",
+  "version": "1.1.1",
+  "websiteUrl": "https://llamly.com/free/?utm_source=mcp-registry&utm_medium=directory&utm_campaign=mcp-directories",
+  "icons": [
+    {
+      "src": "https://ps.w.org/llamly/assets/icon-256x256.png",
+      "mimeType": "image/png",
+      "sizes": ["256x256"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{site_domain}/wp-json/llamly/v1/endpoint",
+      "variables": {
+        "site_domain": {
+          "description": "Your WordPress site's domain with the free Llamly plugin installed, e.g. mysite.com",
+          "isRequired": true
+        }
+      }
+    }
+  ]
+}
