@@ -1,10 +1,10 @@
 # Installing Llamly MCP (instructions for AI agents)
 
-Llamly MCP is a WordPress plugin. The MCP server runs inside the user's own WordPress site, so there is no package to install locally. Guide the user through these steps.
+Llamly MCP is a WordPress plugin. The MCP server runs inside the user's WordPress site, so there is no package to install locally. Guide the user through these steps.
 
 ## 1. Install the plugin (the user does this in wp-admin)
 
-Ask the user to log in to their WordPress admin, go to **Plugins > Add New**, search for **Llamly MCP**, then install and activate it. Requirements: WordPress 6.2+, PHP 8.0+.
+Ask the user to log in to WordPress admin, go to **Plugins > Add New**, search for **Llamly MCP**, then install and activate it. Requirements: WordPress 6.2+, PHP 8.0+.
 
 If the user has WP-CLI access to the site, this also works:
 
@@ -24,8 +24,8 @@ https://SITE_DOMAIN/wp-json/llamly/v1/endpoint
 
 Pick the method for the client you are running in.
 
-- **OAuth clients (claude.ai, Claude Desktop, ChatGPT, Cursor):** add a remote MCP server with the endpoint above. The user approves access on a login page on their site and chooses read only or read and write. The site must be on public HTTPS.
-- **Key-based clients (Claude Code, Codex, Cline, Cursor, OpenCode):** ask the user to open **Llamly > Connections** in wp-admin, pick your app and create an access key. The key is shown once. Then configure a Streamable HTTP server with the header `Authorization: Bearer KEY`.
+- **OAuth clients (claude.ai, Claude Desktop, ChatGPT, Cursor):** add a remote MCP server using the endpoint above. The user approves access on their site and selects read-only or read-write permissions. The site must use public HTTPS.
+- **Key-based clients (Claude Code, Codex, Cline, Cursor, OpenCode):** ask the user to open **Llamly > Connections** in wp-admin, select your app, and generate an access key. The key appears once. Then configure a Streamable HTTP server with the header `Authorization: Bearer KEY`.
 
 Claude Code example:
 
@@ -49,6 +49,6 @@ Cline / generic JSON config:
 
 ## 4. Verify
 
-Call the site information tool. If the connection fails, ask the user to open **Llamly > Connections > Run checks** (the Doctor), which tests the server and explains what to ask their host.
+Call the site information tool. If the connection fails, ask the user to open **Llamly > Connections > Run checks** (the Doctor), which tests the server setup and identifies host configuration issues.
 
-Never ask the user to paste their WordPress password. Llamly only needs its own access key or an OAuth approval.
+Never ask the user to paste their WordPress password. Llamly only needs its own access key or OAuth approval.
