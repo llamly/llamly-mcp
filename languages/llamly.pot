@@ -1,0 +1,6973 @@
+# Copyright (C) 2026 Llamly
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Llamly 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/llamly\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-16T16:27:08-03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: llamly\n"
+
+#. Plugin Name of the plugin
+#: llamly.php
+msgid "Llamly MCP - AI Agent with ChatGPT & Claude"
+msgstr ""
+
+#. Description of the plugin
+#: llamly.php
+msgid "Connect AI clients to WordPress through the Llamly MCP server."
+msgstr ""
+
+#. Author of the plugin
+#: llamly.php
+#: src/Free/Admin/AdminPage.php:124
+#: src/Free/Admin/AdminPage.php:125
+#: src/Free/Admin/AdminPage.php:229
+#: src/Free/Core/Abilities.php:40
+msgid "Llamly"
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:79
+msgid "Only a signed-in site administrator can use Llamly settings."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:83
+msgid "Reload the Llamly page to refresh its security token."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:152
+msgid "Send a JSON key request."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:158
+msgid "Provide a key label and a valid access level."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:161
+msgid "This key name is reserved for the connection Doctor."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:180
+msgid "Provide a valid access level and tool list."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:192
+msgid "Choose whether to open or close the connection window."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:199
+msgid "The OAuth registration window could not be updated."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:210
+msgid "The OAuth window and its audit event could not be saved."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:230
+msgid "The OAuth connection could not be revoked."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:235
+msgid "The active OAuth connection was not found."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:243
+msgid "The OAuth connection could not be revoked with its audit record."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:254
+msgid "The OAuth client could not be revoked."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:259
+msgid "The active OAuth client was not found."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:268
+msgid "The OAuth client and its audit event could not be revoked."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:282
+msgid "Settings and their current revision are required."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:287
+msgid "The settings transaction could not start."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:298
+msgid "The settings and audit event could not be committed."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:551
+msgid "This change was interrupted and blocks the item until it is reviewed."
+msgstr ""
+
+#. translators: %s: add-on name.
+#: src/Free/Admin/AdminController.php:572
+#, php-format
+msgid "Made by the add-on “%s”, which is not active. Activate it to undo or redo this change."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:608
+msgid "The time to undo this change has ended."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:617
+msgid "It was already undone and redone once. It cannot be undone again."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:624
+msgid "The time to redo this change has ended."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:628
+msgid "The item changed after this change was undone. Redo is unavailable."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:647
+msgid "A newer change to this item was already undone and redone and cannot be undone again."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:648
+msgid "A newer change to this item can no longer be undone because its time has ended."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:650
+msgid "To go back to this point, use Undo anyway."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:651
+msgid "Check the item in WordPress."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:654
+msgid "Undo the newer changes to this item first."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:663
+msgid "The item was deleted outside Llamly after this change."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:664
+msgid "The item was changed outside Llamly after this change."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:822
+msgid "Confirm undoing the batch in the dialog before continuing."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:840
+msgid "No committed changes were found for this batch."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:951
+msgid "Confirm clearing the audit log in the dialog before continuing."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:956
+msgid "The audit log transaction could not start."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:961
+msgid "The audit log could not be cleared."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:966
+msgid "The audit log was cleared but the confirmation event could not be recorded."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:970
+msgid "The audit log clear could not be committed."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:992
+msgid "You do not have permission to export Llamly logs."
+msgstr ""
+
+#: src/Free/Admin/AdminController.php:1016
+msgid "The CSV export could not start."
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:52
+msgid "Get Llamly Pro"
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:195
+msgid "Llamly is ready."
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:196
+msgid "Connect Claude, ChatGPT or another AI app to this site. It takes about a minute."
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:197
+msgid "Connect an app"
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:198
+msgid "Dismiss"
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:204
+msgid "You do not have permission to dismiss this notice."
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:215
+#: src/Free/Admin/ProPage.php:232
+msgid "You do not have permission to access Llamly."
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:218
+msgid "Llamly setup"
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:219
+msgid "The required database tables are not ready. Retry the schema check before connecting clients."
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:223
+msgid "Verify database setup"
+msgstr ""
+
+#: src/Free/Admin/AdminPage.php:252
+msgid "You do not have permission to update Llamly."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:39
+msgid "Run the browser checks to confirm this path."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:50
+msgid "A site administrator must run the connection checks."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:70
+msgid "Diagnostic audit record"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:72
+msgid "The diagnostic results were collected, but the required audit record could not be saved."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:75
+msgid "Check database storage and the Logs tab before relying on this report."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:112
+msgid "Llamly settings are valid"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:112
+msgid "Stored settings pass validation."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:112
+msgid "Stored settings are missing or invalid; MCP requests fail closed."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:112
+msgid "Review settings and database availability before connecting a client."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:114
+msgid "MCP server enabled"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:114
+msgid "Authenticated MCP requests are enabled."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:114
+msgid "The MCP server is disabled or settings are invalid."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:114
+msgid "Turn the server on in Settings."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:118
+msgid "Site uses HTTPS"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:118
+msgid "The WordPress site URL uses HTTPS."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:118
+msgid "Plain HTTP is allowed for this development host; remote OAuth clients still require public HTTPS."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:118
+msgid "The WordPress site URL does not use HTTPS."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:118
+msgid "Use a public HTTPS site for remote OAuth clients. Keep local HTTP limited to local development."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:120
+msgid "Hostname suitable for cloud clients"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:120
+msgid "This host appears local or private. Terminal clients may reach it, but cloud-hosted clients cannot be assumed to do so."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:120
+msgid "The site hostname is not a recognized loopback or private IP literal. Public DNS reachability is not tested."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:120
+msgid "Use terminal clients on a network that can reach this site, or provide a public HTTPS address for cloud clients."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:125
+#: assets/free/js/admin.js:1068
+msgid "Permalinks"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:125
+msgid "A pretty permalink structure is configured."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:125
+msgid "Plain permalinks are in use. Llamly serves its OAuth discovery paths without rewrite rules."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:127
+msgid "Bearer key available"
+msgstr ""
+
+#. translators: %d: number of active API keys.
+#: src/Free/Admin/Doctor.php:127
+#, php-format
+msgid "%d active API key is stored; its secret is shown only at creation."
+msgid_plural "%d active API keys are stored; their secrets are shown only at creation."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of active API keys.
+#: src/Free/Admin/Doctor.php:127
+msgid "No access key yet. That is normal until you connect a terminal app; create one in Connections when you are ready. OAuth grants are listed separately."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:130
+msgid "Remote OAuth prerequisites"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:130
+msgid "The site uses HTTPS and does not use a recognized local hostname. Client reachability still needs a real OAuth test."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:130
+msgid "Remote OAuth needs a publicly reachable HTTPS site; local or plain HTTP URLs cannot establish that."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:130
+msgid "Use the OAuth registration window only after the remote client can reach this public HTTPS site."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:132
+msgid "New OAuth registration window"
+msgstr ""
+
+#. translators: %d: seconds until the registration window closes.
+#: src/Free/Admin/Doctor.php:132
+#, php-format
+msgid "Open for about %d more seconds. Existing grants are unaffected when it closes."
+msgstr ""
+
+#. translators: %d: seconds until the registration window closes.
+#: src/Free/Admin/Doctor.php:132
+msgid "Closed. This is the safe default: new clients cannot register and existing OAuth grants keep working. Open the 30-minute window in Connections only when you are ready to connect a client."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:134
+msgid "Known REST-blocking plugins"
+msgstr ""
+
+#. translators: %s: comma-separated plugin names.
+#: src/Free/Admin/Doctor.php:134
+#, php-format
+msgid "Security or cache plugins that sometimes restrict or cache REST requests are active: %s. This is only a heads-up; they do not necessarily block Llamly."
+msgstr ""
+
+#. translators: %s: comma-separated plugin names.
+#: src/Free/Admin/Doctor.php:134
+msgid "No known REST-blocking plugin from the Llamly check list is active."
+msgstr ""
+
+#. translators: %s: comma-separated plugin names.
+#: src/Free/Admin/Doctor.php:134
+msgid "If connections fail, allow the llamly/v1 REST namespace and the /.well-known/ paths in these plugins and exclude them from caching."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:138
+msgid "WordPress Abilities API"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:140
+msgid "The Abilities API is present and Llamly exposes its tools as abilities. Every call still goes through the journal and the same safe mode and approval rules."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:141
+msgid "The Abilities API is present. Exposing Llamly tools as abilities is off; turn it on in Settings if another integration needs it."
+msgstr ""
+
+#. translators: %s: WordPress version.
+#: src/Free/Admin/Doctor.php:142
+#, php-format
+msgid "This site runs WordPress %s, which has no Abilities API. MCP connections work normally."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:147
+msgid "Llamly database schema"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:147
+msgid "All current Llamly tables are installed at the expected version."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:147
+msgid "The installed Llamly schema does not match this plugin version."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:147
+msgid "Use the schema verification action on the Llamly page before connecting."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:150
+msgid "Journal storage preflight"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:151
+msgid "The current database connection and required InnoDB tables pass the mutation preflight. Writing is enabled and every change is journaled."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:152
+msgid "The database passes the mutation preflight, but writing is turned off on this site (LLAMLY_FREE_MUTATIONS_VERIFIED is false)."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:152
+msgid "Fix the requirement marked as failed below (or send this message to your host), then rerun the Doctor. Do not enable mutations manually."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:161
+msgid "Loopback requests"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:161
+msgid "Whether this server can call its own REST endpoint is tested by the connection checks, which need an administrator to run them."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:161
+msgid "Run the connection checks above. If they fail, ask your host to allow the site to request its own URL."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:170
+#: src/Free/Admin/Doctor.php:177
+msgid "REST API reachable from the server"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:170
+msgid "The server could not request its own REST index."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:170
+#: src/Free/Admin/Doctor.php:184
+msgid "Check DNS and loopback requests from the web server to this WordPress site."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:177
+msgid "The REST index returns JSON and lists llamly/v1."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:177
+#, php-format
+msgid "The REST index did not expose the expected namespace (HTTP %d)."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:177
+msgid "Review rewrite rules, proxy rules, and REST access controls."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:184
+#: src/Free/Admin/Doctor.php:194
+msgid "Unauthenticated MCP challenge from the server"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:184
+msgid "The server could not POST to its own MCP endpoint."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:191
+msgid "A proxy may be stripping the WWW-Authenticate header."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:193
+msgid "The endpoint returns a JSON 401 with its Bearer discovery challenge."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:193
+msgid "The endpoint returns a JSON 401, but the WWW-Authenticate header is missing."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:193
+#, php-format
+msgid "Expected an unauthenticated JSON 401 response (HTTP %d received)."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:194
+msgid "Check whether a security plugin, WAF, or proxy intercepts the MCP route."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:201
+#: src/Free/Admin/Doctor.php:205
+#: src/Free/Admin/Doctor.php:209
+#: src/Free/Admin/Doctor.php:213
+#: src/Free/Admin/Doctor.php:219
+#: src/Free/Admin/Doctor.php:223
+msgid "Authenticated MCP handshake from the server"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:201
+msgid "A temporary read-only key could not be created for the handshake check."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:201
+msgid "Check that the current administrator and credential table are valid."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:205
+msgid "The authenticated initialize handshake did not complete."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:205
+msgid "Check the endpoint authentication path and the matching Logs event."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:209
+msgid "The temporary read-only key was incomplete."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:209
+msgid "Check the credential store before retrying."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:213
+msgid "The server could not complete an authenticated request to its own MCP endpoint."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:213
+msgid "Check the web server loopback route and the matching Logs event."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:219
+msgid "A temporary read-only key completed initialize; the key is revoked after this check."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:219
+#, php-format
+msgid "The authenticated initialize handshake did not complete (HTTP %d)."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:219
+msgid "Review the endpoint authentication path and the matching Logs event."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:223
+msgid "The authenticated handshake probe stopped unexpectedly. No response content or credential was recorded."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:223
+msgid "Review the server error log and retry the Doctor."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:249
+msgid "Temporary Doctor key cleanup"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:249
+msgid "The temporary read-only key could not be confirmed revoked. Revoke temporary Doctor credentials before using this site."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:249
+msgid "Review Connections and revoke the temporary Doctor key, then rerun the Doctor."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:258
+#: src/Free/Admin/Doctor.php:270
+msgid "OAuth discovery reachable from the server"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:258
+msgid "The server could not request the site discovery document."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:258
+msgid "Check root rewrite rules and loopback requests from the web server."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:268
+msgid "Plain permalinks are in use and the web server did not pass this /.well-known/ address to WordPress (on Apache, plain permalinks write no rewrite rules). Choose any other structure in Settings > Permalinks, or have the server send /.well-known/oauth-* to index.php, then rerun the Doctor."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:270
+msgid "The discovery document is JSON with its required field."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:270
+#, php-format
+msgid "The discovery document did not return valid JSON with the expected field (HTTP %d)."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: src/Free/Admin/Doctor.php:270
+msgid "Review root .well-known rewrites, cache rules, and the public HTTPS setup."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:406
+msgid "The response advertises HTTP Basic authentication before reaching the Llamly endpoint."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:409
+msgid "Cloudflare challenged the diagnostic request before it reached WordPress."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:412
+msgid "A ModSecurity rule rejected the JSON request before it reached the MCP endpoint."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:415
+msgid "The site returned HTML where the Doctor expected JSON; a login page, WAF, or proxy may have intercepted the request."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:418
+msgid "The JSON response has a byte-order mark or leading whitespace before its first object/array byte."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:422
+msgid "A WAF, cache, or reverse proxy may have intercepted the request."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:425
+msgid "The response content type is not JSON."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:428
+msgid "The response body is not valid JSON."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:431
+msgid "A cache header is present on a dynamic API response; verify this path is excluded from caching."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:451
+#: src/Free/Admin/Doctor.php:453
+msgid "Add-on modules"
+msgstr ""
+
+#. translators: %d: number of refused add-on modules.
+#: src/Free/Admin/Doctor.php:451
+#, php-format
+msgid "%d add-on module was refused and is not loaded. Llamly and the other add-ons keep working."
+msgid_plural "%d add-on modules were refused and are not loaded. Llamly and the other add-ons keep working."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of refused add-on modules.
+#: src/Free/Admin/Doctor.php:451
+msgid "Update the add-on and Llamly to compatible versions, or contact the add-on author with the reason shown here."
+msgstr ""
+
+#. translators: %d: number of active add-on modules.
+#: src/Free/Admin/Doctor.php:454
+#, php-format
+msgid "%d add-on module is active. Its changes use the same journal, safe mode and undo as Llamly."
+msgid_plural "%d add-on modules are active. Their changes use the same journal, safe mode and undo as Llamly."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of active add-on modules.
+#: src/Free/Admin/Doctor.php:455
+msgid "No add-on module is active."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:467
+msgid "Named database locks"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:467
+msgid "GET_LOCK works, so Llamly can serialize writes per object."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:467
+msgid "GET_LOCK did not grant a lock, so Llamly cannot serialize writes per object."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:467
+msgid "Ask your host to allow GET_LOCK() for the WordPress database user (it is blocked by some proxies and managed databases)."
+msgstr ""
+
+#. translators: %s: current value of the MySQL variable, or "unreadable".
+#: src/Free/Admin/Doctor.php:477
+#: src/Free/History/MutationRunner.php:272
+#: src/Free/History/MutationRunner.php:342
+#: src/Free/History/MutationRunner.php:372
+#: src/Free/History/MutationRunner.php:386
+#: src/Free/History/MutationRunner.php:404
+#: src/Free/History/MutationRunner.php:427
+#: src/Free/History/MutationRunner.php:460
+msgid "unreadable"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:478
+msgid "Database version"
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:479
+msgid "The database version is supported (MySQL 5.7.8+ or MariaDB 10.3+)."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:480
+msgid "Llamly needs MySQL 5.7.8 or newer, or MariaDB 10.3 or newer."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:480
+msgid "Ask your host to upgrade the database to MySQL 5.7.8+ or MariaDB 10.3+."
+msgstr ""
+
+#: src/Free/Admin/Doctor.php:488
+msgid "The database does not pass the current journal and transaction preflight."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:57
+#: src/Free/Admin/ProPage.php:58
+#: src/Free/Admin/ProPage.php:240
+#: src/Free/Admin/ProPage.php:245
+#: assets/free/js/admin.js:2112
+msgid "Llamly Pro"
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:246
+msgid "Llamly Pro is an optional add-on with extra modules for your agent. The first one, Llamly Builder, builds pages in Elementor and in the block editor."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:247
+msgid "Everything in Llamly is free and stays free. Llamly Pro only adds modules."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:251
+msgid "Llamly Pro is installed but not active."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:252
+msgid "Activate it on the Plugins screen"
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:256
+msgid "Plans"
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:257
+msgid "A yearly license for a number of sites. Freemius sells Llamly Pro and handles payment and licenses."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:265
+msgid "Plans and prices come from Freemius. Llamly contacts Freemius only when you click the button."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:266
+msgid "Show plans and prices"
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:269
+msgid "Llamly could not load the plans from Freemius. Check the connection of this site and try again."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:270
+#: assets/free/js/admin.js:451
+#: assets/free/js/admin.js:1647
+#: assets/free/js/admin.js:2429
+msgid "Try again"
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:273
+msgid "Llamly Pro is coming soon."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:274
+msgid "The plans are not on sale yet."
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:276
+#: assets/free/js/admin.js:1196
+msgid "Check again"
+msgstr ""
+
+#. translators: %d: number of sites the license covers.
+#: src/Free/Admin/ProPage.php:290
+#, php-format
+msgid "%d site"
+msgid_plural "%d sites"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: yearly price, for example $59.
+#: src/Free/Admin/ProPage.php:295
+#, php-format
+msgid "%s <span>per year</span>"
+msgstr ""
+
+#. translators: %s: number of sites, for example "5 sites".
+#: src/Free/Admin/ProPage.php:298
+#, php-format
+msgid "Buy Llamly Pro for %s (opens Freemius checkout in a new tab)"
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:299
+msgid "Buy"
+msgstr ""
+
+#: src/Free/Admin/ProPage.php:304
+msgid "The checkout opens on freemius.com in a new tab. After the purchase, Freemius sends you the Llamly Pro download and license key by email."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:20
+msgid "Llamly settings are invalid; the MCP server is paused."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:23
+msgid "The Llamly MCP server is disabled."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:29
+#: src/Free/Auth/Authenticator.php:34
+#: src/Free/Auth/Authenticator.php:36
+#: src/Free/Auth/Authenticator.php:41
+#: src/Free/Mcp/Protocol.php:63
+msgid "A valid Bearer token is required."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:63
+msgid "The credential request limit has been reached."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:109
+msgid "Too many authentication failures from this network address."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:119
+#: src/Free/Auth/Authenticator.php:136
+msgid "The Bearer token is invalid or expired."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:140
+msgid "The OAuth grant has no valid scope; access is denied."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:145
+msgid "The OAuth grant contains an unsupported scope."
+msgstr ""
+
+#: src/Free/Auth/Authenticator.php:151
+msgid "The OAuth usage record could not be saved."
+msgstr ""
+
+#: src/Free/Auth/Authorization.php:54
+#: src/Free/Mcp/Dispatcher.php:163
+msgid "This connected user or credential cannot use the requested tool."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:21
+msgid "Only a site administrator can create a Llamly key."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:25
+msgid "Enter a name of up to 120 characters."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:35
+msgid "A secure random key could not be generated."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:41
+msgid "The credential transaction could not start."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:55
+msgid "The key could not be stored. No key was issued."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:60
+msgid "The key ID could not be confirmed. No key was issued."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:66
+msgid "The key and its audit record could not be stored. No key was issued."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:87
+msgid "The bearer token is invalid."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:97
+msgid "The bearer token is invalid or revoked."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:103
+msgid "The stored credential scope is invalid; access is denied."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:108
+msgid "The credential usage record could not be saved."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:132
+msgid "Only a site administrator can revoke a Llamly key."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:136
+#: src/Free/Auth/CredentialStore.php:147
+msgid "The key could not be revoked."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:141
+msgid "The active key was not found."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:157
+msgid "Only a site administrator can change a Llamly key scope."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:165
+msgid "The key scope could not be changed."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:170
+msgid "The active API key was not found."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:192
+msgid "The key scope and its audit record could not be saved."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:226
+msgid "Choose full, read-only, or custom access."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:230
+msgid "Full access is unavailable until the post write, journal, and recovery checks pass."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:239
+msgid "Custom access must name at least one registered tool."
+msgstr ""
+
+#: src/Free/Auth/CredentialStore.php:244
+msgid "Write tools are unavailable until the required post write and recovery checks pass."
+msgstr ""
+
+#: src/Free/Auth/OAuthRedirectPolicy.php:79
+#: assets/free/js/admin.js:2340
+msgid "A desktop or terminal app"
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:71
+msgid "Llamly is not ready to register clients."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:74
+msgid "New OAuth connections are closed. An administrator can open a 30-minute registration window in Llamly."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:78
+msgid "Too many client registration requests."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:83
+msgid "Send a JSON client registration request."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:87
+msgid "Register between one and ten redirect URIs."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:91
+msgid "Every redirect URI must be a string."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:98
+msgid "No redirect URI satisfies the site redirect-host policy."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:107
+msgid "Only authorization-code clients with PKCE are supported."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:110
+msgid "Public clients must use token_endpoint_auth_method=none and PKCE."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:113
+msgid "The client name must be a string."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:120
+msgid "A secure client ID could not be created."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:128
+msgid "The client registration lock is unavailable."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:132
+msgid "The client registration transaction could not start."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:137
+msgid "The client registration limit could not be checked."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:141
+msgid "This site has reached its limit of 100 active OAuth clients. Revoke an unused client before registering another."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:158
+msgid "The client registration could not be stored with its audit record."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:206
+msgid "Llamly is not ready to accept new connections on this site."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:206
+msgid "Ask an administrator to check that the MCP server is turned on in Llamly > Settings."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:210
+msgid "This connection request is invalid."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:210
+#: src/Free/Auth/OAuthServer.php:381
+#: src/Free/Auth/OAuthServer.php:388
+#: src/Free/Auth/OAuthServer.php:392
+msgid "Go back to the app and start the connection again."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:278
+msgid "An administrator must approve this connection."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:278
+msgid "New connections are turned off on this site. Sign in as an administrator to approve it, or ask an administrator to turn on new connections for 30 minutes in Llamly > Connections."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:289
+msgid "Your account cannot approve this connection."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:289
+#: src/Free/Auth/OAuthServer.php:395
+#: src/Free/Auth/OAuthServer.php:398
+msgid "Sign in with an account that can edit this site, or ask an administrator to connect the app."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:381
+msgid "This consent form expired."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:388
+msgid "Choose whether to approve or refuse this connection."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:395
+msgid "Your WordPress user cannot grant read access."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:398
+msgid "Your WordPress user cannot grant write access."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:402
+#: assets/free/js/admin.js:2887
+msgid "Try again in a moment."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:411
+msgid "Select at least one requested permission."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:420
+msgid "Select only permissions requested by this client."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:445
+msgid "The OAuth request is invalid or uses an unsupported resource, redirect, or PKCE method."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:454
+msgid "The client or exact redirect URI is not registered."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:459
+msgid "The client requested an unsupported Llamly scope."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:481
+msgid "A secure authorization code could not be created."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:486
+msgid "The authorization grant transaction could not start."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:517
+msgid "The authorization grant and its audit record could not be stored."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:533
+msgid "Send OAuth token parameters."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:541
+msgid "Only authorization_code and refresh_token grants are supported."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:566
+msgid "The authorization code, PKCE verifier, redirect, or resource is invalid."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:570
+msgid "The authorization-code transaction could not start."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:584
+msgid "The authorization-code record could not be read."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:588
+msgid "The authorization code was already used; tokens issued from it have been revoked."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:597
+msgid "The authorization code is invalid, expired, or already used."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:602
+msgid "The PKCE verifier does not match the authorization request."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:613
+msgid "The authorization code was already consumed."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:623
+msgid "The token response could not be saved with its audit record."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:636
+msgid "The refresh token, client, or resource is invalid."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:640
+msgid "The refresh-token transaction could not start."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:654
+msgid "The refresh-token record could not be read."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:658
+msgid "Refresh token reuse was detected; the token family has been revoked."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:666
+msgid "The refresh token is invalid, expired, or revoked."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:676
+msgid "The refresh token was already consumed."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:682
+msgid "The refreshed token pair could not be saved with its audit record."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:702
+msgid "Token reuse was detected, but revocation could not be saved."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:711
+msgid "Token reuse was detected, but revocation could not be committed with its audit record."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:724
+msgid "Secure access tokens could not be created."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:732
+msgid "The grant does not contain a valid scope."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:761
+msgid "The token pair could not be stored."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:791
+msgid "The revocation transaction could not start."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:801
+msgid "The token record could not be read."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:811
+msgid "The grant could not be revoked."
+msgstr ""
+
+#: src/Free/Auth/OAuthServer.php:888
+msgid "Llamly is not ready to authorize new clients."
+msgstr ""
+
+#: src/Free/Auth/OriginGuard.php:19
+msgid "The request Origin is invalid."
+msgstr ""
+
+#: src/Free/Auth/OriginGuard.php:23
+msgid "Llamly settings are invalid; the request was denied."
+msgstr ""
+
+#: src/Free/Auth/OriginGuard.php:35
+msgid "The request Origin is not in the site allowlist."
+msgstr ""
+
+#: src/Free/Auth/OriginGuard.php:40
+msgid "An Origin outside the site must use HTTPS."
+msgstr ""
+
+#: src/Free/Auth/PermitStore.php:26
+#: src/Free/Auth/PermitStore.php:101
+msgid "Only an administrator can approve this change."
+msgstr ""
+
+#: src/Free/Auth/PermitStore.php:32
+#: src/Free/Auth/PermitStore.php:55
+#: src/Free/Auth/PermitStore.php:106
+#: src/Free/Auth/PermitStore.php:130
+msgid "The approval could not be recorded."
+msgstr ""
+
+#: src/Free/Core/Abilities.php:41
+msgid "Reversible WordPress tools from Llamly. Every change is journaled and can be undone in Llamly › Activity."
+msgstr ""
+
+#: src/Free/Core/Abilities.php:99
+msgid "Sign in to use Llamly abilities."
+msgstr ""
+
+#: src/Free/Core/Plugin.php:34
+msgid "Llamly could not create or verify its database tables. The plugin was not enabled."
+msgstr ""
+
+#: src/Free/Core/Plugin.php:35
+msgid "Llamly activation failed"
+msgstr ""
+
+#: src/Free/Core/Plugin.php:242
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: src/Free/Core/Plugin.php:360
+msgid "Llamly database setup is incomplete. MCP requests and the admin interface are paused until the schema is verified."
+msgstr ""
+
+#. translators: %s: internal error code.
+#: src/Free/Core/Plugin.php:361
+#, php-format
+msgid "Last error: %s"
+msgstr ""
+
+#: src/Free/Core/Plugin.php:366
+msgid "Continue without a backup"
+msgstr ""
+
+#: src/Free/Core/Settings.php:101
+msgid "The settings request contains an unsupported field."
+msgstr ""
+
+#: src/Free/Core/Settings.php:110
+#: src/Free/Core/Settings.php:116
+msgid "Stored settings are invalid; no changes were saved."
+msgstr ""
+
+#: src/Free/Core/Settings.php:119
+#: src/Free/Core/Settings.php:195
+msgid "Settings changed in another session. Reload before saving."
+msgstr ""
+
+#: src/Free/Core/Settings.php:122
+msgid "Removing all Llamly data on uninstall requires explicit confirmation."
+msgstr ""
+
+#: src/Free/Core/Settings.php:126
+msgid "Disabling an origin or redirect allowlist requires explicit confirmation of the security risk."
+msgstr ""
+
+#: src/Free/Core/Settings.php:134
+msgid "Boolean settings must be true or false."
+msgstr ""
+
+#. translators: %s: setting key.
+#: src/Free/Core/Settings.php:142
+#, php-format
+msgid "The value for %s is outside the allowed range."
+msgstr ""
+
+#: src/Free/Core/Settings.php:164
+msgid "The OAuth registration window can only be closed or opened for up to 30 minutes."
+msgstr ""
+
+#: src/Free/Core/Settings.php:175
+msgid "The settings could not be saved. Try again."
+msgstr ""
+
+#: src/Free/Core/Settings.php:202
+msgid "The settings could not be saved because the pending approval requests could not be cancelled. No changes were saved."
+msgstr ""
+
+#: src/Free/Core/Settings.php:249
+msgid "Add no more than 50 OAuth redirect hosts."
+msgstr ""
+
+#: src/Free/Core/Settings.php:254
+msgid "An OAuth redirect host is invalid."
+msgstr ""
+
+#: src/Free/Core/Settings.php:260
+msgid "Enter a hostname only, without scheme, path, port, or IP address."
+msgstr ""
+
+#: src/Free/Core/Settings.php:271
+msgid "Allowed origins must be a list of up to 20 HTTPS origins."
+msgstr ""
+
+#: src/Free/Core/Settings.php:276
+msgid "An allowed origin is invalid."
+msgstr ""
+
+#: src/Free/Core/Settings.php:285
+msgid "Allowed origins must contain only an HTTPS scheme and host."
+msgstr ""
+
+#: src/Free/Core/ToolRegistry.php:100
+#: src/Free/Tools/ElementorTools.php:270
+msgid "The requested tool is not available."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:105
+msgid "The comment could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:186
+msgid "Unknown comment operation."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:222
+msgid "WordPress did not create the comment."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:249
+msgid "The comment dates could not be kept."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:264
+#: src/Free/Tools/CommentTools.php:238
+msgid "The comment was not found."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:268
+msgid "The comment status changed, so the delete plan no longer applies."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:271
+msgid "This comment has protected metadata that cannot be kept for undo, so it cannot be deleted permanently."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:274
+msgid "WordPress did not delete the comment."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:296
+msgid "Unknown comment status."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:305
+msgid "The trash is disabled on this site; delete the comment instead."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:321
+msgid "WordPress did not change the comment status."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:342
+msgid "This comment has protected metadata that cannot be kept for undo, so it cannot be removed."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:347
+msgid "WordPress did not remove the comment."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:361
+msgid "The post of this comment no longer exists."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:364
+msgid "The parent comment no longer exists."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:371
+msgid "A reply to this comment was changed or removed since it was deleted."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:377
+msgid "Comment metadata could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:382
+msgid "Replies could not be attached back to the comment."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:408
+msgid "The comment row could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/CommentObject.php:514
+#: src/Free/History/Adapters/CommentObject.php:519
+#: src/Free/History/Engine.php:1661
+msgid "(comment)"
+msgstr ""
+
+#: src/Free/History/Adapters/GlobalStylesObject.php:128
+#: src/Free/Tools/GutenbergTools.php:712
+msgid "The connected user cannot change the global styles."
+msgstr ""
+
+#: src/Free/History/Adapters/GlobalStylesObject.php:135
+msgid "Only the global styles of the active theme can be changed."
+msgstr ""
+
+#: src/Free/History/Adapters/GlobalStylesObject.php:138
+msgid "The global styles were saved after the caller read them. Read them again before updating."
+msgstr ""
+
+#: src/Free/History/Adapters/GlobalStylesObject.php:153
+msgid "WordPress did not create the global styles."
+msgstr ""
+
+#: src/Free/History/Adapters/GlobalStylesObject.php:166
+msgid "WordPress did not update the global styles."
+msgstr ""
+
+#: src/Free/History/Adapters/GlobalStylesObject.php:169
+msgid "Unknown global styles operation."
+msgstr ""
+
+#: src/Free/History/Adapters/GlobalStylesObject.php:238
+msgid "Custom CSS cannot be changed through Llamly. Use the WordPress Site Editor."
+msgstr ""
+
+#: src/Free/History/Adapters/GlobalStylesObject.php:285
+#: src/Free/History/Engine.php:1663
+#: assets/free/js/admin.js:2216
+msgid "Global styles"
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:150
+#: src/Free/Tools/MediaTools.php:354
+msgid "The media item was not found."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:157
+msgid "Unknown media operation."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:166
+msgid "WordPress did not update the media item."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:173
+#: src/Free/History/Adapters/MediaObject.php:247
+msgid "WordPress did not store the alternative text."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:190
+msgid "The uploaded data is no longer available. Send the upload again."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:195
+msgid "The upload could not be prepared."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:201
+msgid "The file type changed during upload."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:207
+msgid "WordPress rejected the upload."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:223
+msgid "WordPress did not create the media item."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:232
+msgid "The uploaded media item could not be read back."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:266
+msgid "Comments or child items hang from this media item, so removing it would lose them."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:269
+msgid "A file path of this media item is outside the uploads directory, so it is not handled by Llamly."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:274
+#: src/Free/History/FileRetention.php:235
+msgid "A file of this media item is missing or unreadable, so it cannot be kept for undo. Nothing was deleted."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:283
+msgid "Another media item uses the same file, so it cannot be removed safely."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:288
+msgid "The uploaded media item is now used by content, widgets, the site icon, logo, header or background, so the upload cannot be undone."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:326
+msgid "WordPress did not delete the media item."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:368
+msgid "The retained files of this media item are no longer available, so it cannot be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:372
+#: src/Free/History/RawRows.php:102
+msgid "Another item now uses the original identifier, so it cannot be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:386
+msgid "The files of this media item changed, so its details cannot be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:391
+msgid "The media row could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:407
+msgid "The media item now has files the upload did not create, so the upload cannot be undone."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:420
+msgid "A post that used this media item as featured image now has another featured image."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:426
+msgid "The site icon was changed after this media item was removed."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:432
+msgid "The site logo was changed after this media item was removed."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:439
+msgid "The logo, header or background image of the theme was changed after this media item was removed."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:458
+msgid "A featured image link could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:477
+msgid "A journaled theme setting could not be read."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:494
+msgid "A term used by this media item no longer exists."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:504
+#: src/Free/History/Adapters/MediaObject.php:509
+msgid "Media terms could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:609
+#: src/Free/History/Adapters/PostObject.php:587
+#: src/Free/History/Engine.php:1671
+msgid "(untitled)"
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:716
+msgid "The file is empty."
+msgstr ""
+
+#. translators: %s: maximum upload size, formatted.
+#: src/Free/History/Adapters/MediaObject.php:719
+#, php-format
+msgid "The file is larger than the upload limit of %s."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:732
+msgid "This file type is not allowed or its content does not match its extension."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:737
+msgid "The file contains markup or code and is not accepted as media."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:763
+msgid "Use a plain file name of 1 to 200 characters without folders."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:772
+msgid "Hidden files and server configuration files are not accepted."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:776
+msgid "The file name needs an extension."
+msgstr ""
+
+#: src/Free/History/Adapters/MediaObject.php:780
+msgid "Executable, script, markup and SVG files (also as a double extension) are not accepted."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:95
+msgid "The menu settings could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:119
+msgid "The menu locations could not be saved."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:140
+msgid "The automatic page setting of the menu could not be saved."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:160
+#: src/Free/History/Adapters/MenuObject.php:477
+#: src/Free/Tools/MenuTools.php:148
+#: src/Free/Tools/MenuTools.php:369
+msgid "The menu was not found."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:163
+msgid "This menu has too many items to delete reversibly."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:186
+msgid "This menu carries protected metadata that cannot be journaled, so it cannot be changed reversibly."
+msgstr ""
+
+#. translators: %d: maximum number of menu items.
+#: src/Free/History/Adapters/MenuObject.php:204
+#: src/Free/Tools/MenuTools.php:323
+#, php-format
+msgid "A menu can have at most %d items."
+msgstr ""
+
+#. translators: %d: maximum nesting depth.
+#: src/Free/History/Adapters/MenuObject.php:211
+#: src/Free/Tools/MenuTools.php:320
+#, php-format
+msgid "Menu items can be nested at most %d levels deep."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:215
+msgid "invalid parent reference."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:221
+msgid "db_id is not an item of this menu."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:224
+msgid "the same db_id appears twice."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:251
+msgid "unknown item type."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:260
+msgid "the URL must use http, https, mailto or tel (or be relative)."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:263
+msgid "a custom link needs a url."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:266
+msgid "a custom link needs a title."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:274
+msgid "object must be a public post type."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:277
+msgid "object_id is not an existing item of that post type."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:280
+msgid "the connected user cannot read the target item."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:284
+msgid "object must be a taxonomy that menus can link to."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:288
+msgid "object_id is not an existing term of that taxonomy."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:293
+msgid "object must be a post type with an archive."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:299
+msgid "target must be empty or _blank."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:360
+msgid "The menu could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:367
+msgid "The menu metadata could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:375
+msgid "The menu items could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:421
+msgid "The menu item metadata could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:463
+#: src/Free/History/Adapters/TermObject.php:234
+msgid "The creation marker could not be stored."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:507
+msgid "Unknown menu operation."
+msgstr ""
+
+#. translators: %s: menu location slug.
+#: src/Free/History/Adapters/MenuObject.php:528
+#, php-format
+msgid "The theme does not register the menu location \"%s\"."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:557
+msgid "This menu has too many items to rewrite reversibly."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:599
+msgid "WordPress did not save a menu item."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:607
+msgid "WordPress did not remove a menu item."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:619
+msgid "The menu order could not be saved."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:656
+msgid "WordPress did not delete the menu."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:663
+msgid "WordPress left menu items behind, so the delete was cancelled."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:689
+msgid "Another menu now uses this slug."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:696
+msgid "Leftover relationships already use this menu identifier."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:701
+msgid "The menu was recreated with another identifier."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:706
+msgid "The menu rows could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:737
+msgid "A menu item could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:743
+msgid "Leftover relationships already use a menu item identifier."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:750
+msgid "A menu item relationship could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:775
+msgid "A menu item could not be removed."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:834
+msgid "The active theme changed, so the menu locations cannot be restored."
+msgstr ""
+
+#. translators: %s: menu location slug.
+#: src/Free/History/Adapters/MenuObject.php:857
+#, php-format
+msgid "The menu location \"%s\" is now used by another menu."
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:999
+#: src/Free/History/Engine.php:1665
+msgid "(menu)"
+msgstr ""
+
+#: src/Free/History/Adapters/MenuObject.php:1067
+msgid "The active theme is a block theme and does not display classic menus; its navigation lives in wp_navigation posts."
+msgstr ""
+
+#: src/Free/History/Adapters/OptionObject.php:89
+msgid "The option change is not valid."
+msgstr ""
+
+#: src/Free/History/Adapters/OptionObject.php:98
+msgid "WordPress did not save the option."
+msgstr ""
+
+#: src/Free/History/Adapters/OptionObject.php:110
+msgid "The option snapshot does not match this option."
+msgstr ""
+
+#: src/Free/History/Adapters/OptionObject.php:116
+msgid "The option could not be removed."
+msgstr ""
+
+#: src/Free/History/Adapters/OptionObject.php:132
+msgid "The option row could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/OptionObject.php:174
+#: src/Free/History/Engine.php:1667
+#: assets/free/js/admin.js:2339
+msgid "Site option"
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:63
+#: src/Free/Tools/GutenbergTools.php:524
+msgid "The connected user cannot create patterns."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:72
+msgid "WordPress did not create the pattern."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:79
+#: src/Free/Tools/GutenbergTools.php:1022
+msgid "The connected user cannot change this pattern."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:84
+msgid "The trash is disabled on this site (EMPTY_TRASH_DAYS = 0), so deleting would be permanent."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:87
+#: src/Free/Tools/GutenbergTools.php:564
+msgid "The pattern is already in the trash."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:90
+msgid "WordPress did not move the pattern to the trash."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:96
+msgid "Unknown pattern operation."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:104
+msgid "WordPress did not update the pattern."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:118
+msgid "WordPress did not store the pattern sync status."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:214
+#: src/Free/History/Engine.php:1669
+msgid "(untitled pattern)"
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:391
+msgid "WordPress did not remove the item."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:409
+msgid "The journaled item has an unexpected type."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:418
+msgid "The item row could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:450
+msgid "A term used by this item no longer exists."
+msgstr ""
+
+#: src/Free/History/Adapters/PatternObject.php:463
+#: src/Free/History/Adapters/PatternObject.php:468
+msgid "Terms could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:74
+msgid "This post type cannot be changed through the post tools."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:86
+msgid "WordPress did not create the post."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:97
+#: src/Free/History/Adapters/PostObject.php:232
+msgid "The trash is disabled on this site (EMPTY_TRASH_DAYS = 0), so trashing would delete permanently."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:100
+#: src/Free/Tools/PostTools.php:320
+msgid "The post is already in the trash."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:104
+#: src/Free/History/Adapters/PostObject.php:235
+msgid "WordPress did not move the post to the trash."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:113
+msgid "The revision does not belong to this post."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:117
+msgid "WordPress did not restore the revision."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:132
+msgid "WordPress did not update the requested post."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:158
+msgid "WordPress did not store the post metadata."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:192
+msgid "Comments, child items or menu items now depend on this post, so removing it would lose them."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:198
+msgid "WordPress did not remove the post."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:205
+msgid "This post type cannot be restored through the post tools."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:210
+msgid "Another item now uses this post ID."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:218
+msgid "WordPress could not recreate the post with its original ID."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:228
+msgid "WordPress did not restore the post from the trash."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:253
+msgid "The post row could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:263
+msgid "Post metadata could not be read for restore."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:295
+msgid "A category, tag or term used by this post no longer exists."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:311
+#: src/Free/History/Adapters/PostObject.php:316
+msgid "Post terms could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/PostObject.php:360
+msgid "Comment statuses could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/TemplateObject.php:113
+#: src/Free/Tools/GutenbergTools.php:587
+#: src/Free/Tools/GutenbergTools.php:672
+msgid "The connected user cannot edit templates."
+msgstr ""
+
+#: src/Free/History/Adapters/TemplateObject.php:122
+#: src/Free/Tools/GutenbergTools.php:595
+msgid "Only templates of the active theme can be saved."
+msgstr ""
+
+#: src/Free/History/Adapters/TemplateObject.php:126
+msgid "The template was customized after the caller read it. Read it again before saving."
+msgstr ""
+
+#: src/Free/History/Adapters/TemplateObject.php:139
+msgid "WordPress did not create the template override."
+msgstr ""
+
+#: src/Free/History/Adapters/TemplateObject.php:157
+msgid "Unknown template operation."
+msgstr ""
+
+#: src/Free/History/Adapters/TemplateObject.php:165
+msgid "WordPress did not update the template."
+msgstr ""
+
+#: src/Free/History/Adapters/TemplateObject.php:237
+#: src/Free/History/Engine.php:1673
+msgid "(template)"
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:68
+#: src/Free/History/Adapters/TermObject.php:242
+#: src/Free/History/Adapters/TermObject.php:276
+msgid "The term was not found."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:72
+#: src/Free/History/Adapters/TermObject.php:222
+#: src/Free/History/Adapters/TermObject.php:338
+msgid "This taxonomy cannot be changed through Llamly."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:75
+#: src/Free/Tools/TermTools.php:198
+msgid "The default term cannot be deleted."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:78
+msgid "This term row is shared with another taxonomy and cannot be deleted reversibly."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:81
+msgid "This term has too many assigned items or child terms to delete reversibly."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:86
+msgid "This term carries protected metadata that cannot be journaled, so it cannot be deleted reversibly."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:140
+msgid "The term could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:151
+msgid "The term metadata could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:246
+msgid "This term row is shared with another taxonomy."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:249
+msgid "A term cannot be its own parent or a child of its own descendants."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:263
+msgid "Unknown term operation."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:286
+msgid "WordPress did not delete the term."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:291
+msgid "The default term was assigned differently than expected, so the delete was cancelled."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:294
+msgid "The term could not be deleted."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:344
+msgid "Items or child terms now use this term, so removing it would detach them."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:352
+msgid "The taxonomy of this term is no longer available."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:356
+msgid "The parent term of this term no longer exists."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:365
+msgid "Another term now uses this slug."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:392
+msgid "The previous parent is now a descendant of this term, so restoring it would create a loop."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:409
+msgid "The term rows could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:438
+msgid "Leftover relationships already use this term identifier."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:442
+msgid "The saved state of this term is incomplete."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:447
+msgid "The term relationships could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:457
+msgid "A child term was moved after this term was deleted."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:460
+msgid "A child term could not be restored."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:469
+msgid "The default term changed after the delete, so the items it was assigned to cannot be put back safely."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:479
+msgid "The default term assignment could not be undone."
+msgstr ""
+
+#: src/Free/History/Adapters/TermObject.php:570
+#: src/Free/History/Engine.php:1675
+#: assets/free/js/admin.js:2339
+msgid "(unnamed term)"
+msgstr ""
+
+#: src/Free/History/ContentGuard.php:191
+msgid "This is an Elementor document. Its content, excerpt, metadata and revisions are read-only in Llamly."
+msgstr ""
+
+#: src/Free/History/EditorGuard.php:264
+msgid "Reload this editor after copying your unsaved text."
+msgstr ""
+
+#: src/Free/History/EditorGuard.php:265
+msgid "Llamly blocked a stale editor save"
+msgstr ""
+
+#: src/Free/History/EditorGuard.php:322
+msgid "Another Llamly or editor save is in progress. Try again shortly."
+msgstr ""
+
+#: src/Free/History/EditorGuard.php:330
+msgid "Llamly could not confirm the post version. Copy your unsaved text and try again."
+msgstr ""
+
+#: src/Free/History/EditorGuard.php:340
+msgid "Read the item with context=edit and resend its llamly_edit_token as the X-Llamly-Edit-Token header."
+msgstr ""
+
+#: src/Free/History/EditorGuard.php:341
+msgid "This post changed through Llamly. Reload the editor before saving."
+msgstr ""
+
+#: src/Free/History/EditorGuard.php:344
+msgid "This editor token is invalid. Copy your unsaved text, then reload the editor."
+msgstr ""
+
+#: src/Free/History/EditorGuard.php:347
+msgid "This post changed while the editor was open. Copy your unsaved text, then reload before saving."
+msgstr ""
+
+#: src/Free/History/Engine.php:293
+#: src/Free/History/Engine.php:386
+msgid "This completed activity item is no longer available to undo."
+msgstr ""
+
+#: src/Free/History/Engine.php:296
+#: src/Free/History/Engine.php:332
+msgid "Undo this activity item before redoing it."
+msgstr ""
+
+#: src/Free/History/Engine.php:300
+msgid "This activity item cannot be undone through Llamly."
+msgstr ""
+
+#: src/Free/History/Engine.php:303
+msgid "The activity snapshots have expired and this change can no longer be undone."
+msgstr ""
+
+#: src/Free/History/Engine.php:306
+msgid "The site database was restored after this change, so it can no longer be undone or redone."
+msgstr ""
+
+#: src/Free/History/Engine.php:311
+msgid "The stored activity snapshot is incomplete."
+msgstr ""
+
+#: src/Free/History/Engine.php:323
+#: src/Free/History/Engine.php:392
+msgid "This activity item has already been undone."
+msgstr ""
+
+#: src/Free/History/Engine.php:325
+msgid "This activity item has already been redone and cannot start another undo cycle."
+msgstr ""
+
+#: src/Free/History/Engine.php:335
+msgid "The activity snapshots have expired and this change can no longer be redone."
+msgstr ""
+
+#: src/Free/History/Engine.php:338
+msgid "This activity item has already been redone."
+msgstr ""
+
+#: src/Free/History/Engine.php:346
+msgid "The stored activity fingerprint is invalid."
+msgstr ""
+
+#: src/Free/History/Engine.php:358
+msgid "Your WordPress user cannot undo this change."
+msgstr ""
+
+#: src/Free/History/Engine.php:369
+msgid "This connection cannot undo that change."
+msgstr ""
+
+#: src/Free/History/Engine.php:389
+msgid "Block batches cannot be forced back; undo the newer changes first."
+msgstr ""
+
+#: src/Free/History/Engine.php:424
+msgid "Confirm the forced undo in Activity first."
+msgstr ""
+
+#: src/Free/History/Engine.php:478
+#: src/Free/History/Engine.php:507
+msgid "This request is not waiting for approval."
+msgstr ""
+
+#: src/Free/History/Engine.php:487
+#: src/Free/History/Engine.php:490
+msgid "Only an administrator who can change this item can approve the request."
+msgstr ""
+
+#: src/Free/History/Engine.php:503
+msgid "Only an administrator can reject this request."
+msgstr ""
+
+#: src/Free/History/Engine.php:722
+msgid "Safe mode is on and this change needs explicit confirmation. Nothing was changed. Ask the user whether to go ahead; only if they agree, repeat the same call with the same idempotency_key and confirm: true."
+msgstr ""
+
+#: src/Free/History/Engine.php:734
+msgid "A site administrator must approve this change in Llamly › Activity. After approval, repeat the same call with the same idempotency_key."
+msgstr ""
+
+#: src/Free/History/Engine.php:766
+msgid "This request waited too long for approval and expired. Send it again with a new idempotency_key."
+msgstr ""
+
+#: src/Free/History/Engine.php:771
+msgid "The approval policy changed; send the request again with a new idempotency_key."
+msgstr ""
+
+#: src/Free/History/Engine.php:819
+#: src/Free/History/Engine.php:893
+msgid "This operation changed while it was being retried."
+msgstr ""
+
+#: src/Free/History/Engine.php:848
+msgid "Another Llamly or editor save is in progress. Retry with the same idempotency key."
+msgstr ""
+
+#: src/Free/History/Engine.php:854
+msgid "The durable operation row could not be read."
+msgstr ""
+
+#: src/Free/History/Engine.php:860
+msgid "An administrator must review the pending recovery before another Llamly change."
+msgstr ""
+
+#: src/Free/History/Engine.php:873
+msgid "This operation is still being recovered. Retry with the same idempotency key."
+msgstr ""
+
+#: src/Free/History/Engine.php:884
+msgid "The same request was already rejected and will not be repeated."
+msgstr ""
+
+#: src/Free/History/Engine.php:915
+msgid "The current state could not be read from the database."
+msgstr ""
+
+#: src/Free/History/Engine.php:919
+msgid "The requested item was not found."
+msgstr ""
+
+#: src/Free/History/Engine.php:924
+msgid "The item changed after this activity entry. Undo the more recent changes first."
+msgstr ""
+
+#: src/Free/History/Engine.php:925
+msgid "The item changed after the caller read it. Read it again before updating."
+msgstr ""
+
+#: src/Free/History/Engine.php:964
+msgid "The activity item being reversed was not found."
+msgstr ""
+
+#: src/Free/History/Engine.php:973
+#: src/Free/Mcp/Dispatcher.php:156
+msgid "The requested tool is not registered."
+msgstr ""
+
+#: src/Free/History/Engine.php:984
+msgid "The object generation row could not be created."
+msgstr ""
+
+#: src/Free/History/Engine.php:997
+#: src/Free/History/Engine.php:1008
+msgid "An incomplete operation blocks this item until an administrator reviews it."
+msgstr ""
+
+#: src/Free/History/Engine.php:1043
+msgid "The snapshot could not be serialized to the journal."
+msgstr ""
+
+#: src/Free/History/Engine.php:1047
+msgid "This change is too large to keep a reversible snapshot, so it was not applied."
+msgstr ""
+
+#: src/Free/History/Engine.php:1054
+msgid "The durable operation transaction could not start."
+msgstr ""
+
+#: src/Free/History/Engine.php:1061
+msgid "Another operation is pending for this item."
+msgstr ""
+
+#: src/Free/History/Engine.php:1067
+msgid "The item changed while the operation was being prepared."
+msgstr ""
+
+#: src/Free/History/Engine.php:1089
+msgid "The applying marker or object generation could not be committed."
+msgstr ""
+
+#: src/Free/History/Engine.php:1095
+msgid "The applying marker was not durably committed."
+msgstr ""
+
+#: src/Free/History/Engine.php:1110
+msgid "The operation transaction marker could not be written."
+msgstr ""
+
+#: src/Free/History/Engine.php:1123
+msgid "The item changed before the Llamly update began. No Llamly changes were applied."
+msgstr ""
+
+#: src/Free/History/Engine.php:1134
+msgid "This change needs a fresh administrator approval. Confirm it again in Activity."
+msgstr ""
+
+#: src/Free/History/Engine.php:1153
+msgid "WordPress did not return the changed item."
+msgstr ""
+
+#: src/Free/History/Engine.php:1162
+msgid "The changed item could not be read back from the database."
+msgstr ""
+
+#: src/Free/History/Engine.php:1167
+#: src/Free/History/Engine.php:1178
+msgid "WordPress changed the restored item while saving it, so the undo or redo was cancelled."
+msgstr ""
+
+#: src/Free/History/Engine.php:1190
+#: src/Free/History/Engine.php:1195
+msgid "WordPress saved the item differently from the request, so the change was cancelled."
+msgstr ""
+
+#: src/Free/History/Engine.php:1200
+msgid "The object version row could not be stored."
+msgstr ""
+
+#: src/Free/History/Engine.php:1206
+msgid "The object generation marker changed during the write."
+msgstr ""
+
+#: src/Free/History/Engine.php:1235
+msgid "The operation result or object generation could not be committed."
+msgstr ""
+
+#: src/Free/History/Engine.php:1248
+msgid "The required audit event could not be committed."
+msgstr ""
+
+#: src/Free/History/Engine.php:1251
+msgid "The database connection or object lock changed before commit."
+msgstr ""
+
+#: src/Free/History/Engine.php:1255
+msgid "The database did not confirm the change and journal commit."
+msgstr ""
+
+#: src/Free/History/Engine.php:1274
+msgid "The change and journal transaction failed."
+msgstr ""
+
+#: src/Free/History/Engine.php:1293
+msgid "The item changed outside the journal transaction. An administrator must review its saved state."
+msgstr ""
+
+#: src/Free/History/Engine.php:1343
+msgid "A plugin changed too much extra metadata while saving, so the change was cancelled and restored."
+msgstr ""
+
+#: src/Free/History/Engine.php:1351
+msgid "The database rolled back the change transaction (deadlock or lock timeout). Nothing was committed; retry with the same idempotency key."
+msgstr ""
+
+#: src/Free/History/Engine.php:1374
+msgid "The pending operation has no recoverable item identifier."
+msgstr ""
+
+#: src/Free/History/Engine.php:1383
+msgid "The pending operation could not be verified."
+msgstr ""
+
+#: src/Free/History/Engine.php:1413
+msgid "The item does not match either the saved state or the recorded change. An administrator must review it."
+msgstr ""
+
+#: src/Free/History/Engine.php:1420
+msgid "The creation journal row could not be loaded."
+msgstr ""
+
+#: src/Free/History/Engine.php:1440
+msgid "An item created by the interrupted operation no longer matches its recorded intent."
+msgstr ""
+
+#: src/Free/History/Engine.php:1444
+msgid "More than one item carries the interrupted creation marker."
+msgstr ""
+
+#: src/Free/History/Engine.php:1507
+msgid "This activity item is not waiting for recovery."
+msgstr ""
+
+#: src/Free/History/Engine.php:1513
+msgid "Your WordPress user cannot resolve this recovery."
+msgstr ""
+
+#: src/Free/History/Engine.php:1520
+#: src/Free/History/Engine.php:1541
+#: src/Free/History/Engine.php:1545
+msgid "The recovery could not be recorded."
+msgstr ""
+
+#: src/Free/History/Engine.php:1642
+#: src/Free/History/Engine.php:1879
+msgid "The site database was restored after this change."
+msgstr ""
+
+#: src/Free/History/Engine.php:1645
+#: src/Free/History/Engine.php:1882
+msgid "The snapshot retention period could not be confirmed."
+msgstr ""
+
+#: src/Free/History/Engine.php:1646
+#: src/Free/History/Engine.php:1883
+msgid "The snapshot retention period has ended."
+msgstr ""
+
+#: src/Free/History/Engine.php:1677
+msgid "(user)"
+msgstr ""
+
+#. translators: 1: object type, 2: maximum hash length.
+#: src/Free/History/Engine.php:2000
+#, php-format
+msgid "The revision hash of %1$s items is longer than the journal stores (%2$d characters): the hash prefix of its adapter is too long. No change was made."
+msgstr ""
+
+#: src/Free/History/Engine.php:2035
+msgid "The initial journal row could not be saved. No change was made."
+msgstr ""
+
+#: src/Free/History/Engine.php:2058
+#: src/Free/Tools/GutenbergTools.php:1095
+#: src/Free/Tools/PostTools.php:582
+msgid "This idempotency key was already used for a different change."
+msgstr ""
+
+#: src/Free/History/Engine.php:2068
+msgid "This operation needs administrator recovery before it can be retried."
+msgstr ""
+
+#: src/Free/History/Engine.php:2078
+msgid "This idempotent request was already rejected."
+msgstr ""
+
+#: src/Free/History/Engine.php:2121
+#: src/Free/History/MutationRunner.php:147
+msgid "Llamly or its required journal is paused."
+msgstr ""
+
+#: src/Free/History/Engine.php:2124
+msgid "The approval policy changed while this request was being prepared. Repeat the same call with the same idempotency_key."
+msgstr ""
+
+#: src/Free/History/Engine.php:2139
+msgid "The change and journal transaction could not start."
+msgstr ""
+
+#: src/Free/History/Engine.php:2229
+msgid "The stored operation result is invalid."
+msgstr ""
+
+#: src/Free/History/Engine.php:2250
+msgid "Use an idempotency key of 16 to 128 letters, numbers, dots, underscores, colons, or dashes."
+msgstr ""
+
+#: src/Free/History/Engine.php:2343
+#: src/Free/History/MutationRunner.php:471
+msgid "Writing is paused until concurrency and journal proof is complete."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:240
+msgid "A file of this media item could not be read. Nothing was deleted."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:246
+msgid "This media item is larger than the undo retention allows for one change. Nothing was deleted."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:249
+msgid "The undo retention space for media is full. Nothing was deleted; wait for older changes to expire."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:253
+msgid "The protected retention directory could not be prepared. Nothing was deleted."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:258
+msgid "The retention directory could not be created. Nothing was deleted."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:270
+msgid "A media file could not be copied to the undo retention. Nothing was deleted."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:275
+msgid "The retained copy of a media file did not verify. Nothing was deleted."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:284
+msgid "The retention index could not be stored. Nothing was deleted."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:318
+msgid "The retained files do not match the media item being restored."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:321
+msgid "The retained media files are no longer available."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:327
+msgid "A retained media file is missing or damaged, so the media item cannot be restored."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:331
+msgid "A media file path is no longer inside the uploads directory."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:335
+msgid "Another file now exists at the original path of a media file, so it was not overwritten."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:348
+msgid "A media folder could not be recreated."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:352
+msgid "A media file could not be staged for restore."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:356
+msgid "A staged media file did not verify."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:361
+msgid "Another file appeared at the original path of a media file during restore."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:364
+msgid "A media file could not be moved into place."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:377
+msgid "Restoring the media files failed; every file placed by this attempt was removed."
+msgstr ""
+
+#: src/Free/History/FileRetention.php:396
+msgid "The retention index could not be updated."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:73
+msgid "The requested write tool has no registered executor."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:150
+msgid "The Llamly journal schema is not current."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:155
+msgid "The active database adapter cannot guarantee a single transaction connection."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:163
+msgid "The database storage engines of the Llamly tables could not be verified."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:172
+msgid "The journal table row format cannot support its unique idempotency key."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:176
+msgid "The database cluster mode and durability settings could not be verified."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:332
+#: assets/free/js/admin.js:1108
+msgid "missing"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:340
+msgid "InnoDB tables"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:344
+msgid "The storage engines could not be read from information_schema."
+msgstr ""
+
+#. translators: %s: comma-separated tables with their engine.
+#: src/Free/History/MutationRunner.php:347
+#, php-format
+msgid "These tables are not InnoDB: %s."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:348
+msgid "Every content, metadata and journal table uses InnoDB."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:349
+msgid "Ask your host to convert each listed table with ALTER TABLE <table> ENGINE=InnoDB."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:370
+msgid "Transaction isolation"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:372
+msgid "cannot be changed"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:374
+msgid "Llamly sets REPEATABLE READ for each write transaction and restores the previous level afterwards, so the host default does not need to change."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:375
+msgid "Llamly could not switch this database session between isolation levels, which every write needs."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:376
+msgid "Ask your host to allow SET SESSION TRANSACTION ISOLATION LEVEL for the WordPress database user."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:384
+msgid "Durable commits"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:388
+msgid "InnoDB flushes the log at every commit."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:390
+msgid "InnoDB writes the log at every commit but flushes it to disk about once a second; an operating-system crash or power loss (not just a MySQL restart) can lose up to about one second of whole transactions, including journal entries. Effects outside the database, such as media files, can survive that loss."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:393
+msgid "For full durability, ask your host to set innodb_flush_log_at_trx_commit=1. Value 2 is accepted."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:394
+msgid "Ask your host to set innodb_flush_log_at_trx_commit to 1 (or 2)."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:402
+msgid "Galera cluster"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:404
+msgid "not set"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:405
+msgid "The database is not running in Galera cluster mode."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:406
+msgid "Ask your host to run this site on a non-clustered database."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:413
+msgid "Database drop-in"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:415
+msgid "none"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:416
+msgid "No custom wp-content/db.php drop-in is installed."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:417
+msgid "Remove wp-content/db.php (or ask your host to), then rerun the Doctor."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:425
+msgid "Maximum packet size"
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:429
+msgid "The database accepts packets large enough for journal snapshots."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:430
+msgid "Large changes (big pages) can exceed this packet size and be refused."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:431
+msgid "Ask your host to raise max_allowed_packet to at least 16M."
+msgstr ""
+
+#. translators: %s: database table name.
+#: src/Free/History/MutationRunner.php:441
+#, php-format
+msgid "The table %s was not found, so Llamly cannot verify it uses InnoDB. Ask your host to restore it, or reactivate Llamly to recreate it."
+msgstr ""
+
+#. translators: 1: database table name, 2: its storage engine.
+#: src/Free/History/MutationRunner.php:443
+#, php-format
+msgid "The table %1$s uses the %2$s storage engine, but Llamly needs InnoDB for transactions. Ask your host to run ALTER TABLE %1$s ENGINE=InnoDB."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:449
+msgid "The database variable wsrep_on is ON (Galera cluster), which Llamly does not support for writes. Ask your host to run this site on a non-clustered database."
+msgstr ""
+
+#: src/Free/History/MutationRunner.php:454
+msgid "A custom database drop-in (wp-content/db.php) is installed, so Llamly cannot guarantee that one transaction stays on one connection. Remove it, or ask your host to."
+msgstr ""
+
+#. translators: %s: current value of the MySQL variable, or "unreadable".
+#: src/Free/History/MutationRunner.php:460
+#, php-format
+msgid "The database variable innodb_flush_log_at_trx_commit is %s, so commits are not durable. Ask your host to set it to 1 (or 2)."
+msgstr ""
+
+#. translators: %s: current session transaction isolation level.
+#: src/Free/History/MutationRunner.php:466
+#, php-format
+msgid "Llamly could not switch the database session to REPEATABLE READ (transaction_isolation is %s). Ask your host to allow SET SESSION TRANSACTION ISOLATION LEVEL for the WordPress database user."
+msgstr ""
+
+#: src/Free/History/RawRows.php:63
+msgid "Metadata could not be read for restore."
+msgstr ""
+
+#: src/Free/History/RawRows.php:71
+#: src/Free/History/RawRows.php:76
+msgid "Metadata could not be restored."
+msgstr ""
+
+#: src/Free/History/RawRows.php:95
+msgid "The journaled row has no identifier."
+msgstr ""
+
+#: src/Free/History/RawRows.php:99
+msgid "The row identifier could not be checked."
+msgstr ""
+
+#: src/Free/History/RawRows.php:109
+msgid "The item could not be restored with its original identifier."
+msgstr ""
+
+#: src/Free/Mcp/Dispatcher.php:18
+msgid "Find Llamly tools available to this connection and their input schemas."
+msgstr ""
+
+#: src/Free/Mcp/Dispatcher.php:32
+msgid "Run one registered Llamly tool after the server checks its schema, scope, WordPress capability, and mutation policy."
+msgstr ""
+
+#: src/Free/Mcp/Dispatcher.php:159
+msgid "Writing is paused until the concurrency and journal guarantees pass their required development proof."
+msgstr ""
+
+#: src/Free/Mcp/Dispatcher.php:171
+msgid "Tool arguments must be an object."
+msgstr ""
+
+#: src/Free/Mcp/Endpoint.php:77
+msgid "The access token is not issued for this MCP endpoint."
+msgstr ""
+
+#: src/Free/Mcp/Endpoint.php:156
+msgid "Llamly is updating its database. Try again in a few seconds."
+msgstr ""
+
+#: src/Free/Mcp/Protocol.php:67
+msgid "The requested MCP protocol version is not supported."
+msgstr ""
+
+#: src/Free/Mcp/Protocol.php:391
+msgid "Connect with an OAuth connector or a scoped Bearer key. Keys are shown only once. Verify client calls in Activity and revoke a key to deny the next request."
+msgstr ""
+
+#: src/Free/Mcp/Protocol.php:392
+msgid "Use read-only access unless writing is needed. Every write must have a durable journal entry, pass the WordPress user capability check, and include the current post revision hash. If storage or concurrency checks fail, Llamly stops before reporting success."
+msgstr ""
+
+#: src/Free/Mcp/Protocol.php:408
+msgid "Review available draft posts without changing them."
+msgstr ""
+
+#: src/Free/Mcp/Protocol.php:418
+msgid "Review posts that are accessible to this connection."
+msgstr ""
+
+#: src/Free/Mcp/Protocol.php:427
+msgid "Connection and access"
+msgstr ""
+
+#: src/Free/Mcp/Protocol.php:428
+msgid "Writing safety"
+msgstr ""
+
+#. translators: 1: argument path, 2: what is wrong with it.
+#: src/Free/Mcp/SchemaValidator.php:150
+#, php-format
+msgid "Argument %1$s %2$s."
+msgstr ""
+
+#. translators: %s: add-on name.
+#: src/Free/Modules/ModuleRegistry.php:253
+#, php-format
+msgid "This change was made by the add-on “%s”, which is not active. Activate it to undo or redo this change."
+msgstr ""
+
+#: src/Free/Modules/WriteGateway.php:33
+msgid "This module cannot change that kind of item."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:73
+msgid "The connected user cannot moderate comments on this post."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:137
+#: src/Free/Tools/ElementorTools.php:168
+#: src/Free/Tools/GutenbergTools.php:804
+#: src/Free/Tools/GutenbergTools.php:819
+msgid "The post was not found."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:140
+msgid "The connected user cannot read this post, so it cannot comment on it."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:144
+#: src/Free/Tools/CommentTools.php:183
+msgid "The comment needs text of at most 65535 bytes."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:150
+msgid "The parent comment does not exist on this post."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:156
+#: src/Free/Tools/CommentTools.php:193
+msgid "The author e-mail is not valid."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:204
+msgid "Provide at least one field or a status to change."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:222
+msgid "This comment has protected metadata that cannot be kept for undo, so it cannot be deleted permanently. Move it to the trash instead."
+msgstr ""
+
+#: src/Free/Tools/CommentTools.php:241
+msgid "The connected user cannot edit this comment."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:145
+msgid "The Elementor template was not found."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:148
+msgid "The connected user cannot edit this template."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:177
+#: src/Free/Tools/GutenbergTools.php:823
+#: src/Free/Tools/PostTools.php:185
+msgid "The connected user cannot read this post."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:180
+msgid "This is an Elementor library template. Read it with wp_elementor_get_template."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:183
+msgid "This post is not built with the Elementor builder."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:202
+msgid "There is no active Elementor kit."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:205
+msgid "The connected user cannot edit the Elementor kit."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:240
+msgid "The Elementor widget registry is not available."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:266
+msgid "Elementor is not active on this site."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:285
+msgid "The stored Elementor data is too large to read through Llamly."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:289
+msgid "This item has no Elementor content."
+msgstr ""
+
+#: src/Free/Tools/ElementorTools.php:293
+msgid "The stored Elementor data could not be decoded."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:199
+msgid "This block type is not registered."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:300
+msgid "Send exactly one of name (registered pattern) or id (user pattern)."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:305
+msgid "No registered pattern has this name."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:322
+#: src/Free/Tools/GutenbergTools.php:1019
+msgid "No user pattern has this id."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:325
+msgid "The connected user cannot read this pattern."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:368
+#: src/Free/Tools/GutenbergTools.php:847
+msgid "Template not found. List the available ids with wp_list_templates."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:459
+msgid "The blocks changed after the caller read them. Read them again with wp_list_blocks before editing."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:462
+msgid "This is an Elementor document. Its content is read-only in Llamly."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:470
+msgid "Someone is editing this post in the WordPress editor. Try again after they close it."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:475
+msgid "This content is classic HTML outside blocks. Convert it to blocks in the editor before editing blocks."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:489
+msgid "The operations do not change the stored content."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:545
+msgid "Send at least one of title, content, synced or categories."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:561
+msgid "The trash is disabled on this site (EMPTY_TRASH_DAYS = 0), so deleting would be permanent. Nothing was changed."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:615
+msgid "area only applies to template parts."
+msgstr ""
+
+#. translators: %s: comma-separated allowed areas.
+#: src/Free/Tools/GutenbergTools.php:619
+#, php-format
+msgid "Unknown template part area. Allowed: %s."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:624
+msgid "Send at least one of title, description, content or area."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:635
+msgid "The template changed after the caller read it. Read it again with wp_get_template before saving."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:640
+msgid "Template not found. Send content to create a new custom template with this id."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:643
+msgid "The slug of a new template must be lowercase letters, numbers and dashes."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:679
+msgid "Only templates of the active theme can be reset."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:682
+msgid "This template has no saved customization; it already comes from the theme."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:708
+msgid "This WordPress version cannot validate global styles safely."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:715
+msgid "Send settings, styles or both."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:721
+msgid "The global styles changed after the caller read them. Read them again with wp_get_global_styles."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:730
+msgid "Custom CSS cannot be written through Llamly. Remove every css key from styles and use the WordPress Site Editor for custom CSS."
+msgstr ""
+
+#. translators: 1: style section, 2: comma-separated invalid values.
+#: src/Free/Tools/GutenbergTools.php:750
+#, php-format
+msgid "Global styles contain values WordPress would remove as unsafe or invalid (%1$s): %2$s. Nothing was changed."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:755
+msgid "This change would remove the custom CSS saved in the Site Editor. Use mode merge to keep it."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:763
+msgid "The global styles could not be encoded as JSON."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:770
+msgid "Another save of the global styles is in progress. Retry with the same idempotency key."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:798
+msgid "Send exactly one of post_id or template."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:807
+msgid "Address templates with template \"theme//slug\" instead of post_id."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:814
+msgid "Blocks of this post type cannot be read or edited here."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:823
+#: src/Free/Tools/PostTools.php:276
+#: src/Free/Tools/RevisionTools.php:204
+msgid "The connected user cannot edit this post."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:840
+msgid "The connected user cannot read or edit templates."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:850
+msgid "Only templates of the active theme can be edited."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:871
+msgid "Template ids look like \"theme//slug\"."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:885
+msgid "The template override could not be read."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:931
+msgid "Another save of this template is in progress. Retry with the same idempotency key."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:952
+msgid "This WordPress version has no block templates."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:955
+msgid "The active theme is a classic theme: templates, template parts, global styles and navigation menus of the site editor are not available."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:1011
+msgid "Registered patterns (core, theme or plugin) are read-only. Create a user pattern with wp_create_pattern instead."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:1012
+msgid "No registered pattern has this name; user patterns are addressed by id."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:1015
+msgid "Send the id of the user pattern."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:1037
+#: src/Free/Tools/PostTools.php:358
+msgid "The title cannot be empty."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:1049
+msgid "This WordPress version has no unsynced patterns."
+msgstr ""
+
+#: src/Free/Tools/GutenbergTools.php:1055
+msgid "This WordPress version has no pattern categories."
+msgstr ""
+
+#. translators: %s: pattern category slug.
+#: src/Free/Tools/GutenbergTools.php:1061
+#, php-format
+msgid "Pattern category %s does not exist."
+msgstr ""
+
+#: src/Free/Tools/HistoryTools.php:160
+msgid "Safe mode is on and undoing needs explicit confirmation. Nothing was changed. Ask the user whether to go ahead; only if they agree, repeat the same call with the same idempotency_key and confirm: true (one confirm covers every change in this request)."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:128
+#: src/Free/Tools/MediaTools.php:187
+#: src/Free/Tools/MediaTools.php:253
+msgid "The connected user cannot upload files."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:138
+#: src/Free/Tools/MediaParts.php:585
+msgid "Another upload of this user is starting. Try again."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:163
+msgid "This file type is not allowed for uploads."
+msgstr ""
+
+#. translators: 1: MIME type sent by the agent, 2: MIME type of the file extension.
+#: src/Free/Tools/MediaParts.php:167
+#, php-format
+msgid "mime_type %1$s does not match the file extension (%2$s)."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:171
+msgid "size must be the file size in bytes (1 or more) and sha256 its lowercase hex sha256."
+msgstr ""
+
+#. translators: 1: file size, 2: site upload limit.
+#: src/Free/Tools/MediaParts.php:175
+#, php-format
+msgid "The file is %1$s; the upload limit of this site is %2$s."
+msgstr ""
+
+#. translators: 1: maximum number of started uploads without their file, 2: time (UTC) when the first link expires.
+#: src/Free/Tools/MediaParts.php:183
+#, php-format
+msgid "Limit of started uploads reached: this user already has %1$d uploads waiting for their file. Run their upload_command (or send their parts) and finish them, or wait until their links expire (the first one at %2$s)."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:199
+#: src/Free/Tools/MediaTools.php:218
+msgid "The upload could not be staged on the server."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:260
+msgid "data must be strict base64 of the part bytes (no URL, data: prefix or line breaks)."
+msgstr ""
+
+#. translators: %s: maximum size of one part.
+#: src/Free/Tools/MediaParts.php:266
+#, php-format
+msgid "Each part must be valid base64 of 1 byte to %s."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:272
+msgid "Another part of this upload is being saved. Send this part again."
+msgstr ""
+
+#. translators: 1: part index sent, 2: index expected next.
+#: src/Free/Tools/MediaParts.php:288
+#, php-format
+msgid "Part %1$d is out of order: send part %2$d next (parts start at 0 and go in order)."
+msgstr ""
+
+#. translators: %s: total size declared at the start.
+#: src/Free/Tools/MediaParts.php:292
+#, php-format
+msgid "This part goes past the total size declared at the start (%s)."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:306
+msgid "The part could not be saved on the server."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:328
+msgid "This upload is being finished by another call. Try again."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:338
+msgid "This upload was already finished. Its media item is in the result of the first finish call."
+msgstr ""
+
+#. translators: 1: bytes received, 2: total size declared at the start.
+#: src/Free/Tools/MediaParts.php:345
+#, php-format
+msgid "Only %1$s of %2$s arrived. Send the remaining parts before finishing."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:350
+msgid "The parts could not be joined on the server."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:355
+msgid "The sha256 of the joined file does not match the one sent at the start. The upload was discarded; start again."
+msgstr ""
+
+#. translators: 1: MIME type found in the file, 2: MIME type declared at the start.
+#: src/Free/Tools/MediaParts.php:360
+#, php-format
+msgid "The file content is %1$s, not the %2$s declared at the start."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:408
+msgid "This upload is busy. Try the same command again."
+msgstr ""
+
+#. translators: 1: bytes received, 2: size declared at the start.
+#: src/Free/Tools/MediaParts.php:429
+#, php-format
+msgid "The upload link received %1$s bytes; the start declared %2$s bytes. The upload was discarded; start again with wp_upload_media_start."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:434
+msgid "The sha256 of the received file does not match the one sent at the start. The upload was discarded; start again with wp_upload_media_start."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:439
+msgid "The file could not be saved on the server. Start again with wp_upload_media_start."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:466
+msgid "This upload link does not exist or was already used. Start again with wp_upload_media_start."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:472
+msgid "This upload link expired. Start again with wp_upload_media_start."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:475
+msgid "The user of this upload can no longer upload files."
+msgstr ""
+
+#. translators: 1: bytes held by the unfinished uploads of this user, 2: size of this file, 3: limit of bytes held, 4: how many files of the site upload limit that is.
+#: src/Free/Tools/MediaParts.php:558
+#, php-format
+msgid "Limit of file bytes held reached: the unfinished uploads of this user that hold their file add up to %1$s, and this file (%2$s) would take them past %3$s (%4$d times the site upload limit)."
+msgstr ""
+
+#. translators: %s: time (UTC) when the first unfinished upload expires.
+#: src/Free/Tools/MediaParts.php:561
+#, php-format
+msgid "Finish them with wp_upload_media_finish, then run the same upload command again while its link is valid (or wait until they expire, the first one at %s)."
+msgstr ""
+
+#. translators: %s: time (UTC) when the first unfinished upload expires.
+#: src/Free/Tools/MediaParts.php:563
+#, php-format
+msgid "Finish them with wp_upload_media_finish, then send this part again (or wait until they expire, the first one at %s)."
+msgstr ""
+
+#. translators: %s: time (UTC) when the first unfinished upload expires.
+#: src/Free/Tools/MediaParts.php:565
+#, php-format
+msgid "Finish them with wp_upload_media_finish, or wait until they expire (the first one at %s)."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:626
+msgid "This upload does not exist, expired, or belongs to another connection. Start again with wp_upload_media_start."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:630
+msgid "This upload expired before it was finished. Start again with wp_upload_media_start."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:633
+msgid "This upload was already finished."
+msgstr ""
+
+#: src/Free/Tools/MediaParts.php:688
+msgid "Uploads in parts need a temporary directory outside the website folder (WP_TEMP_DIR or the system one), and this server has none. Use wp_upload_media for small files."
+msgstr ""
+
+#: src/Free/Tools/MediaTools.php:128
+msgid "The connected user cannot edit that post."
+msgstr ""
+
+#. translators: %s: maximum file size per MCP upload.
+#: src/Free/Tools/MediaTools.php:199
+#, php-format
+msgid "The file is larger than one MCP upload allows (%s)."
+msgstr ""
+
+#: src/Free/Tools/MediaTools.php:202
+msgid "data must be strict base64 of the file bytes (no URL, data: prefix or line breaks) within the upload limit."
+msgstr ""
+
+#: src/Free/Tools/MediaTools.php:207
+msgid "data is not valid base64."
+msgstr ""
+
+#. translators: 1: file size, 2: maximum file size per MCP upload.
+#: src/Free/Tools/MediaTools.php:213
+#, php-format
+msgid "The file is %1$s; one MCP upload is limited to %2$s."
+msgstr ""
+
+#: src/Free/Tools/MediaTools.php:309
+msgid "A media item cannot be its own parent."
+msgstr ""
+
+#: src/Free/Tools/MediaTools.php:322
+#: src/Free/Tools/PostTools.php:289
+msgid "Provide at least one field to change."
+msgstr ""
+
+#: src/Free/Tools/MediaTools.php:357
+msgid "The connected user cannot change this media item."
+msgstr ""
+
+#: src/Free/Tools/MediaTools.php:366
+msgid "The post to attach to was not found."
+msgstr ""
+
+#: src/Free/Tools/MediaTools.php:369
+msgid "The connected user cannot edit the post to attach to."
+msgstr ""
+
+#: src/Free/Tools/MenuTools.php:88
+msgid "The active theme is a block theme and does not display classic menus; its navigation lives in wp_navigation posts (use wp_list_navigations). Classic menus can still be edited here."
+msgstr ""
+
+#: src/Free/Tools/MenuTools.php:96
+#: src/Free/Tools/MenuTools.php:142
+#: src/Free/Tools/MenuTools.php:358
+msgid "The connected user cannot manage menus."
+msgstr ""
+
+#: src/Free/Tools/MenuTools.php:222
+msgid "A menu name is required."
+msgstr ""
+
+#: src/Free/Tools/MenuTools.php:248
+msgid "A menu name cannot be empty."
+msgstr ""
+
+#: src/Free/Tools/MenuTools.php:262
+msgid "Send at least one of name, locations or auto_add."
+msgstr ""
+
+#. translators: %s: menu location slug.
+#: src/Free/Tools/MenuTools.php:345
+#, php-format
+msgid "The theme does not register the menu location \"%s\". See wp_list_menus."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:114
+msgid "The connected user cannot list this post type."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:182
+#: src/Free/Tools/PostTools.php:273
+#: src/Free/Tools/PostTools.php:313
+#: src/Free/Tools/RevisionTools.php:201
+msgid "The post was not found or its type is not handled by the post tools."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:250
+msgid "The connected user cannot create items of this post type."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:258
+msgid "A post title is required."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:290
+msgid "Every meta key was rejected and nothing else changes."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:307
+msgid "Permanent deletion is not available. The post can only be moved to the trash; a person can empty the trash in WordPress."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:316
+msgid "The connected user cannot delete this post."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:323
+msgid "The trash is disabled on this site (EMPTY_TRASH_DAYS = 0), so trashing would delete permanently. Nothing was changed."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:376
+msgid "The author does not exist or cannot edit this post type."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:379
+msgid "The connected user cannot assign posts to another author."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:386
+msgid "The date is not a valid ISO 8601 date."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:399
+msgid "Scheduling (status future) needs a date in the future."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:407
+msgid "The connected user cannot publish, schedule or make private this post type."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:417
+msgid "The parent must be another item of the same hierarchical post type and not one of its descendants."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:428
+msgid "The slug is empty after sanitizing."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:434
+msgid "Another item already uses this slug."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:449
+msgid "This post type does not support featured images."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:452
+msgid "featured_media must be an image attachment ID."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:458
+msgid "Only posts of type post can be sticky."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:461
+msgid "The connected user cannot change sticky posts."
+msgstr ""
+
+#. translators: 1: taxonomy name, 2: argument name.
+#: src/Free/Tools/PostTools.php:502
+#, php-format
+msgid "Pass %1$s either as %2$s or inside terms, not both."
+msgstr ""
+
+#. translators: %s: taxonomy name.
+#: src/Free/Tools/PostTools.php:512
+#, php-format
+msgid "The taxonomy %s cannot be assigned to this post type here."
+msgstr ""
+
+#. translators: %s: taxonomy name.
+#: src/Free/Tools/PostTools.php:515
+#, php-format
+msgid "The connected user cannot assign %s terms."
+msgstr ""
+
+#. translators: 1: term ID, 2: taxonomy name.
+#: src/Free/Tools/PostTools.php:522
+#, php-format
+msgid "Term %1$d does not exist in %2$s."
+msgstr ""
+
+#: src/Free/Tools/PostTools.php:615
+msgid "This post type is not handled by the post tools."
+msgstr ""
+
+#: src/Free/Tools/RevisionTools.php:105
+msgid "compare_to must be another revision of the same post."
+msgstr ""
+
+#: src/Free/Tools/RevisionTools.php:155
+msgid "Restore the post from the trash before restoring one of its revisions."
+msgstr ""
+
+#: src/Free/Tools/RevisionTools.php:158
+msgid "This autosave belongs to another user."
+msgstr ""
+
+#: src/Free/Tools/RevisionTools.php:191
+msgid "The revision was not found."
+msgstr ""
+
+#: src/Free/Tools/RevisionTools.php:207
+msgid "This post type does not keep revisions."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:67
+msgid "The connected user cannot list terms of this taxonomy."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:109
+msgid "The connected user cannot create terms in this taxonomy."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:113
+msgid "A term name is required."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:145
+msgid "A term name cannot be empty."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:155
+msgid "Send at least one of name, slug, description or parent."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:186
+#: src/Free/Tools/TermTools.php:194
+msgid "The connected user cannot change terms of this taxonomy."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:191
+msgid "The term was not found in this taxonomy."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:201
+msgid "The connected user cannot change this term."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:209
+msgid "This taxonomy is unknown or not available through Llamly."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:221
+msgid "This taxonomy is not hierarchical, so terms cannot have a parent."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:224
+msgid "A term cannot be its own parent."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:227
+msgid "The parent term was not found in this taxonomy."
+msgstr ""
+
+#: src/Free/Tools/TermTools.php:232
+msgid "A term cannot be moved under its own descendant."
+msgstr ""
+
+#: src/Free/Tools/Toolkit.php:158
+msgid "This kind of item cannot be changed through Llamly."
+msgstr ""
+
+#: src/Free/Tools/Toolkit.php:168
+msgid "Send the revision_hash from your latest read of this item as expected_hash."
+msgstr ""
+
+#: src/Free/Tools/UserTools.php:60
+msgid "Unknown role."
+msgstr ""
+
+#: src/Free/Tools/UserTools.php:93
+msgid "Send exactly one of user_id, login or email."
+msgstr ""
+
+#: src/Free/Tools/UserTools.php:101
+msgid "The user was not found."
+msgstr ""
+
+#: src/Free/Tools/UserTools.php:105
+msgid "The connected user cannot view this user's profile."
+msgstr ""
+
+#. translators: %s: site name.
+#: templates/free/consent.php:26
+#, php-format
+msgid "Authorize access ‹ %s"
+msgstr ""
+
+#: templates/free/consent.php:41
+msgid "Couldn't connect"
+msgstr ""
+
+#: templates/free/consent.php:47
+#: templates/free/consent.php:81
+msgid "Switch account"
+msgstr ""
+
+#: templates/free/consent.php:49
+#: templates/free/consent.php:109
+msgid "Protected by Llamly"
+msgstr ""
+
+#. translators: 1: app name, 2: site name
+#: templates/free/consent.php:71
+#, php-format
+msgid "<strong>%1$s</strong> wants to access %2$s"
+msgstr ""
+
+#: templates/free/consent.php:74
+msgid "It will be able to read and edit the site through Llamly, acting with your account's content permissions: posts and pages, media, menus, comments, patterns, templates and styles, and it can look up users. With safe mode on, the app must confirm deletions, undoing a change and changes that can't be undone. Almost every change is recorded in Activity and can be undone there. If you turn on approval in Llamly › Settings, publishing waits for you."
+msgstr ""
+
+#: templates/free/consent.php:75
+msgid "It will be able to view the site through Llamly, acting with your account's content permissions."
+msgstr ""
+
+#: templates/free/consent.php:76
+msgid "It never gets administrator powers, whatever your role: no site settings, users, plugins, themes, code files or unfiltered HTML. The app connects straight to this site; there is no Llamly server in between."
+msgstr ""
+
+#: templates/free/consent.php:79
+msgid "Signed in as"
+msgstr ""
+
+#: templates/free/consent.php:87
+msgid "Access level"
+msgstr ""
+
+#: templates/free/consent.php:91
+#: assets/free/js/admin.js:470
+#: assets/free/js/admin.js:471
+msgid "Full access"
+msgstr ""
+
+#: templates/free/consent.php:91
+#: assets/free/js/admin.js:551
+msgid "Read and edit the site"
+msgstr ""
+
+#: templates/free/consent.php:91
+msgid "Unavailable: this app did not ask for write access, or writing is paused"
+msgstr ""
+
+#: templates/free/consent.php:95
+#: assets/free/js/admin.js:470
+#: assets/free/js/admin.js:471
+msgid "Read only"
+msgstr ""
+
+#: templates/free/consent.php:95
+msgid "View without changing anything"
+msgstr ""
+
+#. translators: %s: redirect host
+#: templates/free/consent.php:100
+#, php-format
+msgid "After you approve, you go back to <strong>%s</strong>. The app name comes from the verified return address; approve only if you started this connection just now."
+msgstr ""
+
+#: templates/free/consent.php:103
+msgid "Deny"
+msgstr ""
+
+#: templates/free/consent.php:104
+msgid "Approve access"
+msgstr ""
+
+#: templates/free/consent.php:107
+msgid "Redirects to"
+msgstr ""
+
+#: templates/free/consent.php:108
+msgid "You can revoke this access at any time in Llamly > Connections."
+msgstr ""
+
+#: assets/free/js/admin.js:29
+msgctxt "month abbreviation"
+msgid "Jan"
+msgstr ""
+
+#: assets/free/js/admin.js:29
+msgctxt "month abbreviation"
+msgid "Feb"
+msgstr ""
+
+#: assets/free/js/admin.js:29
+msgctxt "month abbreviation"
+msgid "Mar"
+msgstr ""
+
+#: assets/free/js/admin.js:30
+msgctxt "month abbreviation"
+msgid "Apr"
+msgstr ""
+
+#: assets/free/js/admin.js:30
+msgctxt "month abbreviation"
+msgid "May"
+msgstr ""
+
+#: assets/free/js/admin.js:31
+msgctxt "month abbreviation"
+msgid "Jun"
+msgstr ""
+
+#: assets/free/js/admin.js:31
+msgctxt "month abbreviation"
+msgid "Jul"
+msgstr ""
+
+#: assets/free/js/admin.js:31
+msgctxt "month abbreviation"
+msgid "Aug"
+msgstr ""
+
+#: assets/free/js/admin.js:32
+msgctxt "month abbreviation"
+msgid "Sep"
+msgstr ""
+
+#: assets/free/js/admin.js:32
+msgctxt "month abbreviation"
+msgid "Oct"
+msgstr ""
+
+#: assets/free/js/admin.js:32
+msgctxt "month abbreviation"
+msgid "Nov"
+msgstr ""
+
+#: assets/free/js/admin.js:33
+msgctxt "month abbreviation"
+msgid "Dec"
+msgstr ""
+
+#: assets/free/js/admin.js:48
+msgid "today"
+msgstr ""
+
+#: assets/free/js/admin.js:48
+msgid "Today"
+msgstr ""
+
+#: assets/free/js/admin.js:49
+msgid "yesterday"
+msgstr ""
+
+#: assets/free/js/admin.js:49
+msgid "Yesterday"
+msgstr ""
+
+#. translators: short date. 1: day of the month, 2: abbreviated month name, 3: year.
+#: assets/free/js/admin.js:51
+#, js-format
+msgid "%2$s %1$d, %3$d"
+msgstr ""
+
+#. translators: 1: day ("Today", "Yesterday" or a short date), 2: time (HH:MM).
+#: assets/free/js/admin.js:56
+#, js-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: assets/free/js/admin.js:63
+#: assets/free/js/admin.js:1184
+msgid "just now"
+msgstr ""
+
+#. translators: %d: number of minutes.
+#: assets/free/js/admin.js:65
+#, js-format
+msgid "%d minute ago"
+msgid_plural "%d minutes ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of hours.
+#: assets/free/js/admin.js:68
+#, js-format
+msgid "%d hour ago"
+msgid_plural "%d hours ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: time (HH:MM).
+#: assets/free/js/admin.js:72
+#, js-format
+msgid "yesterday, %s"
+msgstr ""
+
+#. translators: %s: time (HH:MM).
+#: assets/free/js/admin.js:74
+#, js-format
+msgid "today, %s"
+msgstr ""
+
+#: assets/free/js/admin.js:80
+msgid "The content changed after this change. Refresh the list and undo the newer changes first."
+msgstr ""
+
+#: assets/free/js/admin.js:81
+msgid "This action needs a new confirmation. Try again."
+msgstr ""
+
+#: assets/free/js/admin.js:82
+msgid "This change was already undone."
+msgstr ""
+
+#: assets/free/js/admin.js:83
+msgid "This change was already redone."
+msgstr ""
+
+#: assets/free/js/admin.js:84
+msgid "This change was already undone and redone once."
+msgstr ""
+
+#: assets/free/js/admin.js:85
+msgid "Undo the change before redoing it."
+msgstr ""
+
+#: assets/free/js/admin.js:86
+msgid "The time to undo this change is over."
+msgstr ""
+
+#: assets/free/js/admin.js:87
+msgid "Block changes can't be force undone. Undo the newer changes first."
+msgstr ""
+
+#: assets/free/js/admin.js:88
+msgid "Another change is in progress on this content. Try again in a moment."
+msgstr ""
+
+#: assets/free/js/admin.js:89
+msgid "An interrupted change is blocking this content. Review and release it in Activity."
+msgstr ""
+
+#: assets/free/js/admin.js:90
+msgid "The change log is unavailable. Nothing was changed."
+msgstr ""
+
+#: assets/free/js/admin.js:91
+msgid "WordPress changed the restored content while saving. The action was canceled."
+msgstr ""
+
+#: assets/free/js/admin.js:92
+msgid "Writing is paused on this site."
+msgstr ""
+
+#: assets/free/js/admin.js:93
+#: assets/free/js/admin.js:95
+msgid "Your user doesn't have permission for this action."
+msgstr ""
+
+#: assets/free/js/admin.js:94
+msgid "Your session expired. Reload the page."
+msgstr ""
+
+#: assets/free/js/admin.js:96
+msgid "Give the key a name (up to 120 characters) and choose the access."
+msgstr ""
+
+#: assets/free/js/admin.js:97
+msgid "Choose at least one tool."
+msgstr ""
+
+#: assets/free/js/admin.js:98
+msgid "The key couldn't be created. No key was issued."
+msgstr ""
+
+#: assets/free/js/admin.js:99
+msgid "This connection no longer exists. Refresh the page."
+msgstr ""
+
+#: assets/free/js/admin.js:100
+msgid "The database didn't confirm the change. Nothing was saved."
+msgstr ""
+
+#: assets/free/js/admin.js:101
+msgid "The saved settings are invalid. Nothing was changed."
+msgstr ""
+
+#: assets/free/js/admin.js:102
+msgid "One of the values isn't valid. Check the fields and try again."
+msgstr ""
+
+#: assets/free/js/admin.js:103
+msgid "This item is no longer available. Refresh the list."
+msgstr ""
+
+#: assets/free/js/admin.js:104
+msgid "The site database was restored after this change. It can no longer be undone or redone."
+msgstr ""
+
+#: assets/free/js/admin.js:105
+msgid "The item no longer exists."
+msgstr ""
+
+#: assets/free/js/admin.js:106
+msgid "The approval expired. Ask the agent to repeat the request."
+msgstr ""
+
+#: assets/free/js/admin.js:107
+msgid "This request is no longer waiting for approval."
+msgstr ""
+
+#: assets/free/js/admin.js:108
+msgid "This request was rejected."
+msgstr ""
+
+#: assets/free/js/admin.js:109
+msgid "The data sent isn't valid."
+msgstr ""
+
+#: assets/free/js/admin.js:110
+msgid "This request was already used with different data."
+msgstr ""
+
+#: assets/free/js/admin.js:113
+msgid "The settings changed in another session. Reload the page to see the current version. Your draft is still here."
+msgstr ""
+
+#: assets/free/js/admin.js:114
+msgid "This change needs confirmation. Save again and confirm."
+msgstr ""
+
+#: assets/free/js/admin.js:118
+msgid "The database couldn't be read right now. Nothing was changed. Try again."
+msgstr ""
+
+#: assets/free/js/admin.js:119
+msgid "The change log couldn't be read right now. Nothing was changed. Try again."
+msgstr ""
+
+#: assets/free/js/admin.js:135
+msgid "No response from the server. Check your connection and try again."
+msgstr ""
+
+#: assets/free/js/admin.js:145
+msgid "The request wasn't completed."
+msgstr ""
+
+#: assets/free/js/admin.js:198
+msgid "The action wasn't completed."
+msgstr ""
+
+#: assets/free/js/admin.js:211
+msgid "The browser didn't allow copying. Select the text and copy it manually."
+msgstr ""
+
+#: assets/free/js/admin.js:216
+#: assets/free/js/editor-guard.js:33
+msgid "Copied"
+msgstr ""
+
+#: assets/free/js/admin.js:238
+#: assets/free/js/admin.js:244
+msgid "Copy"
+msgstr ""
+
+#: assets/free/js/admin.js:264
+#: assets/free/js/admin.js:1006
+msgid "Close"
+msgstr ""
+
+#: assets/free/js/admin.js:285
+#: assets/free/js/admin.js:302
+msgid "Cancel"
+msgstr ""
+
+#: assets/free/js/admin.js:369
+msgctxt "header status"
+msgid "MCP server on"
+msgstr ""
+
+#: assets/free/js/admin.js:369
+msgid "MCP server off"
+msgstr ""
+
+#: assets/free/js/admin.js:379
+msgid "Llamly, home"
+msgstr ""
+
+#: assets/free/js/admin.js:383
+msgid "Llamly sections"
+msgstr ""
+
+#: assets/free/js/admin.js:394
+msgid "Safe mode is off"
+msgstr ""
+
+#: assets/free/js/admin.js:395
+msgid "Agents can move to trash and delete, undo changes and make changes that can't be undone (like granting administrator access) without asking you first."
+msgstr ""
+
+#: assets/free/js/admin.js:398
+msgid "Turn on safe mode"
+msgstr ""
+
+#: assets/free/js/admin.js:406
+msgid "Safe mode on"
+msgstr ""
+
+#. translators: browser tab title. 1: Llamly tab name, 2: site name.
+#: assets/free/js/admin.js:440
+#, js-format
+msgid "%1$s ‹ Llamly ‹ %2$s — WordPress"
+msgstr ""
+
+#: assets/free/js/admin.js:448
+msgid "Llamly couldn't be loaded"
+msgstr ""
+
+#: assets/free/js/admin.js:469
+msgid "Browser sign-in"
+msgstr ""
+
+#: assets/free/js/admin.js:469
+msgid "Access key"
+msgstr ""
+
+#: assets/free/js/admin.js:470
+msgid "Chosen tools"
+msgstr ""
+
+#: assets/free/js/admin.js:471
+msgid "Choose tools"
+msgstr ""
+
+#: assets/free/js/admin.js:472
+msgid "List the drafts on my site that haven't been published yet."
+msgstr ""
+
+#: assets/free/js/admin.js:475
+msgid "my-site"
+msgstr ""
+
+#: assets/free/js/admin.js:518
+msgid "Content"
+msgstr ""
+
+#: assets/free/js/admin.js:518
+#: assets/free/js/admin.js:1891
+msgid "General"
+msgstr ""
+
+#: assets/free/js/admin.js:519
+msgid "Revisions"
+msgstr ""
+
+#: assets/free/js/admin.js:519
+#: assets/free/js/admin.js:520
+msgid "Taxonomies"
+msgstr ""
+
+#: assets/free/js/admin.js:519
+#: assets/free/js/admin.js:2214
+msgid "Media"
+msgstr ""
+
+#: assets/free/js/admin.js:520
+msgid "Menus"
+msgstr ""
+
+#: assets/free/js/admin.js:521
+msgid "Comments"
+msgstr ""
+
+#: assets/free/js/admin.js:521
+msgid "Users"
+msgstr ""
+
+#: assets/free/js/admin.js:521
+msgid "Site"
+msgstr ""
+
+#: assets/free/js/admin.js:522
+msgid "Gutenberg · blocks"
+msgstr ""
+
+#: assets/free/js/admin.js:522
+msgid "History"
+msgstr ""
+
+#. translators: tool group in the access picker. 1: category name, 2: "write" or "read".
+#: assets/free/js/admin.js:531
+#, js-format
+msgid "%1$s · %2$s"
+msgstr ""
+
+#: assets/free/js/admin.js:532
+msgctxt "tool access"
+msgid "write"
+msgstr ""
+
+#: assets/free/js/admin.js:532
+msgctxt "tool access"
+msgid "read"
+msgstr ""
+
+#: assets/free/js/admin.js:551
+msgid "Unavailable: writing is paused on this site"
+msgstr ""
+
+#: assets/free/js/admin.js:552
+msgid "Look up without changing"
+msgstr ""
+
+#: assets/free/js/admin.js:553
+msgid "By category"
+msgstr ""
+
+#: assets/free/js/admin.js:570
+#: assets/free/js/admin.js:671
+msgid "Connected"
+msgstr ""
+
+#: assets/free/js/admin.js:577
+msgid "Choose the app"
+msgstr ""
+
+#: assets/free/js/admin.js:578
+msgid "No terminal"
+msgstr ""
+
+#: assets/free/js/admin.js:578
+msgid "Connects through the browser"
+msgstr ""
+
+#: assets/free/js/admin.js:578
+msgid "Terminal and editor"
+msgstr ""
+
+#: assets/free/js/admin.js:579
+msgid "Connects with a key"
+msgstr ""
+
+#: assets/free/js/admin.js:580
+msgid "Another MCP-compatible app? Use this address:"
+msgstr ""
+
+#: assets/free/js/admin.js:584
+msgid "Which app do you want to connect?"
+msgstr ""
+
+#: assets/free/js/admin.js:585
+msgid "Choose from the list. You get the right step-by-step for it, and it takes about a minute."
+msgstr ""
+
+#: assets/free/js/admin.js:588
+msgid "<strong>No terminal</strong>: claude.ai, Claude Desktop and ChatGPT. You approve access on your own site."
+msgstr ""
+
+#: assets/free/js/admin.js:591
+msgid "<strong>Terminal and editor</strong>: Claude Code, Codex, Cursor and others. You create a key and paste a command."
+msgstr ""
+
+#: assets/free/js/admin.js:602
+#, js-format
+msgid "New connections: open for %d minute"
+msgid_plural "New connections: open for %d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:603
+msgid "They close on their own afterwards. Existing connections aren't affected."
+msgstr ""
+
+#: assets/free/js/admin.js:605
+msgid "Close now"
+msgstr ""
+
+#: assets/free/js/admin.js:609
+msgid "New connections: closed"
+msgstr ""
+
+#: assets/free/js/admin.js:610
+#, js-format
+msgid "The “Add to %s” button opens them for 30 minutes. Adding it by hand? Open them first."
+msgstr ""
+
+#: assets/free/js/admin.js:612
+#: assets/free/js/admin.js:897
+msgid "Open for 30 min"
+msgstr ""
+
+#: assets/free/js/admin.js:628
+msgid "Connected."
+msgstr ""
+
+#: assets/free/js/admin.js:628
+#, js-format
+msgid "First request received at %s."
+msgstr ""
+
+#: assets/free/js/admin.js:632
+#, js-format
+msgid "No request arrived in 30 minutes. Check the steps above and %s."
+msgstr ""
+
+#: assets/free/js/admin.js:633
+msgid "check again"
+msgstr ""
+
+#: assets/free/js/admin.js:642
+#: assets/free/js/admin.js:643
+msgid "In a chat, click <strong>+</strong>, open <strong>Connectors</strong> and check that your site is turned on."
+msgstr ""
+
+#: assets/free/js/admin.js:644
+msgid "In a chat, open the <strong>+</strong> menu, choose <strong>Developer mode</strong> and select your site."
+msgstr ""
+
+#: assets/free/js/admin.js:645
+msgid "Open a new conversation with the agent."
+msgstr ""
+
+#. translators: 1: instruction where to find the site in the app, 2: link to the Logs tab.
+#: assets/free/js/admin.js:647
+#: assets/free/js/admin.js:2079
+msgid "Ask for something in the conversation"
+msgstr ""
+
+#: assets/free/js/admin.js:648
+#, js-format
+msgid "%s Then ask, for example:"
+msgstr ""
+
+#. translators: %s: app name.
+#: assets/free/js/admin.js:650
+#, js-format
+msgid "Waiting for the first request from %s…"
+msgstr ""
+
+#: assets/free/js/admin.js:651
+#, js-format
+msgid "It already shows up in %s."
+msgstr ""
+
+#: assets/free/js/admin.js:652
+#: assets/free/js/admin.js:1743
+msgid "Logs"
+msgstr ""
+
+#. translators: %s: app name (Claude or ChatGPT). Registration is anonymous: only the client's address is known.
+#: assets/free/js/admin.js:667
+#, js-format
+msgid "A client with the %s address registered on your site"
+msgstr ""
+
+#. translators: %s: app name (Claude or ChatGPT).
+#: assets/free/js/admin.js:669
+#, js-format
+msgid "Waiting for %s to reach your site"
+msgstr ""
+
+#: assets/free/js/admin.js:670
+msgid "You approved access"
+msgstr ""
+
+#: assets/free/js/admin.js:670
+msgid "You approve access on your site"
+msgstr ""
+
+#. translators: %s: app name (Claude or ChatGPT).
+#: assets/free/js/admin.js:681
+#, js-format
+msgid "%s hasn't reached your site yet"
+msgstr ""
+
+#: assets/free/js/admin.js:682
+msgid "More than 3 minutes have passed since you clicked. The usual causes:"
+msgstr ""
+
+#: assets/free/js/admin.js:683
+msgid "Your Claude account is in a Team or Enterprise organization, and the owner hasn't added the connector yet. See below."
+msgstr ""
+
+#. translators: %s: the /.well-known/ path.
+#: assets/free/js/admin.js:686
+#, js-format
+msgid "The web server doesn't pass the site's %s addresses to WordPress. Run the connection diagnostics below."
+msgstr ""
+
+#. translators: %s: app name (Claude or ChatGPT).
+#: assets/free/js/admin.js:690
+#, js-format
+msgid "Connecting to %s"
+msgstr ""
+
+#: assets/free/js/admin.js:702
+msgid "Didn't work? Try another way"
+msgstr ""
+
+#: assets/free/js/admin.js:703
+msgid "Claude Team or Enterprise account"
+msgstr ""
+
+#. translators: %s: "Organization settings › Connectors" (Claude menu path, kept in English).
+#: assets/free/js/admin.js:706
+#, js-format
+msgid "The organization owner adds the connector in %s, with this name and address:"
+msgstr ""
+
+#: assets/free/js/admin.js:707
+msgid "Copy name"
+msgstr ""
+
+#: assets/free/js/admin.js:707
+#: assets/free/js/admin.js:748
+#: assets/free/js/admin.js:763
+msgid "Copy address"
+msgstr ""
+
+#: assets/free/js/admin.js:709
+msgid "Then you find it in <strong>Customize › Connectors</strong> and click <strong>Connect</strong>."
+msgstr ""
+
+#: assets/free/js/admin.js:711
+msgid "Connect from the terminal instead"
+msgstr ""
+
+#: assets/free/js/admin.js:712
+msgid "Claude Code and Codex connect with an access key. They don't need the organization owner."
+msgstr ""
+
+#: assets/free/js/admin.js:714
+msgid "Connect Claude Code"
+msgstr ""
+
+#: assets/free/js/admin.js:715
+msgid "Connect Codex"
+msgstr ""
+
+#: assets/free/js/admin.js:726
+msgid "Go to <code>chatgpt.com</code> in the browser (MCP apps only work on the web)."
+msgstr ""
+
+#: assets/free/js/admin.js:727
+msgid "In <strong>Settings › Security and login</strong>, turn on <strong>Developer mode</strong> (only once)."
+msgstr ""
+
+#: assets/free/js/admin.js:729
+msgid "In <strong>Plugins</strong>, click <strong>+</strong> and choose <strong>Add custom MCP server</strong>."
+msgstr ""
+
+#: assets/free/js/admin.js:731
+msgid "Give it a name, paste the address above into <strong>MCP server URL</strong>, choose <strong>OAuth</strong> authentication and create it."
+msgstr ""
+
+#: assets/free/js/admin.js:734
+msgid "Open the <strong>Claude</strong> app and sign in to your account."
+msgstr ""
+
+#: assets/free/js/admin.js:735
+msgid "Go to <code>claude.ai</code> in the browser."
+msgstr ""
+
+#: assets/free/js/admin.js:736
+msgid "Go to <strong>Customize › Connectors</strong>."
+msgstr ""
+
+#: assets/free/js/admin.js:737
+msgid "Click <strong>+ Add</strong> and then <strong>Add custom connector</strong>."
+msgstr ""
+
+#: assets/free/js/admin.js:738
+msgid "Give it a name, paste the address above and click <strong>Continue</strong> and <strong>Add</strong>. If it asks which OAuth client to use, choose <strong>Register automatically</strong>."
+msgstr ""
+
+#: assets/free/js/admin.js:741
+msgctxt "step title"
+msgid "Open ChatGPT"
+msgstr ""
+
+#: assets/free/js/admin.js:743
+msgctxt "button"
+msgid "Open ChatGPT"
+msgstr ""
+
+#: assets/free/js/admin.js:745
+msgid "Copies your site address, opens new connections for 30 minutes and opens ChatGPT in another tab."
+msgstr ""
+
+#: assets/free/js/admin.js:747
+msgid "I'd rather copy the address and do it by hand"
+msgstr ""
+
+#: assets/free/js/admin.js:750
+#, js-format
+msgid "Add to %s"
+msgstr ""
+
+#: assets/free/js/admin.js:752
+msgid "Add to Claude"
+msgstr ""
+
+#: assets/free/js/admin.js:756
+#, js-format
+msgid "Opens claude.ai in another tab with this site already filled in and opens new connections for 30 minutes. Check that the address is %s and click <strong>Continue</strong> and <strong>Add</strong>."
+msgstr ""
+
+#: assets/free/js/admin.js:758
+msgid "The connector also shows up in the Claude Desktop app, on the same account."
+msgstr ""
+
+#: assets/free/js/admin.js:760
+msgid "Already added it? Claude says the connector exists. Find it in <strong>Customize › Connectors</strong> and click <strong>Connect</strong>."
+msgstr ""
+
+#: assets/free/js/admin.js:762
+msgid "Add manually"
+msgstr ""
+
+#. translators: %s: app name (Claude or ChatGPT).
+#: assets/free/js/admin.js:770
+msgid "Approve access on your site"
+msgstr ""
+
+#: assets/free/js/admin.js:771
+#, js-format
+msgid "%s opens a sign-in page <strong>on your site</strong>. Check what it asks for, choose the access level and click <strong>Approve access</strong>."
+msgstr ""
+
+#: assets/free/js/admin.js:774
+msgid "Requires ChatGPT Plus, Pro, Business, Enterprise or Edu, on the web. On Business and Enterprise, an admin has to allow Developer mode first."
+msgstr ""
+
+#: assets/free/js/admin.js:777
+#, js-format
+msgid "Custom connectors work on every Claude plan (on Free, one at a time). On Team and Enterprise, the organization owner adds it first in %s."
+msgstr ""
+
+#: assets/free/js/admin.js:784
+msgid "opencode.json (in the project root)"
+msgstr ""
+
+#: assets/free/js/admin.js:788
+msgid "YOUR_KEY"
+msgstr ""
+
+#: assets/free/js/admin.js:817
+#: assets/free/js/admin.js:1544
+msgid "Key created"
+msgstr ""
+
+#: assets/free/js/admin.js:818
+msgid "It's already in the command below."
+msgstr ""
+
+#: assets/free/js/admin.js:822
+msgid "Copy it now"
+msgstr ""
+
+#: assets/free/js/admin.js:823
+msgid "For security, the key isn't shown again. If you lose it, just create another one and revoke this one."
+msgstr ""
+
+#: assets/free/js/admin.js:826
+msgid "I copied it, hide"
+msgstr ""
+
+#: assets/free/js/admin.js:828
+msgid "The key was hidden from this page. Lost it? Create another one and revoke this one in Connected apps."
+msgstr ""
+
+#. translators: %s: app name. Default name of a new access key.
+#: assets/free/js/admin.js:833
+#, js-format
+msgid "%s · my computer"
+msgstr ""
+
+#. translators: %s: name of the WordPress user.
+#: assets/free/js/admin.js:835
+#, js-format
+msgid "Acting as %s, with your content permissions."
+msgstr ""
+
+#: assets/free/js/admin.js:836
+msgid "Create an access key"
+msgstr ""
+
+#: assets/free/js/admin.js:837
+msgid "Give it a name to recognize it later and choose what the agent can do."
+msgstr ""
+
+#: assets/free/js/admin.js:839
+msgid "Name"
+msgstr ""
+
+#: assets/free/js/admin.js:842
+#: assets/free/js/admin.js:1058
+msgid "Access"
+msgstr ""
+
+#: assets/free/js/admin.js:846
+msgid "What this key allows"
+msgstr ""
+
+#: assets/free/js/admin.js:847
+msgid "The agent works on this site with your content permissions, never administrator ones: no site settings, users, plugins, themes, code files or unfiltered HTML, whatever your role. It connects straight to this site, with no Llamly server in between. Revoke the key at any time in Connections."
+msgstr ""
+
+#: assets/free/js/admin.js:851
+msgid "Create key"
+msgstr ""
+
+#: assets/free/js/admin.js:862
+msgid "Where to configure"
+msgstr ""
+
+#: assets/free/js/admin.js:864
+msgid "For all projects"
+msgstr ""
+
+#: assets/free/js/admin.js:866
+msgid "Only in this project"
+msgstr ""
+
+#. translators: %s: configuration file path.
+#: assets/free/js/admin.js:868
+#, js-format
+msgid "Add it to the %s file and restart OpenCode."
+msgstr ""
+
+#. translators: %s: configuration file path.
+#: assets/free/js/admin.js:872
+#, js-format
+msgid "Add it to the %s file (create it if it doesn't exist) and restart Cursor."
+msgstr ""
+
+#: assets/free/js/admin.js:876
+msgid "Run it in the terminal. Codex reads the key every time it starts, so also add the <code>export</code> line to your <code>~/.zshrc</code>."
+msgstr ""
+
+#: assets/free/js/admin.js:878
+#: assets/free/js/admin.js:881
+msgid "Terminal"
+msgstr ""
+
+#: assets/free/js/admin.js:880
+msgid "Run it in the terminal:"
+msgstr ""
+
+#: assets/free/js/admin.js:885
+msgid "In interactive use, Codex asks before each tool call. To run without prompts (<code>codex exec</code>), approve the tools with <code>default_tools_approval_mode = \"approve\"</code> in this server's section of <code>~/.codex/config.toml</code>."
+msgstr ""
+
+#: assets/free/js/admin.js:890
+msgid "Prefer signing in through the browser, without a key?"
+msgstr ""
+
+#: assets/free/js/admin.js:892
+msgid "Cursor also accepts OAuth sign-in. Use only the address and approve access on your site when it asks. Open new connections for 30 minutes first."
+msgstr ""
+
+#: assets/free/js/admin.js:898
+msgid "Add it to the configuration file"
+msgstr ""
+
+#: assets/free/js/admin.js:898
+msgid "Run this command"
+msgstr ""
+
+#: assets/free/js/admin.js:900
+msgid "Create the key in step 1 and it goes into the command automatically."
+msgstr ""
+
+#: assets/free/js/admin.js:908
+#, js-format
+msgid "Open a new Claude Code session and run <code>/mcp</code>. %s should show up as connected."
+msgstr ""
+
+#. translators: %s: server name as shown by the app.
+#: assets/free/js/admin.js:910
+#, js-format
+msgid "Start Codex and run <code>/mcp</code>. %s should show up with its tools."
+msgstr ""
+
+#. translators: %s: server name as shown by the app.
+#: assets/free/js/admin.js:912
+#, js-format
+msgid "Run <code>opencode mcp list</code>. %s should show up as connected."
+msgstr ""
+
+#. translators: %s: server name as shown by the app.
+#: assets/free/js/admin.js:914
+#, js-format
+msgid "Open <strong>Customize</strong> in the Cursor sidebar. %s should show up turned on. Errors are in <strong>Output › MCP Logs</strong>."
+msgstr ""
+
+#. translators: %s: server name as shown by the app.
+#: assets/free/js/admin.js:917
+#, js-format
+msgid "Start Antigravity CLI and ask it to do something on your site. %s should show up with its tools."
+msgstr ""
+
+#. translators: %s: server name as shown by the app.
+#: assets/free/js/admin.js:919
+#, js-format
+msgid "Open a new chat in Claude Desktop and click the tools icon. %s should show up. The first time can take a while as the bridge is downloaded."
+msgstr ""
+
+#: assets/free/js/admin.js:923
+msgid "Waiting for the first request…"
+msgstr ""
+
+#: assets/free/js/admin.js:924
+msgid "Now just ask for something in the conversation."
+msgstr ""
+
+#: assets/free/js/admin.js:925
+msgid "Check that it works"
+msgstr ""
+
+#: assets/free/js/admin.js:935
+msgid "This site runs on your computer"
+msgstr ""
+
+#: assets/free/js/admin.js:937
+msgid "Claude's cloud connector can't reach local sites. Use a <strong>local bridge</strong>: a small program that runs here and links Claude Desktop to the site. Nothing is exposed to the internet."
+msgstr ""
+
+#. translators: %s: configuration file name.
+#: assets/free/js/admin.js:941
+msgid "Add the bridge to Claude Desktop"
+msgstr ""
+
+#: assets/free/js/admin.js:942
+#, js-format
+msgid "Add it to the %s file (create it if it doesn't exist). Then quit Claude completely and open it again."
+msgstr ""
+
+#: assets/free/js/admin.js:947
+msgid "Needs Node.js on this computer. The bridge is the open-source <code>mcp-remote</code> package, started on demand by <code>npx</code>. The key is saved as plain text in that file; prefer <strong>read only</strong> if you don't need to edit."
+msgstr ""
+
+#: assets/free/js/admin.js:951
+msgid "Is the site actually at a public HTTPS address? Use the cloud connector"
+msgstr ""
+
+#. translators: %s: site host name.
+#: assets/free/js/admin.js:958
+#, js-format
+msgid "%s is on your computer."
+msgstr ""
+
+#: assets/free/js/admin.js:960
+msgid "ChatGPT can't reach this site"
+msgstr ""
+
+#: assets/free/js/admin.js:961
+msgid "claude.ai can't reach this site"
+msgstr ""
+
+#: assets/free/js/admin.js:962
+msgid "It connects through the OpenAI cloud and only reaches sites at a public HTTPS address."
+msgstr ""
+
+#: assets/free/js/admin.js:963
+msgid "It connects through the Anthropic cloud and only reaches sites at a public HTTPS address."
+msgstr ""
+
+#: assets/free/js/admin.js:965
+msgid "What works on a local site"
+msgstr ""
+
+#: assets/free/js/admin.js:967
+msgid "Terminal and editor apps"
+msgstr ""
+
+#: assets/free/js/admin.js:968
+msgid "Claude Code, Codex, Cursor, Antigravity CLI and OpenCode connect now, without a public address."
+msgstr ""
+
+#: assets/free/js/admin.js:971
+msgid "Connects through a local bridge that runs on this computer."
+msgstr ""
+
+#: assets/free/js/admin.js:973
+msgid "Temporary tunnel"
+msgstr ""
+
+#: assets/free/js/admin.js:975
+msgid "ngrok or Cloudflare Tunnel work, but they expose the whole site while running, and the Site Address in WordPress has to be the tunnel's."
+msgstr ""
+
+#: assets/free/js/admin.js:995
+#, js-format
+msgid "Connect %s"
+msgstr ""
+
+#: assets/free/js/admin.js:996
+msgid "About 1 minute"
+msgstr ""
+
+#: assets/free/js/admin.js:997
+msgid "About 2 minutes"
+msgstr ""
+
+#: assets/free/js/admin.js:1003
+#: assets/free/js/admin.js:1056
+msgid "Connect another app"
+msgstr ""
+
+#: assets/free/js/admin.js:1003
+msgid "Connect your first app"
+msgstr ""
+
+#: assets/free/js/admin.js:1004
+msgid "Choose the AI app or coding tool you use."
+msgstr ""
+
+#. translators: %d: number of tools.
+#: assets/free/js/admin.js:1014
+#: assets/free/js/admin.js:2139
+#, js-format
+msgid "%d tool"
+msgid_plural "%d tools"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:1018
+msgid "Waiting for approval"
+msgstr ""
+
+#: assets/free/js/admin.js:1023
+#: assets/free/js/admin.js:1045
+msgid "App"
+msgstr ""
+
+#: assets/free/js/admin.js:1026
+msgid "Not approved"
+msgstr ""
+
+#: assets/free/js/admin.js:1030
+msgid "Waiting for first use"
+msgstr ""
+
+#: assets/free/js/admin.js:1034
+#, js-format
+msgid "as %s"
+msgstr ""
+
+#: assets/free/js/admin.js:1036
+#: assets/free/js/admin.js:1340
+msgid "Edit access"
+msgstr ""
+
+#: assets/free/js/admin.js:1038
+msgid "See activity"
+msgstr ""
+
+#: assets/free/js/admin.js:1040
+#: assets/free/js/admin.js:1375
+msgid "Revoke access"
+msgstr ""
+
+#. translators: %s: connection name.
+#: assets/free/js/admin.js:1042
+#, js-format
+msgid "Actions for %s"
+msgstr ""
+
+#: assets/free/js/admin.js:1042
+msgid "connection"
+msgstr ""
+
+#: assets/free/js/admin.js:1053
+msgid "Connected apps"
+msgstr ""
+
+#: assets/free/js/admin.js:1054
+msgid "Each connection has its own access level and can be revoked at any time."
+msgstr ""
+
+#: assets/free/js/admin.js:1057
+#: assets/free/js/admin.js:1386
+#: assets/free/js/admin.js:1659
+msgid "Connection"
+msgstr ""
+
+#: assets/free/js/admin.js:1058
+msgid "Type"
+msgstr ""
+
+#: assets/free/js/admin.js:1059
+msgid "Created"
+msgstr ""
+
+#: assets/free/js/admin.js:1059
+msgid "Last used"
+msgstr ""
+
+#: assets/free/js/admin.js:1060
+msgid "Actions"
+msgstr ""
+
+#: assets/free/js/admin.js:1066
+msgid "Valid Llamly settings"
+msgstr ""
+
+#: assets/free/js/admin.js:1066
+#: assets/free/js/admin.js:1484
+msgctxt "diagnostic check"
+msgid "MCP server on"
+msgstr ""
+
+#: assets/free/js/admin.js:1067
+msgid "Site on HTTPS"
+msgstr ""
+
+#: assets/free/js/admin.js:1067
+msgid "Address reachable by cloud apps"
+msgstr ""
+
+#: assets/free/js/admin.js:1068
+msgid "Access key available"
+msgstr ""
+
+#: assets/free/js/admin.js:1069
+msgid "Browser sign-in requirements"
+msgstr ""
+
+#: assets/free/js/admin.js:1069
+msgid "New connections window"
+msgstr ""
+
+#: assets/free/js/admin.js:1071
+msgid "Plugins that block the REST API"
+msgstr ""
+
+#: assets/free/js/admin.js:1072
+msgid "Llamly tables in the database"
+msgstr ""
+
+#: assets/free/js/admin.js:1072
+msgid "Undo history storage"
+msgstr ""
+
+#: assets/free/js/admin.js:1073
+msgid "REST API reachable by the server"
+msgstr ""
+
+#: assets/free/js/admin.js:1074
+msgid "MCP endpoint requires authentication (server)"
+msgstr ""
+
+#: assets/free/js/admin.js:1075
+msgid "Authenticated MCP connection (server)"
+msgstr ""
+
+#: assets/free/js/admin.js:1076
+msgid "Removal of the diagnostics temporary key"
+msgstr ""
+
+#: assets/free/js/admin.js:1077
+msgid "OAuth discovery: protected resource (server)"
+msgstr ""
+
+#: assets/free/js/admin.js:1078
+msgid "OAuth discovery: authorization server (server)"
+msgstr ""
+
+#: assets/free/js/admin.js:1079
+msgid "Diagnostics record"
+msgstr ""
+
+#: assets/free/js/admin.js:1083
+msgid "REST API reachable in this browser"
+msgstr ""
+
+#: assets/free/js/admin.js:1086
+msgid "MCP endpoint requires authentication (browser)"
+msgstr ""
+
+#: assets/free/js/admin.js:1090
+msgid "OAuth discovery: protected resource (browser)"
+msgstr ""
+
+#: assets/free/js/admin.js:1092
+msgid "OAuth discovery: authorization server (browser)"
+msgstr ""
+
+#: assets/free/js/admin.js:1107
+msgid "Response observed in this browser."
+msgstr ""
+
+#: assets/free/js/admin.js:1107
+msgid "The response in the browser didn't match what was expected."
+msgstr ""
+
+#: assets/free/js/admin.js:1110
+msgid "Check the server's WAF, cache, rewrite rules and CORS. The server result doesn't replace this check."
+msgstr ""
+
+#: assets/free/js/admin.js:1112
+msgid "The browser couldn't read this address."
+msgstr ""
+
+#: assets/free/js/admin.js:1113
+msgid "fetch rejected"
+msgstr ""
+
+#: assets/free/js/admin.js:1114
+msgid "Check that the browser reaches the same origin and that the proxy allows these addresses."
+msgstr ""
+
+#: assets/free/js/admin.js:1127
+msgid "The server could not request its own address, but this browser reached the site. AI apps connect from outside, so this usually does not block them."
+msgstr ""
+
+#: assets/free/js/admin.js:1130
+msgid "Could not verify that the server passes the Authorization header; if the app connects but every call returns 401, that is the cause."
+msgstr ""
+
+#: assets/free/js/admin.js:1132
+msgid "If connections fail, ask your host to allow the site to request its own URL."
+msgstr ""
+
+#. translators: %s: date and time the report was generated.
+#: assets/free/js/admin.js:1141
+#, js-format
+msgid "Generated: %s"
+msgstr ""
+
+#: assets/free/js/admin.js:1142
+#, js-format
+msgid "Environment: %s"
+msgstr ""
+
+#: assets/free/js/admin.js:1148
+#, js-format
+msgid "Fix: %s"
+msgstr ""
+
+#: assets/free/js/admin.js:1157
+msgid "Checking endpoint, HTTPS, headers and OAuth discovery…"
+msgstr ""
+
+#: assets/free/js/admin.js:1160
+msgid "The diagnostics didn't finish"
+msgstr ""
+
+#. translators: %s: diagnostic code.
+#: assets/free/js/admin.js:1170
+#, js-format
+msgid "Code: %s"
+msgstr ""
+
+#. translators: %d: number of problems found.
+#: assets/free/js/admin.js:1177
+#, js-format
+msgid "%d problem"
+msgid_plural "%d problems"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:1178
+msgid "All good"
+msgstr ""
+
+#. translators: %d: number of warnings.
+#: assets/free/js/admin.js:1181
+#, js-format
+msgid "%d warning"
+msgid_plural "%d warnings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: when the check ran ("today, 14:05" or "just now").
+#: assets/free/js/admin.js:1183
+#, js-format
+msgid "Checked %s"
+msgstr ""
+
+#: assets/free/js/admin.js:1187
+msgid "Tests whether AI apps can reach this site and builds a report to copy, in case you need help."
+msgstr ""
+
+#: assets/free/js/admin.js:1192
+msgid "Connection diagnostics"
+msgstr ""
+
+#: assets/free/js/admin.js:1193
+msgid "Tests whether AI apps can reach this site."
+msgstr ""
+
+#: assets/free/js/admin.js:1194
+msgid "Copy report"
+msgstr ""
+
+#: assets/free/js/admin.js:1197
+msgid "Run checks"
+msgstr ""
+
+#: assets/free/js/admin.js:1199
+msgid "Still having trouble?"
+msgstr ""
+
+#: assets/free/js/admin.js:1200
+msgid "Ask for help on the WordPress.org forum"
+msgstr ""
+
+#. translators: %s: app name.
+#: assets/free/js/admin.js:1290
+#, js-format
+msgid "%s connected"
+msgstr ""
+
+#: assets/free/js/admin.js:1323
+msgid "The settings changed in another session. Try again."
+msgstr ""
+
+#. translators: %s: name of the user who created the key.
+#: assets/free/js/admin.js:1337
+#, js-format
+msgid "Read and edit the site with the permissions of %s."
+msgstr ""
+
+#: assets/free/js/admin.js:1338
+msgid "whoever created the key"
+msgstr ""
+
+#: assets/free/js/admin.js:1343
+msgid "Look up content and settings, without changing anything."
+msgstr ""
+
+#: assets/free/js/admin.js:1344
+msgid "Only the categories checked below."
+msgstr ""
+
+#: assets/free/js/admin.js:1346
+msgid "Applies from the agent's next request."
+msgstr ""
+
+#: assets/free/js/admin.js:1347
+msgid "Save access"
+msgstr ""
+
+#: assets/free/js/admin.js:1355
+#: assets/free/js/admin.js:1502
+msgid "Check at least one category."
+msgstr ""
+
+#: assets/free/js/admin.js:1358
+msgid "Access updated"
+msgstr ""
+
+#. translators: %s: connection name.
+#: assets/free/js/admin.js:1368
+#, js-format
+msgid "%s loses access to the site on its next request."
+msgstr ""
+
+#: assets/free/js/admin.js:1368
+msgid "This connection"
+msgstr ""
+
+#: assets/free/js/admin.js:1370
+msgid "Revoke access?"
+msgstr ""
+
+#: assets/free/js/admin.js:1373
+msgid "This connection's change history and logs stay saved. To connect again, you create a new key."
+msgstr ""
+
+#: assets/free/js/admin.js:1374
+msgid "This connection's change history and logs stay saved. To connect again, you create a new approval."
+msgstr ""
+
+#. translators: %s: connection name.
+#: assets/free/js/admin.js:1386
+#, js-format
+msgid "%s: access revoked"
+msgstr ""
+
+#: assets/free/js/admin.js:1393
+msgid "Connections"
+msgstr ""
+
+#: assets/free/js/admin.js:1406
+msgid "Connect AI agents like <strong>Claude</strong>, <strong>ChatGPT</strong> or <strong>Codex</strong> to this site through the Model Context Protocol (MCP)."
+msgstr ""
+
+#: assets/free/js/admin.js:1409
+#: assets/free/js/admin.js:1905
+msgid "The MCP server is off"
+msgstr ""
+
+#: assets/free/js/admin.js:1410
+msgid "No agent can reach the site right now. Connections stay saved."
+msgstr ""
+
+#: assets/free/js/admin.js:1412
+msgid "Turn on server"
+msgstr ""
+
+#: assets/free/js/admin.js:1444
+msgid "New connections open for 30 minutes"
+msgstr ""
+
+#: assets/free/js/admin.js:1458
+msgid "Address copied. Paste it into ChatGPT as the MCP server URL."
+msgstr ""
+
+#: assets/free/js/admin.js:1459
+msgid "We opened claude.ai in another tab"
+msgstr ""
+
+#: assets/free/js/admin.js:1471
+#: assets/free/js/admin.js:1717
+#: assets/free/js/admin.js:2306
+#: assets/free/js/admin.js:2798
+msgid "Try again."
+msgstr ""
+
+#: assets/free/js/admin.js:1501
+msgid "Give the key a name."
+msgstr ""
+
+#: assets/free/js/admin.js:1507
+msgid "The key didn't come back from the server. Revoke the new connection and try again."
+msgstr ""
+
+#. translators: pagination. 1: first item shown, 2: last item shown, 3: total items.
+#: assets/free/js/admin.js:1524
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: assets/free/js/admin.js:1526
+msgid "Items per page"
+msgstr ""
+
+#: assets/free/js/admin.js:1529
+#, js-format
+msgid "%d per page"
+msgstr ""
+
+#: assets/free/js/admin.js:1531
+msgid "Previous"
+msgstr ""
+
+#: assets/free/js/admin.js:1532
+msgid "Next"
+msgstr ""
+
+#: assets/free/js/admin.js:1538
+#: assets/free/js/admin.js:1540
+msgid "Success"
+msgstr ""
+
+#: assets/free/js/admin.js:1538
+msgid "Denied"
+msgstr ""
+
+#: assets/free/js/admin.js:1539
+#: assets/free/js/admin.js:1559
+msgid "Limit reached"
+msgstr ""
+
+#: assets/free/js/admin.js:1539
+msgid "Error"
+msgstr ""
+
+#: assets/free/js/admin.js:1540
+msgid "All"
+msgstr ""
+
+#: assets/free/js/admin.js:1540
+msgctxt "logs filter"
+msgid "Denied"
+msgstr ""
+
+#: assets/free/js/admin.js:1541
+msgid "Errors"
+msgstr ""
+
+#: assets/free/js/admin.js:1543
+msgid "Tool call"
+msgstr ""
+
+#: assets/free/js/admin.js:1543
+msgid "Logs cleared"
+msgstr ""
+
+#: assets/free/js/admin.js:1544
+msgid "Authentication denied"
+msgstr ""
+
+#: assets/free/js/admin.js:1545
+msgid "Key revoked"
+msgstr ""
+
+#: assets/free/js/admin.js:1546
+msgid "Key access changed"
+msgstr ""
+
+#: assets/free/js/admin.js:1546
+msgid "Diagnostics run"
+msgstr ""
+
+#: assets/free/js/admin.js:1547
+msgid "Diagnostics key not removed"
+msgstr ""
+
+#: assets/free/js/admin.js:1548
+msgid "App registered"
+msgstr ""
+
+#: assets/free/js/admin.js:1548
+msgid "App registration revoked"
+msgstr ""
+
+#: assets/free/js/admin.js:1549
+msgid "Access approved"
+msgstr ""
+
+#: assets/free/js/admin.js:1549
+msgid "Access revoked"
+msgstr ""
+
+#: assets/free/js/admin.js:1550
+msgid "Sign-in completed"
+msgstr ""
+
+#: assets/free/js/admin.js:1550
+msgid "Session renewed"
+msgstr ""
+
+#: assets/free/js/admin.js:1551
+msgid "New connections opened"
+msgstr ""
+
+#: assets/free/js/admin.js:1552
+msgid "Add-on guide shortened"
+msgstr ""
+
+#: assets/free/js/admin.js:1553
+msgid "Connection started"
+msgstr ""
+
+#: assets/free/js/admin.js:1553
+msgid "Connection not completed"
+msgstr ""
+
+#: assets/free/js/admin.js:1553
+msgid "New connections closed"
+msgstr ""
+
+#: assets/free/js/admin.js:1554
+msgid "Sign-in code reused"
+msgstr ""
+
+#: assets/free/js/admin.js:1555
+msgid "Session renewal reused"
+msgstr ""
+
+#: assets/free/js/admin.js:1555
+msgid "Undo or redo approved"
+msgstr ""
+
+#: assets/free/js/admin.js:1557
+msgid "Post created"
+msgstr ""
+
+#: assets/free/js/admin.js:1557
+msgid "Post updated"
+msgstr ""
+
+#: assets/free/js/admin.js:1558
+#: assets/free/js/admin.js:2650
+msgid "Change undone"
+msgstr ""
+
+#: assets/free/js/admin.js:1558
+#: assets/free/js/admin.js:2651
+#: assets/free/js/admin.js:2654
+msgid "Change redone"
+msgstr ""
+
+#: assets/free/js/admin.js:1560
+msgid "Recovery released"
+msgstr ""
+
+#: assets/free/js/admin.js:1560
+msgid "Settings saved"
+msgstr ""
+
+#: assets/free/js/admin.js:1561
+msgid "Change recovered"
+msgstr ""
+
+#: assets/free/js/admin.js:1561
+msgid "Post moved to trash"
+msgstr ""
+
+#: assets/free/js/admin.js:1562
+msgid "Post deleted"
+msgstr ""
+
+#: assets/free/js/admin.js:1563
+msgid "Approval requested"
+msgstr ""
+
+#: assets/free/js/admin.js:1563
+msgid "Approval granted"
+msgstr ""
+
+#: assets/free/js/admin.js:1564
+msgid "Approval rejected"
+msgstr ""
+
+#. translators: %s: internal event name with spaces (for events without a label).
+#: assets/free/js/admin.js:1567
+#, js-format
+msgid "Event %s"
+msgstr ""
+
+#: assets/free/js/admin.js:1572
+msgid "Administrator"
+msgstr ""
+
+#: assets/free/js/admin.js:1573
+msgid "Automated test"
+msgstr ""
+
+#: assets/free/js/admin.js:1574
+msgid "WordPress Abilities"
+msgstr ""
+
+#: assets/free/js/admin.js:1577
+msgid "Diagnostics"
+msgstr ""
+
+#: assets/free/js/admin.js:1584
+msgid "The app"
+msgstr ""
+
+#. translators: %s: app name.
+#: assets/free/js/admin.js:1587
+#, js-format
+msgid "%s never reached the site. Check the connection diagnostics and, on Claude Team or Enterprise, that the owner added the connector."
+msgstr ""
+
+#. translators: %s: app name.
+#: assets/free/js/admin.js:1589
+#, js-format
+msgid "A client with the %s address registered on the site, but access was not approved on the sign-in page."
+msgstr ""
+
+#. translators: %s: app name.
+#: assets/free/js/admin.js:1591
+#, js-format
+msgid "Access was approved, but %s did not finish signing in."
+msgstr ""
+
+#: assets/free/js/admin.js:1592
+msgid "The connection was not completed."
+msgstr ""
+
+#. translators: %s: event label.
+#: assets/free/js/admin.js:1600
+msgid "Request completed without problems."
+msgstr ""
+
+#: assets/free/js/admin.js:1600
+#, js-format
+msgid "%s."
+msgstr ""
+
+#: assets/free/js/admin.js:1601
+msgid "Per-minute request limit reached."
+msgstr ""
+
+#: assets/free/js/admin.js:1602
+msgid "Request denied."
+msgstr ""
+
+#: assets/free/js/admin.js:1602
+msgid "The request ended with an error."
+msgstr ""
+
+#. translators: %s: tool or event name.
+#: assets/free/js/admin.js:1608
+#, js-format
+msgid "See details for %s"
+msgstr ""
+
+#: assets/free/js/admin.js:1619
+msgid "Detail"
+msgstr ""
+
+#: assets/free/js/admin.js:1620
+msgid "Event"
+msgstr ""
+
+#: assets/free/js/admin.js:1621
+msgid "Code"
+msgstr ""
+
+#: assets/free/js/admin.js:1623
+msgid "Request"
+msgstr ""
+
+#: assets/free/js/admin.js:1624
+msgid "Context (redacted)"
+msgstr ""
+
+#: assets/free/js/admin.js:1646
+msgid "The logs couldn't be loaded"
+msgstr ""
+
+#: assets/free/js/admin.js:1650
+msgid "Loading logs…"
+msgstr ""
+
+#: assets/free/js/admin.js:1653
+#: assets/free/js/admin.js:2435
+msgid "Nothing found"
+msgstr ""
+
+#: assets/free/js/admin.js:1653
+msgid "No request matches these filters."
+msgstr ""
+
+#: assets/free/js/admin.js:1654
+#: assets/free/js/admin.js:2436
+msgid "Clear filters"
+msgstr ""
+
+#: assets/free/js/admin.js:1658
+msgid "Date and time"
+msgstr ""
+
+#: assets/free/js/admin.js:1659
+msgid "Tool"
+msgstr ""
+
+#: assets/free/js/admin.js:1660
+msgid "Result"
+msgstr ""
+
+#: assets/free/js/admin.js:1660
+msgid "Duration"
+msgstr ""
+
+#: assets/free/js/admin.js:1661
+msgid "Details"
+msgstr ""
+
+#. translators: %s: connection name.
+#: assets/free/js/admin.js:1679
+#: assets/free/js/admin.js:2470
+msgid "All connections"
+msgstr ""
+
+#. translators: %s: connection name.
+#: assets/free/js/admin.js:1680
+#: assets/free/js/admin.js:2465
+#, js-format
+msgid "%s (revoked)"
+msgstr ""
+
+#: assets/free/js/admin.js:1688
+#: assets/free/js/admin.js:1689
+msgid "Search by tool"
+msgstr ""
+
+#: assets/free/js/admin.js:1690
+#: assets/free/js/admin.js:2493
+msgid "Filter by connection"
+msgstr ""
+
+#: assets/free/js/admin.js:1691
+msgctxt "date range"
+msgid "From"
+msgstr ""
+
+#: assets/free/js/admin.js:1692
+msgid "Start date"
+msgstr ""
+
+#: assets/free/js/admin.js:1693
+msgctxt "date range"
+msgid "To"
+msgstr ""
+
+#: assets/free/js/admin.js:1694
+msgid "End date"
+msgstr ""
+
+#: assets/free/js/admin.js:1697
+msgid "No requests logged"
+msgstr ""
+
+#: assets/free/js/admin.js:1697
+msgid "Every time an agent talks to your site, the request shows up here."
+msgstr ""
+
+#. translators: %d: number of days logs are kept.
+#: assets/free/js/admin.js:1699
+#, js-format
+msgid "Kept for %d day"
+msgid_plural "Kept for %d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:1702
+msgid "Export CSV"
+msgstr ""
+
+#: assets/free/js/admin.js:1704
+#: assets/free/js/admin.js:1808
+msgid "Clear logs"
+msgstr ""
+
+#: assets/free/js/admin.js:1752
+msgid "Audit log of every request made by agents, including denied ones. It's always on."
+msgstr ""
+
+#. translators: %d: number of logged requests.
+#: assets/free/js/admin.js:1799
+msgid "Clear all logs?"
+msgstr ""
+
+#: assets/free/js/admin.js:1799
+#, js-format
+msgid "%d request will be deleted."
+msgid_plural "%d requests will be deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:1801
+msgid "This deletes this site's audit log and can't be undone. Changes in the history aren't affected."
+msgstr ""
+
+#: assets/free/js/admin.js:1803
+msgid "Continue"
+msgstr ""
+
+#: assets/free/js/admin.js:1806
+msgid "Confirm clearing"
+msgstr ""
+
+#: assets/free/js/admin.js:1806
+msgid "Last confirmation."
+msgstr ""
+
+#: assets/free/js/admin.js:1807
+msgid "The current logs will be deleted now. Only a record that the clearing happened is kept."
+msgstr ""
+
+#: assets/free/js/admin.js:1817
+msgid "Logs deleted"
+msgstr ""
+
+#: assets/free/js/admin.js:1832
+msgid "Enabled"
+msgstr ""
+
+#: assets/free/js/admin.js:1832
+msgid "Disabled"
+msgstr ""
+
+#: assets/free/js/admin.js:1833
+msgid "On"
+msgstr ""
+
+#: assets/free/js/admin.js:1833
+msgid "Off"
+msgstr ""
+
+#. translators: 1: minimum allowed value, 2: maximum allowed value.
+#: assets/free/js/admin.js:1850
+#, js-format
+msgid "Use a whole number from %1$s to %2$s."
+msgstr ""
+
+#: assets/free/js/admin.js:1879
+msgid "Settings"
+msgstr ""
+
+#: assets/free/js/admin.js:1885
+msgid "Recommended"
+msgstr ""
+
+#: assets/free/js/admin.js:1889
+msgid "The saved settings are invalid"
+msgstr ""
+
+#: assets/free/js/admin.js:1890
+msgid "Meanwhile, the server denies every request. Review and save again."
+msgstr ""
+
+#: assets/free/js/admin.js:1891
+msgid "How the server responds to agents."
+msgstr ""
+
+#: assets/free/js/admin.js:1892
+msgid "MCP server"
+msgstr ""
+
+#: assets/free/js/admin.js:1892
+msgid "When off, every agent request is denied. Connections stay saved."
+msgstr ""
+
+#: assets/free/js/admin.js:1893
+msgid "Safe mode"
+msgstr ""
+
+#: assets/free/js/admin.js:1894
+msgid "The agent must ask you and confirm before destructive actions (like moving to trash or deleting), before undoing changes and before changes that can't be undone (like granting administrator access)."
+msgstr ""
+
+#: assets/free/js/admin.js:1896
+msgid "Require my approval to publish"
+msgstr ""
+
+#: assets/free/js/admin.js:1897
+msgid "When on, publishing or changing anything visitors see (content, comments, menus, templates, styles, media in use) waits for you in Activity. When off, the agent works directly and every change is still recorded."
+msgstr ""
+
+#: assets/free/js/admin.js:1899
+msgid "Request limit"
+msgstr ""
+
+#: assets/free/js/admin.js:1899
+msgid "Protects the site from too many calls from the same agent."
+msgstr ""
+
+#: assets/free/js/admin.js:1900
+msgid "per minute, per connection"
+msgstr ""
+
+#: assets/free/js/admin.js:1901
+msgid "Detailed logging"
+msgstr ""
+
+#: assets/free/js/admin.js:1902
+msgid "Also stores the argument names of each call in the Logs tab. Values are never stored."
+msgstr ""
+
+#: assets/free/js/admin.js:1906
+msgid "No agent can use this site until you turn it back on."
+msgstr ""
+
+#: assets/free/js/admin.js:1908
+msgid "Connections without a terminal (OAuth)"
+msgstr ""
+
+#: assets/free/js/admin.js:1908
+msgid "For AI apps that connect through the browser."
+msgstr ""
+
+#: assets/free/js/admin.js:1909
+msgid "Only accept known AI apps"
+msgstr ""
+
+#: assets/free/js/admin.js:1910
+msgid "Limits the return addresses to claude.ai, chatgpt.com, cursor.com and localhost. Turn it off only if you trust the app that will connect."
+msgstr ""
+
+#: assets/free/js/admin.js:1912
+msgid "Additional allowed addresses"
+msgstr ""
+
+#: assets/free/js/admin.js:1913
+msgid "n8n.example.com"
+msgstr ""
+
+#: assets/free/js/admin.js:1913
+msgid "One per line. Subdomains included."
+msgstr ""
+
+#: assets/free/js/admin.js:1915
+msgid "Only accept allowed origins"
+msgstr ""
+
+#: assets/free/js/admin.js:1916
+msgid "Requests sent by web pages are only accepted when they come from this site or the addresses below. Terminal apps don't send an origin and aren't affected."
+msgstr ""
+
+#: assets/free/js/admin.js:1918
+msgid "Allowed HTTPS origins"
+msgstr ""
+
+#: assets/free/js/admin.js:1918
+msgid "https://app.example.com"
+msgstr ""
+
+#: assets/free/js/admin.js:1919
+msgid "One per line, with https:// and no path."
+msgstr ""
+
+#: assets/free/js/admin.js:1920
+#: assets/free/js/admin.js:2333
+#: assets/free/js/admin.js:2642
+msgid "Undo"
+msgstr ""
+
+#: assets/free/js/admin.js:1920
+msgid "How long Llamly keeps what the agent changed."
+msgstr ""
+
+#: assets/free/js/admin.js:1921
+msgid "Undo history"
+msgstr ""
+
+#: assets/free/js/admin.js:1922
+msgid "Keeps the before and after of each change so you can undo it. When off, the agent can't change the site: writes are paused and only reading continues."
+msgstr ""
+
+#: assets/free/js/admin.js:1924
+msgid "Keep history for"
+msgstr ""
+
+#: assets/free/js/admin.js:1924
+msgid "Older changes can no longer be undone."
+msgstr ""
+
+#: assets/free/js/admin.js:1925
+#: assets/free/js/admin.js:1933
+msgid "days"
+msgstr ""
+
+#: assets/free/js/admin.js:1927
+msgid "Integration with other plugins and WordPress features."
+msgstr ""
+
+#: assets/free/js/admin.js:1928
+msgid "Expose Llamly tools as WordPress Abilities"
+msgstr ""
+
+#: assets/free/js/admin.js:1929
+msgid "Makes Llamly tools visible to anyone using the WordPress Abilities API, with each user's permissions. The same rules apply as for agents: safe mode asks for confirmation, the optional approval setting holds publishing, users and settings for you, and everything stays in the history."
+msgstr ""
+
+#: assets/free/js/admin.js:1931
+msgctxt "settings section"
+msgid "Logs"
+msgstr ""
+
+#: assets/free/js/admin.js:1931
+msgid "The audit log shows who did what."
+msgstr ""
+
+#: assets/free/js/admin.js:1932
+msgid "Keep audit logs for"
+msgstr ""
+
+#: assets/free/js/admin.js:1932
+msgid "Older logs are deleted automatically."
+msgstr ""
+
+#: assets/free/js/admin.js:1934
+msgid "Plugin data"
+msgstr ""
+
+#: assets/free/js/admin.js:1934
+msgid "What happens when Llamly is deleted from WordPress."
+msgstr ""
+
+#: assets/free/js/admin.js:1935
+msgid "Delete data when deleting the plugin"
+msgstr ""
+
+#: assets/free/js/admin.js:1936
+msgid "Removes Llamly connections, undo history, logs and settings. Posts and media aren't deleted. When off, the data is kept."
+msgstr ""
+
+#: assets/free/js/admin.js:1938
+msgid "How the server behaves, what it keeps and how far an agent can go."
+msgstr ""
+
+#: assets/free/js/admin.js:1940
+#: assets/free/js/admin.js:1972
+msgid "No unsaved changes"
+msgstr ""
+
+#: assets/free/js/admin.js:1942
+msgid "Discard"
+msgstr ""
+
+#: assets/free/js/admin.js:1943
+msgid "Save changes"
+msgstr ""
+
+#: assets/free/js/admin.js:1947
+msgid "Discard changes?"
+msgstr ""
+
+#: assets/free/js/admin.js:1948
+msgid "You have unsaved changes in Settings."
+msgstr ""
+
+#: assets/free/js/admin.js:1949
+msgid "If you leave now, they're lost."
+msgstr ""
+
+#: assets/free/js/admin.js:1949
+msgid "Keep editing"
+msgstr ""
+
+#: assets/free/js/admin.js:1950
+msgid "Discard and leave"
+msgstr ""
+
+#: assets/free/js/admin.js:1971
+msgid "Fix the highlighted values before saving."
+msgstr ""
+
+#: assets/free/js/admin.js:1972
+msgid "You have unsaved changes"
+msgstr ""
+
+#: assets/free/js/admin.js:2017
+msgid "Delete data when deleting the plugin?"
+msgstr ""
+
+#: assets/free/js/admin.js:2018
+msgid "Applies when someone deletes Llamly in Plugins."
+msgstr ""
+
+#: assets/free/js/admin.js:2019
+msgid "All Llamly connections, undo history, logs and settings will be deleted. Posts and media aren't deleted."
+msgstr ""
+
+#: assets/free/js/admin.js:2020
+msgid "Confirm"
+msgstr ""
+
+#: assets/free/js/admin.js:2024
+msgid "Turn off a protection?"
+msgstr ""
+
+#: assets/free/js/admin.js:2025
+msgid "This widens who can reach your site."
+msgstr ""
+
+#: assets/free/js/admin.js:2026
+msgid "HTTPS, the exact return address and an administrator's approval still apply. Turn it off only if you trust the app that will connect."
+msgstr ""
+
+#: assets/free/js/admin.js:2027
+msgid "Turn off anyway"
+msgstr ""
+
+#: assets/free/js/admin.js:2037
+msgid "Requests waiting for approval, if any, will be cancelled when you save, and the agent will have to ask again."
+msgstr ""
+
+#: assets/free/js/admin.js:2039
+msgid "50+ requests are still waiting for your approval. They will be cancelled when you save, and the agent will have to ask again."
+msgstr ""
+
+#: assets/free/js/admin.js:2040
+#, js-format
+msgid "%d request is still waiting for your approval. It will be cancelled when you save, and the agent will have to ask again."
+msgid_plural "%d requests are still waiting for your approval. They will be cancelled when you save, and the agent will have to ask again."
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2043
+msgid "Turn off your approval?"
+msgstr ""
+
+#: assets/free/js/admin.js:2044
+msgid "Requests may be waiting for you."
+msgstr ""
+
+#: assets/free/js/admin.js:2045
+msgid "Cancel them and save"
+msgstr ""
+
+#: assets/free/js/admin.js:2059
+msgid "Settings saved."
+msgstr ""
+
+#: assets/free/js/admin.js:2062
+msgid "Couldn't save."
+msgstr ""
+
+#: assets/free/js/admin.js:2072
+msgid "List the drafts that haven't been published yet"
+msgstr ""
+
+#: assets/free/js/admin.js:2073
+msgid "Write the alt text for images without a description"
+msgstr ""
+
+#: assets/free/js/admin.js:2074
+msgid "Create an About us page based on the site's content"
+msgstr ""
+
+#: assets/free/js/admin.js:2074
+msgid "Reorder the main menu by importance"
+msgstr ""
+
+#: assets/free/js/admin.js:2075
+msgid "Show what changed on the site today"
+msgstr ""
+
+#: assets/free/js/admin.js:2075
+msgid "Change the theme's accent color to dark green"
+msgstr ""
+
+#: assets/free/js/admin.js:2077
+msgctxt "getting started step"
+msgid "Connect an agent"
+msgstr ""
+
+#: assets/free/js/admin.js:2078
+msgid "Choose Claude, ChatGPT, Cursor or another and follow the step-by-step."
+msgstr ""
+
+#: assets/free/js/admin.js:2079
+msgid "Tell the agent what to do on the site, in plain language."
+msgstr ""
+
+#: assets/free/js/admin.js:2080
+msgid "Review and undo"
+msgstr ""
+
+#: assets/free/js/admin.js:2080
+msgid "See each change in Activity and roll it back whenever you want."
+msgstr ""
+
+#: assets/free/js/admin.js:2088
+msgctxt "add-on state"
+msgid "Active"
+msgstr ""
+
+#: assets/free/js/admin.js:2089
+msgctxt "add-on state"
+msgid "Refused"
+msgstr ""
+
+#: assets/free/js/admin.js:2091
+msgctxt "add-on state"
+msgid "Inactive"
+msgstr ""
+
+#: assets/free/js/admin.js:2092
+msgid "Its past changes stay in Activity; activate it again to undo them."
+msgstr ""
+
+#. translators: %d: module API version.
+#: assets/free/js/admin.js:2095
+#, js-format
+msgid "Add-ons extend Llamly through the module API %d. Their changes use the same history, safe mode and undo."
+msgstr ""
+
+#: assets/free/js/admin.js:2097
+msgid "Add-ons"
+msgstr ""
+
+#. translators: %d: module API version required by the add-on.
+#: assets/free/js/admin.js:2102
+#, js-format
+msgid "API %d"
+msgstr ""
+
+#: assets/free/js/admin.js:2113
+msgid "Everything on these screens is free and stays free."
+msgstr ""
+
+#: assets/free/js/admin.js:2115
+msgid "Llamly Pro is a separate add-on with extra modules for your agent. The first one, Llamly Builder, builds pages in Elementor and in the block editor."
+msgstr ""
+
+#: assets/free/js/admin.js:2117
+msgid "See Llamly Pro plans"
+msgstr ""
+
+#: assets/free/js/admin.js:2121
+msgid "About"
+msgstr ""
+
+#: assets/free/js/admin.js:2134
+msgid "MCP endpoint"
+msgstr ""
+
+#: assets/free/js/admin.js:2134
+msgid "Theme"
+msgstr ""
+
+#: assets/free/js/admin.js:2135
+#: assets/free/js/admin.js:2153
+msgid "Documentation"
+msgstr ""
+
+#: assets/free/js/admin.js:2136
+msgid "Support forum on WordPress.org"
+msgstr ""
+
+#: assets/free/js/admin.js:2136
+msgid "Report a problem"
+msgstr ""
+
+#. translators: %d: number of site areas.
+#: assets/free/js/admin.js:2141
+#, js-format
+msgid "%d area"
+msgid_plural "%d areas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: "N tools", 2: "N areas".
+#: assets/free/js/admin.js:2143
+#, js-format
+msgid "%1$s in %2$s of the site."
+msgstr ""
+
+#: assets/free/js/admin.js:2146
+msgid "Llamly turns your WordPress into an MCP server"
+msgstr ""
+
+#: assets/free/js/admin.js:2148
+msgid "AI agents read and edit the site with the permissions you give them. Almost every change stays in the history and can be undone."
+msgstr ""
+
+#: assets/free/js/admin.js:2151
+#: assets/free/js/admin.js:2487
+msgid "Connect an agent"
+msgstr ""
+
+#: assets/free/js/admin.js:2154
+msgid "Getting started"
+msgstr ""
+
+#: assets/free/js/admin.js:2158
+msgid "Try asking"
+msgstr ""
+
+#: assets/free/js/admin.js:2159
+msgid "Click to copy and paste it into the conversation with your agent."
+msgstr ""
+
+#: assets/free/js/admin.js:2163
+msgid "What Llamly can do"
+msgstr ""
+
+#: assets/free/js/admin.js:2165
+msgid "Writing is paused on this site; that's why only read tools are shown."
+msgstr ""
+
+#: assets/free/js/admin.js:2169
+msgid "The tool catalog is unavailable right now."
+msgstr ""
+
+#: assets/free/js/admin.js:2171
+msgid "Elementor detected. In Free, Elementor pages are outside the agent's write reach."
+msgstr ""
+
+#: assets/free/js/admin.js:2175
+msgid "Help"
+msgstr ""
+
+#: assets/free/js/admin.js:2179
+msgid "System information"
+msgstr ""
+
+#: assets/free/js/admin.js:2180
+msgid "Copy information"
+msgstr ""
+
+#: assets/free/js/admin.js:2185
+msgid "Prompt copied."
+msgstr ""
+
+#: assets/free/js/admin.js:2187
+msgid "Information copied."
+msgstr ""
+
+#: assets/free/js/admin.js:2196
+msgid "Created a post"
+msgstr ""
+
+#: assets/free/js/admin.js:2196
+msgid "Edited a post"
+msgstr ""
+
+#: assets/free/js/admin.js:2197
+msgid "Removed a post"
+msgstr ""
+
+#: assets/free/js/admin.js:2197
+msgid "Created a draft"
+msgstr ""
+
+#: assets/free/js/admin.js:2198
+msgid "Edited a draft"
+msgstr ""
+
+#: assets/free/js/admin.js:2199
+msgid "Restored a revision"
+msgstr ""
+
+#: assets/free/js/admin.js:2199
+msgid "Created a term"
+msgstr ""
+
+#: assets/free/js/admin.js:2200
+msgid "Edited a term"
+msgstr ""
+
+#: assets/free/js/admin.js:2200
+msgid "Deleted a term"
+msgstr ""
+
+#: assets/free/js/admin.js:2201
+msgid "Uploaded media"
+msgstr ""
+
+#: assets/free/js/admin.js:2202
+msgid "Edited media"
+msgstr ""
+
+#: assets/free/js/admin.js:2202
+msgid "Deleted media"
+msgstr ""
+
+#: assets/free/js/admin.js:2203
+msgid "Created a menu"
+msgstr ""
+
+#: assets/free/js/admin.js:2203
+msgid "Edited a menu"
+msgstr ""
+
+#: assets/free/js/admin.js:2204
+msgid "Deleted a menu"
+msgstr ""
+
+#: assets/free/js/admin.js:2204
+msgid "Reorganized the menu items"
+msgstr ""
+
+#: assets/free/js/admin.js:2205
+msgid "Created a comment"
+msgstr ""
+
+#: assets/free/js/admin.js:2205
+msgid "Edited a comment"
+msgstr ""
+
+#: assets/free/js/admin.js:2206
+msgid "Deleted a comment"
+msgstr ""
+
+#: assets/free/js/admin.js:2207
+msgid "Changed a site setting"
+msgstr ""
+
+#: assets/free/js/admin.js:2208
+msgid "Edited blocks"
+msgstr ""
+
+#: assets/free/js/admin.js:2208
+msgid "Created a pattern"
+msgstr ""
+
+#: assets/free/js/admin.js:2209
+msgid "Edited a pattern"
+msgstr ""
+
+#: assets/free/js/admin.js:2209
+msgid "Deleted a pattern"
+msgstr ""
+
+#: assets/free/js/admin.js:2210
+msgid "Saved a template"
+msgstr ""
+
+#: assets/free/js/admin.js:2210
+msgid "Reset the template to the original"
+msgstr ""
+
+#: assets/free/js/admin.js:2211
+msgid "Changed the global styles"
+msgstr ""
+
+#: assets/free/js/admin.js:2213
+msgid "Post"
+msgstr ""
+
+#: assets/free/js/admin.js:2213
+msgid "Page"
+msgstr ""
+
+#: assets/free/js/admin.js:2213
+msgid "Term"
+msgstr ""
+
+#: assets/free/js/admin.js:2214
+msgid "Menu"
+msgstr ""
+
+#: assets/free/js/admin.js:2214
+msgid "Comment"
+msgstr ""
+
+#: assets/free/js/admin.js:2215
+msgid "User"
+msgstr ""
+
+#: assets/free/js/admin.js:2215
+msgid "Site setting"
+msgstr ""
+
+#: assets/free/js/admin.js:2215
+msgid "Block pattern"
+msgstr ""
+
+#: assets/free/js/admin.js:2216
+msgid "Template"
+msgstr ""
+
+#: assets/free/js/admin.js:2218
+msgctxt "changed field"
+msgid "title"
+msgstr ""
+
+#: assets/free/js/admin.js:2218
+msgctxt "changed field"
+msgid "content"
+msgstr ""
+
+#: assets/free/js/admin.js:2219
+msgctxt "changed field"
+msgid "excerpt"
+msgstr ""
+
+#: assets/free/js/admin.js:2219
+msgctxt "changed field"
+msgid "status"
+msgstr ""
+
+#: assets/free/js/admin.js:2220
+#: assets/free/js/admin.js:2223
+msgctxt "changed field"
+msgid "slug"
+msgstr ""
+
+#: assets/free/js/admin.js:2220
+msgctxt "changed field"
+msgid "date"
+msgstr ""
+
+#: assets/free/js/admin.js:2221
+msgctxt "changed field"
+msgid "parent page"
+msgstr ""
+
+#: assets/free/js/admin.js:2221
+msgctxt "changed field"
+msgid "order"
+msgstr ""
+
+#: assets/free/js/admin.js:2222
+msgctxt "changed field"
+msgid "author"
+msgstr ""
+
+#: assets/free/js/admin.js:2222
+msgctxt "changed field"
+msgid "type"
+msgstr ""
+
+#: assets/free/js/admin.js:2222
+msgctxt "changed field"
+msgid "name"
+msgstr ""
+
+#: assets/free/js/admin.js:2223
+msgctxt "changed field"
+msgid "description"
+msgstr ""
+
+#: assets/free/js/admin.js:2224
+msgctxt "changed field"
+msgid "value"
+msgstr ""
+
+#: assets/free/js/admin.js:2224
+msgctxt "changed field"
+msgid "alt text"
+msgstr ""
+
+#: assets/free/js/admin.js:2225
+msgctxt "changed field"
+msgid "caption"
+msgstr ""
+
+#: assets/free/js/admin.js:2228
+msgid "Force undid"
+msgstr ""
+
+#: assets/free/js/admin.js:2229
+#: assets/free/js/admin.js:2372
+msgid "Undid a change"
+msgstr ""
+
+#: assets/free/js/admin.js:2230
+#: assets/free/js/admin.js:2372
+msgid "Redid a change"
+msgstr ""
+
+#: assets/free/js/admin.js:2231
+msgid "Created an item"
+msgstr ""
+
+#: assets/free/js/admin.js:2232
+msgid "Removed an item"
+msgstr ""
+
+#: assets/free/js/admin.js:2233
+msgid "Changed the content"
+msgstr ""
+
+#. translators: %d: number of custom fields.
+#: assets/free/js/admin.js:2242
+#, js-format
+msgid "%d custom field"
+msgid_plural "%d custom fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2243
+msgid "categories and tags"
+msgstr ""
+
+#. translators: %s: comma-separated list of changed fields.
+#: assets/free/js/admin.js:2245
+#, js-format
+msgid "Changed: %s"
+msgstr ""
+
+#: assets/free/js/admin.js:2257
+msgid "Becomes visible to the public"
+msgstr ""
+
+#: assets/free/js/admin.js:2257
+msgid "Sensitive data"
+msgstr ""
+
+#: assets/free/js/admin.js:2258
+msgid "Removes or replaces content"
+msgstr ""
+
+#: assets/free/js/admin.js:2261
+msgid "Pings, feeds, sitemaps, caches and webhooks of third parties are not undone."
+msgstr ""
+
+#: assets/free/js/admin.js:2263
+msgid "Pages that embed this synced pattern change for visitors."
+msgstr ""
+
+#: assets/free/js/admin.js:2264
+msgid "The whole site changes for visitors; page caches and CDNs are not purged."
+msgstr ""
+
+#: assets/free/js/admin.js:2266
+msgid "Every page rendered with this template changes for visitors; page caches and CDNs are not purged."
+msgstr ""
+
+#: assets/free/js/admin.js:2268
+msgid "CDN, page and image caches and third-party copies of the file are not undone."
+msgstr ""
+
+#: assets/free/js/admin.js:2270
+msgid "Page caches, search engines and feeds may keep the previous value."
+msgstr ""
+
+#: assets/free/js/admin.js:2272
+msgctxt "changes filter"
+msgid "All"
+msgstr ""
+
+#: assets/free/js/admin.js:2272
+msgctxt "changes filter"
+msgid "Active"
+msgstr ""
+
+#: assets/free/js/admin.js:2273
+msgctxt "changes filter"
+msgid "Undone"
+msgstr ""
+
+#: assets/free/js/admin.js:2273
+msgctxt "changes filter"
+msgid "Not reversible"
+msgstr ""
+
+#: assets/free/js/admin.js:2320
+msgctxt "change state"
+msgid "Undone"
+msgstr ""
+
+#: assets/free/js/admin.js:2321
+msgid "Conflict"
+msgstr ""
+
+#: assets/free/js/admin.js:2322
+msgctxt "change state"
+msgid "Not reversible"
+msgstr ""
+
+#: assets/free/js/admin.js:2323
+msgid "Recovery needed"
+msgstr ""
+
+#: assets/free/js/admin.js:2324
+msgid "In progress"
+msgstr ""
+
+#: assets/free/js/admin.js:2325
+msgid "Add-on inactive"
+msgstr ""
+
+#: assets/free/js/admin.js:2332
+msgid "Review and release"
+msgstr ""
+
+#: assets/free/js/admin.js:2334
+#: assets/free/js/admin.js:2642
+#: assets/free/js/admin.js:2650
+msgid "Redo"
+msgstr ""
+
+#: assets/free/js/admin.js:2335
+msgid "Review"
+msgstr ""
+
+#. translators: 1: summary of the original change, 2: when it happened ("today, 14:00").
+#: assets/free/js/admin.js:2357
+#, js-format
+msgid "Redoes “%1$s” from %2$s"
+msgstr ""
+
+#: assets/free/js/admin.js:2357
+#, js-format
+msgid "Redoes “%s”"
+msgstr ""
+
+#. translators: 1: summary of the original change, 2: when it happened ("today, 14:00").
+#: assets/free/js/admin.js:2361
+#, js-format
+msgid "Undoes “%1$s” from %2$s"
+msgstr ""
+
+#: assets/free/js/admin.js:2361
+#, js-format
+msgid "Undoes “%s”"
+msgstr ""
+
+#. translators: 1: summary of the original change, 2: when it happened ("today, 14:00").
+#: assets/free/js/admin.js:2364
+#, js-format
+msgid "Reverted “%1$s” from %2$s over newer edits."
+msgstr ""
+
+#: assets/free/js/admin.js:2365
+#, js-format
+msgid "Reverted “%s” over newer edits."
+msgstr ""
+
+#: assets/free/js/admin.js:2366
+msgid "Undoing this change brings back what was replaced."
+msgstr ""
+
+#. translators: 1: relative time ("5 minutes ago"), 2: who undid it.
+#: assets/free/js/admin.js:2378
+#, js-format
+msgid "Undone %1$s by %2$s"
+msgstr ""
+
+#: assets/free/js/admin.js:2379
+#: assets/free/js/admin.js:2382
+msgid "someone"
+msgstr ""
+
+#. translators: 1: relative time ("5 minutes ago"), 2: who redid it.
+#: assets/free/js/admin.js:2381
+#, js-format
+msgid "Redone %1$s by %2$s"
+msgstr ""
+
+#: assets/free/js/admin.js:2405
+#: assets/free/js/admin.js:2682
+msgid "Undo batch"
+msgstr ""
+
+#. translators: %d: number of changes in the batch.
+#: assets/free/js/admin.js:2409
+#, js-format
+msgid "Batch of %d change"
+msgid_plural "Batch of %d changes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2413
+#, js-format
+msgid "%1$d of %2$d change shown. The others are outside the current filters."
+msgid_plural "%1$d of %2$d changes shown. The others are outside the current filters."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of changes already undone, 2: total changes in the batch.
+#: assets/free/js/admin.js:2417
+#, js-format
+msgid "%1$d of %2$d already undone"
+msgid_plural "%1$d of %2$d already undone"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2421
+#, js-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2428
+msgid "The history couldn't be loaded"
+msgstr ""
+
+#: assets/free/js/admin.js:2431
+msgid "Loading the history…"
+msgstr ""
+
+#: assets/free/js/admin.js:2435
+msgid "No change matches these filters."
+msgstr ""
+
+#: assets/free/js/admin.js:2439
+msgid "Writing through MCP is paused on this site. Undo and redo are unavailable until it comes back."
+msgstr ""
+
+#: assets/free/js/admin.js:2474
+msgid "All types"
+msgstr ""
+
+#: assets/free/js/admin.js:2479
+msgid "Change history"
+msgstr ""
+
+#: assets/free/js/admin.js:2483
+msgid "No changes yet"
+msgstr ""
+
+#: assets/free/js/admin.js:2485
+msgid "When an agent creates or edits something on the site, it shows up here with the option to undo."
+msgstr ""
+
+#: assets/free/js/admin.js:2486
+msgid "Writing through MCP is paused on this site. Reading is still available."
+msgstr ""
+
+#: assets/free/js/admin.js:2491
+msgid "Search by change or item"
+msgstr ""
+
+#: assets/free/js/admin.js:2492
+msgid "Search the history"
+msgstr ""
+
+#: assets/free/js/admin.js:2494
+msgid "Filter by item type"
+msgstr ""
+
+#: assets/free/js/admin.js:2501
+msgid "(removed)"
+msgstr ""
+
+#: assets/free/js/admin.js:2501
+msgid "(moved to the trash)"
+msgstr ""
+
+#: assets/free/js/admin.js:2501
+msgid "(deleted)"
+msgstr ""
+
+#: assets/free/js/admin.js:2505
+msgctxt "changed field"
+msgid "item"
+msgstr ""
+
+#: assets/free/js/admin.js:2530
+msgid "(empty)"
+msgstr ""
+
+#. translators: %d: number of changed lines that are not shown.
+#: assets/free/js/admin.js:2550
+#, js-format
+msgid "…and %d more changed line"
+msgid_plural "…and %d more changed lines"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2553
+msgid "Changed beyond the shown excerpt."
+msgstr ""
+
+#: assets/free/js/admin.js:2554
+msgid "Incomplete diff: the value is longer than what is shown."
+msgstr ""
+
+#: assets/free/js/admin.js:2558
+msgid "Only the first changes are shown."
+msgstr ""
+
+#: assets/free/js/admin.js:2567
+msgid "Risk not given"
+msgstr ""
+
+#: assets/free/js/admin.js:2572
+msgid "Approved"
+msgstr ""
+
+#: assets/free/js/admin.js:2574
+#: assets/free/js/admin.js:2784
+msgid "Reject"
+msgstr ""
+
+#: assets/free/js/admin.js:2576
+#: assets/free/js/admin.js:2781
+msgid "Approve"
+msgstr ""
+
+#: assets/free/js/admin.js:2582
+#, js-format
+msgid "The agent sent this request %d times. Your answer applies to all of them."
+msgstr ""
+
+#. translators: %s: when the request leaves the list ("tomorrow, 14:00").
+#: assets/free/js/admin.js:2585
+#, js-format
+msgid "Expires %s"
+msgstr ""
+
+#: assets/free/js/admin.js:2595
+#, js-format
+msgid "Approved until %s. Waiting for the agent to repeat the request."
+msgstr ""
+
+#: assets/free/js/admin.js:2600
+msgid "Requests waiting for approval"
+msgstr ""
+
+#: assets/free/js/admin.js:2602
+msgid "The agent has to repeat the request after approval."
+msgstr ""
+
+#: assets/free/js/admin.js:2635
+msgid "It's recorded as a new change."
+msgstr ""
+
+#: assets/free/js/admin.js:2637
+msgid "Undo this change?"
+msgstr ""
+
+#: assets/free/js/admin.js:2637
+msgid "Redo this change?"
+msgstr ""
+
+#: assets/free/js/admin.js:2639
+msgid "Llamly checks that the item is still as the agent left it before changing it. If someone edited it since, nothing is changed."
+msgstr ""
+
+#. translators: %d: number of other changes not listed.
+#: assets/free/js/admin.js:2666
+#, js-format
+msgid "and %d more"
+msgid_plural "and %d more"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of changes in the batch.
+#: assets/free/js/admin.js:2670
+msgid "Undo this batch?"
+msgstr ""
+
+#: assets/free/js/admin.js:2670
+#, js-format
+msgid "%d change made together by the agent."
+msgid_plural "%d changes made together by the agent."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of changes of the batch outside the current filters that are still to undo.
+#: assets/free/js/admin.js:2675
+#, js-format
+msgid "%d change of this batch is outside the current filters"
+msgid_plural "%d changes of this batch are outside the current filters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2677
+msgid "Undo batch undoes it too:"
+msgid_plural "Undo batch undoes them too:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2680
+msgid "Llamly undoes from the newest change to the oldest. If one of them changed since, it stops there and shows what's left. Each undo is recorded as a new change."
+msgstr ""
+
+#: assets/free/js/admin.js:2690
+msgid "The change couldn't be undone."
+msgstr ""
+
+#. translators: 1: changes undone, 2: total changes in the batch.
+#: assets/free/js/admin.js:2694
+msgid "Batch partly undone"
+msgstr ""
+
+#: assets/free/js/admin.js:2694
+#, js-format
+msgid "%1$d of %2$d change undone."
+msgid_plural "%1$d of %2$d changes undone."
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2698
+#, js-format
+msgid "Stopped at %s"
+msgstr ""
+
+#: assets/free/js/admin.js:2699
+msgid "a change"
+msgstr ""
+
+#. translators: %d: number of changes left in the batch.
+#: assets/free/js/admin.js:2701
+#, js-format
+msgid "%d change of this batch is left."
+msgid_plural "%d changes of this batch are left."
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2703
+msgid "Review the item and try again. The ones already undone aren't repeated."
+msgstr ""
+
+#: assets/free/js/admin.js:2704
+msgid "Got it"
+msgstr ""
+
+#. translators: %d: number of items undone.
+#: assets/free/js/admin.js:2708
+#, js-format
+msgid "Batch undone (%d item)"
+msgid_plural "Batch undone (%d items)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/free/js/admin.js:2716
+msgid "Undo anyway?"
+msgstr ""
+
+#: assets/free/js/admin.js:2717
+msgid "The item goes back to how it was before this agent change. Edits made after it are replaced."
+msgstr ""
+
+#: assets/free/js/admin.js:2719
+msgid "Nothing is lost: the force undo stays in the history as a new change, and undoing it brings back the replaced state."
+msgstr ""
+
+#: assets/free/js/admin.js:2721
+#: assets/free/js/admin.js:2752
+msgid "Undo anyway"
+msgstr ""
+
+#: assets/free/js/admin.js:2729
+msgid "Change force undone. You can undo it from the history."
+msgstr ""
+
+#: assets/free/js/admin.js:2740
+msgid "Review conflict"
+msgstr ""
+
+#: assets/free/js/admin.js:2742
+msgid "The item changed after this change."
+msgstr ""
+
+#: assets/free/js/admin.js:2746
+msgid "Undo anyway takes the item back to how it was before the agent change and overwrites the edit made after it. The undo stays in the history and can be undone."
+msgstr ""
+
+#: assets/free/js/admin.js:2748
+msgid "To undo, the item has to be as the agent left it. Check the item in WordPress."
+msgstr ""
+
+#: assets/free/js/admin.js:2750
+msgid "Open in WordPress"
+msgstr ""
+
+#: assets/free/js/admin.js:2751
+msgid "Keep as is"
+msgstr ""
+
+#: assets/free/js/admin.js:2758
+msgid "Accept the item's current state?"
+msgstr ""
+
+#: assets/free/js/admin.js:2758
+msgid "A change was interrupted."
+msgstr ""
+
+#: assets/free/js/admin.js:2760
+msgid "The item matches neither the previous state nor the request. Open the item in WordPress and check the saved content."
+msgstr ""
+
+#: assets/free/js/admin.js:2762
+msgid "When you accept, Llamly doesn't change the content: it closes this operation, allows new changes and invalidates editors open with the old version."
+msgstr ""
+
+#: assets/free/js/admin.js:2764
+msgid "Accept current state"
+msgstr ""
+
+#: assets/free/js/admin.js:2769
+msgid "The recovery was recorded and the item was released."
+msgstr ""
+
+#: assets/free/js/admin.js:2776
+msgid "The agent"
+msgstr ""
+
+#: assets/free/js/admin.js:2779
+msgid "Approve this request?"
+msgstr ""
+
+#: assets/free/js/admin.js:2780
+msgid "The approval is only for this request and for a limited time. The agent has to repeat the request after approval. The change goes into the history and can be undone."
+msgstr ""
+
+#: assets/free/js/admin.js:2782
+msgid "Reject this request?"
+msgstr ""
+
+#: assets/free/js/admin.js:2783
+msgid "Nothing is changed. If the agent repeats the same request, it gets the rejection."
+msgstr ""
+
+#: assets/free/js/admin.js:2793
+msgid "Request approved. The agent has to repeat the request."
+msgstr ""
+
+#: assets/free/js/admin.js:2794
+msgid "Request rejected."
+msgstr ""
+
+#. translators: 1: requests answered, 2: requests that failed, 3: reason.
+#: assets/free/js/admin.js:2797
+#, js-format
+msgid "%1$d requests were answered and %2$d failed: %3$s"
+msgstr ""
+
+#: assets/free/js/admin.js:2806
+msgid "Activity"
+msgstr ""
+
+#: assets/free/js/admin.js:2815
+msgid "Every change made by an agent is recorded with the previous state. You can undo each change separately."
+msgstr ""
+
+#: assets/free/js/editor-guard.js:25
+msgid "This page changed while the editor was open. Your changes are still here; copy the text before reloading."
+msgstr ""
+
+#: assets/free/js/editor-guard.js:30
+#: assets/free/js/editor-guard.js:113
+msgid "Copy my changes"
+msgstr ""
+
+#: assets/free/js/editor-guard.js:41
+#: assets/free/js/editor-guard.js:119
+msgid "Reload editor"
+msgstr ""
+
+#: assets/free/js/editor-guard.js:109
+msgid "This page changed while the editor was open. Your unsaved content was kept; copy it before reloading."
+msgstr ""

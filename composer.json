@@ -1,0 +1,10 @@
+{
+	"name": "llamly/llamly",
+	"description": "Llamly MCP WordPress plugin. vendor/ holds only the Freemius WordPress SDK, vendored unchanged from its release tag.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=8.0",
+		"freemius/wordpress-sdk": "2.13.5"
+	}
+}

@@ -1,0 +1,17 @@
+/* Llamly Free · Settings tab */
+.cfg-form { display: grid; gap: var(--ll-8); }
+.cfg-form .ll-setting__control .ll-input--num { width: 88px; }
+.cfg-form .ll-setting__control span:not(.ll-switch__track):not(.ll-switch-label) { white-space: nowrap; }
+.cfg-form .ll-switch-label { min-width: 72px; text-align: right; }
+.cfg-form .ll-setting__extra .ll-field { max-width: 560px; }
+.cfg-form [data-hosts][hidden] { display: none; }
+.cfg-callout { margin-bottom: var(--ll-3); }
+.cfg-form [data-oauth-dep] .ll-setting:last-child, .cfg-form [data-undo-dep] .ll-setting:last-child { border-bottom: 1px solid var(--ll-border); }
+.cfg-form .ll-card .ll-settings-list > :last-child, .cfg-form .ll-card .ll-settings-list > :last-child > :last-child { border-bottom: 0; }
+@media (max-width: 782px) {
+  .cfg-form .ll-switch-label { text-align: left; }
+  .cfg-form .ll-setting__extra { padding-left: var(--ll-4); padding-right: var(--ll-4); }
+  .ll-savebar { flex-wrap: wrap; }
+}
+.cfg-form .ll-setting:has(+ .ll-setting__extra:not([hidden])) { border-bottom: 0; padding-bottom: var(--ll-4); }
+.cfg-form .ll-setting__extra { margin-top: 0; padding-top: 0; }

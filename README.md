@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/icon.png" width="128" height="128" alt="Llamly"></p>
+<p align="center"><img src=".github/icon.png" width="128" height="128" alt="Llamly"></p>
 
 <h1 align="center">Llamly MCP: a WordPress MCP server</h1>
 
@@ -14,7 +14,7 @@ Llamly MCP is a free WordPress plugin that turns your site into a remote MCP ser
 
 It runs inside your WordPress site: **no relay, no third-party server in between, no Llamly account and no AI provider API key.** You bring the AI subscription you already have.
 
-> This repository holds the MCP registry metadata and install docs. The plugin itself is distributed on [WordPress.org](https://wordpress.org/plugins/llamly/) (GPLv2 or later).
+> This repository mirrors the source of the free plugin, exactly as released on [WordPress.org](https://wordpress.org/plugins/llamly/) (GPLv2 or later). Install it from WordPress.org to get automatic updates. For support, use the [WordPress.org forum](https://wordpress.org/support/plugin/llamly/).
 
 ## Why Llamly
 

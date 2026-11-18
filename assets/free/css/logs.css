@@ -1,0 +1,26 @@
+/* Llamly Free · Logs tab */
+.lg-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: var(--ll-3);
+	padding: var(--ll-4) var(--ll-6); border-bottom: 1px solid var(--ll-border); }
+.lg-chips { grid-column: 1 / -1; }
+.lg-conn { display: inline-flex; align-items: center; gap: var(--ll-2); }
+.lg-table .lg-ms { text-align: right; white-space: nowrap; }
+.lg-table td.lg-ms { font-size: var(--ll-fs-sm); }
+.lg-table td:first-child, .lg-table td.ll-mono { white-space: nowrap; }
+.lg-row { cursor: pointer; }
+.lg-toggle .ll-icon { transition: transform 150ms; }
+.lg-toggle[aria-expanded="true"] .ll-icon { transform: rotate(180deg); }
+.lg-table tr.is-open td { background: var(--ll-subtle); border-bottom-color: transparent; }
+.lg-table tr.lg-detail[hidden] { display: none; }
+.lg-table tr.lg-detail td { background: var(--ll-subtle); padding-top: 0; padding-bottom: var(--ll-4); }
+.lg-dl { margin: 0; display: grid; grid-template-columns: minmax(0, 2fr) 1fr 1fr; gap: var(--ll-4); font-size: var(--ll-fs-sm); }
+.lg-dl dt { color: var(--ll-text-3); margin-bottom: 2px; }
+.lg-dl dd { margin: 0; color: var(--ll-text); overflow-wrap: anywhere; }
+.lg-foot { flex-wrap: wrap; }
+
+@media (max-width: 782px) {
+  .lg-toolbar { grid-template-columns: 1fr; padding: var(--ll-4); }
+  .lg-ip { display: none; }
+  .lg-dl { grid-template-columns: 1fr; gap: var(--ll-2); }
+  .lg-foot { padding: var(--ll-4); }
+  .ll-pager { padding: var(--ll-3) var(--ll-4); }
+}

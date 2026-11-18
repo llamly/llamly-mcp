@@ -1,0 +1,82 @@
+/* Llamly Free · design tokens.
+   Every color, type size, spacing and radius comes from here. Components never use raw values. */
+
+.llamly {
+  /* Brand */
+  --ll-emerald: #2ee6a6;          /* brand accent: primary button, focus, indicators */
+  --ll-emerald-hover: #1fd697;
+  --ll-emerald-ink: #053b29;      /* text on emerald (contrast 10.9:1) */
+  --ll-emerald-text: #0a7d5a;     /* emerald readable on white (AA 4.9:1): links, active tab */
+  --ll-emerald-soft: #e3fbf2;     /* success/selected backgrounds */
+  --ll-emerald-line: #a6f0d4;
+  --ll-sun: #ffc83d;              /* mascot yellow; illustrations only */
+
+  /* Neutrals (aligned with WP admin) */
+  --ll-page: #f0f0f1;
+  --ll-surface: #ffffff;
+  --ll-subtle: #f7f7f8;
+  --ll-hover: #f3f4f5;
+  --ll-border: #e2e4e7;
+  --ll-border-strong: #c9ccd1;
+  --ll-text: #1d2327;
+  --ll-text-2: #50575e;           /* secondary, AA on white */
+  --ll-text-3: #6b7178;           /* metadata, AA at 14px+ */
+  --ll-ink: #101517;              /* dark button / code block */
+
+  /* Semantic */
+  --ll-success: #0a7d5a;
+  --ll-success-bg: #e3fbf2;
+  --ll-warning: #8a5a00;
+  --ll-warning-bg: #fff6dc;
+  --ll-warning-line: #f2d58a;
+  --ll-danger: #b42318;
+  --ll-danger-bg: #fef1ef;
+  --ll-danger-line: #f6c4bd;
+  --ll-info: #1d5fa8;
+  --ll-info-bg: #edf4fc;
+  --ll-info-line: #c3d9f2;
+
+  /* Dark surfaces (header and app picker) */
+  --ll-dark: #1c232a;
+  --ll-dark-2: #252d35;
+  --ll-dark-3: #2e3740;
+  --ll-dark-line: #364049;
+  --ll-dark-text: #f3f5f6;
+  --ll-dark-text-2: #a9b2b9;
+  --ll-dark-text-3: #8b969e;
+
+  /* Type: the same font stack as WP admin. The brand is the original logo (SVG), with no custom font. */
+  --ll-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --ll-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --ll-fs-xs: 12px;   /* absolute minimum: metadata and table headers only */
+  --ll-fs-sm: 13px;   /* descriptions, secondary cells */
+  --ll-fs-md: 14px;   /* default body */
+  --ll-fs-lg: 16px;   /* card title */
+  --ll-fs-xl: 20px;   /* panel/recipe title */
+  --ll-fs-2xl: 24px;  /* wordmark and standalone page titles */
+  --ll-lh: 1.55;
+  --ll-lh-tight: 1.3;
+
+  /* Spacing (base 4) */
+  --ll-1: 4px;
+  --ll-2: 8px;
+  --ll-3: 12px;
+  --ll-4: 16px;
+  --ll-5: 20px;
+  --ll-6: 24px;
+  --ll-8: 32px;
+  --ll-10: 40px;
+  --ll-12: 48px;
+
+  --ll-radius-sm: 6px;
+  --ll-radius: 8px;
+  --ll-radius-lg: 12px;
+  --ll-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --ll-shadow-pop: 0 12px 32px rgba(16, 24, 40, 0.14), 0 2px 6px rgba(16, 24, 40, 0.06);
+  --ll-focus: 0 0 0 2px #fff, 0 0 0 4px var(--ll-emerald);
+
+  --ll-content-max: 1120px;
+  --ll-control-h: 40px;
+  --ll-control-h-sm: 32px;
+}

@@ -1,0 +1,66 @@
+/* Llamly Free · glue between the design stylesheets (tokens, llamly and one file per tab) and WP admin.
+   Integration adjustments only: the look comes from the design stylesheets. */
+
+/* The app fills the admin content area edge to edge, as in the approved design. */
+.llamly-admin-wrap { margin: 0 0 0 -20px; }
+.llamly-admin-wrap > h1.screen-reader-text + .llamly { margin-top: 0; }
+@media (max-width: 782px) {
+  .llamly-admin-wrap { margin-left: -10px; }
+}
+
+/* Neutralize global WP admin styles inside the app. */
+.llamly h2, .llamly h3, .llamly h4 { margin: 0; }
+.llamly p { margin: 0; }
+.llamly code { background: none; padding: 0; }
+.llamly .ll-code code { color: inherit; font-size: inherit; }
+.llamly .ll-input, .llamly .ll-select, .llamly .ll-textarea { box-shadow: none; max-width: 100%; }
+.llamly .ll-select { background-color: var(--ll-surface); }
+.llamly input[type="radio"], .llamly input[type="checkbox"] { box-shadow: none; }
+.llamly .ll-switch input[type="checkbox"] { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
+.llamly .ll-switch input[type="checkbox"]::before { content: none; }
+.llamly a:focus:not(:focus-visible) { box-shadow: none; }
+.llamly .ll-choice__item[aria-disabled="true"] { cursor: not-allowed; opacity: 0.6; }
+.llamly-admin-wrap .ll-extension-section[hidden] { display: none; }
+
+/* Pieces the static design did not need. */
+.ll-toast--error .ll-icon { color: #ff8f8f; }
+.llamly .ll-linkbtn { padding: 0; border: 0; background: none; color: var(--ll-emerald-text); font: inherit;
+	font-weight: 600; text-decoration: underline; cursor: pointer; }
+.llamly .lg-dl .lg-dl__wide { grid-column: 1 / -1; }
+.llamly .lg-ctx { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: var(--ll-fs-xs); }
+.llamly .about-note { margin-top: var(--ll-3); }
+.llamly .ll-check__body .ll-mono { font-size: var(--ll-fs-xs); color: var(--ll-text-3); }
+.llamly .ll-btn[hidden], .llamly [hidden] { display: none !important; }
+
+/* Activity: pieces only the real screen has (type filter, approval requests, batch items). */
+.llamly .at-toolbar { grid-template-columns: minmax(0, 1fr) 200px 200px; }
+.llamly .at-callout { margin: var(--ll-4) var(--ll-6) 0; }
+#at-top > .at-req-card { margin-bottom: var(--ll-6); }
+.llamly .at-row.at-req { grid-template-columns: 56px 200px minmax(0, 1fr) auto; }
+.llamly .at-req-actions { display: flex; gap: var(--ll-2); flex-wrap: wrap; justify-content: flex-end; }
+.llamly .at-req-risk { display: flex; gap: 6px; flex-wrap: wrap; margin-top: var(--ll-1); }
+.llamly .at-batch-list { grid-template-columns: 1fr; }
+.llamly .at-batch-item { display: flex; flex-wrap: wrap; align-items: center; gap: 4px var(--ll-3); min-width: 0; }
+.llamly .at-batch-item > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.llamly .at-batch-note { flex-basis: 100%; }
+.llamly .at-trunc { padding: var(--ll-3) var(--ll-6); }
+@media (max-width: 782px) {
+  .llamly .at-toolbar { grid-template-columns: 1fr; }
+  .llamly .at-callout { margin: var(--ll-4) var(--ll-4) 0; }
+  .llamly .at-row.at-req { grid-template-columns: auto minmax(0, 1fr); }
+  .llamly .at-req-actions { grid-column: 1 / -1; justify-content: flex-start; }
+  .llamly .at-trunc { padding-left: var(--ll-4); padding-right: var(--ll-4); }
+}
+
+/* Logs: date range and page size. */
+.llamly .lg-date .ll-input { width: auto; min-width: 9.5rem; }
+.llamly .ll-pager .ll-select { height: 32px; width: auto; }
+@media (max-width: 600px) { .llamly .lg-date { flex: 1 1 45%; } .llamly .lg-date .ll-input { width: 100%; min-width: 0; } }
+
+/* The tab panel receives focus after a tab is chosen; the focus ring stays on the tabs, not on the whole panel. */
+.llamly .ll-main:focus { outline: none; box-shadow: none; }
+/* Inline range error on number settings. */
+.llamly .ll-setting__control .cfg-num-error { flex-basis: 100%; color: var(--ll-danger); }
+.llamly .ll-input--num[aria-invalid="true"] { border-color: var(--ll-danger); }
+.llamly .ll-setting__control:has(> .cfg-num-error:not([hidden])) { flex-wrap: wrap; max-width: 260px; justify-content: flex-end; }
+.llamly .cfg-num-error[hidden] { display: none; }

@@ -1,0 +1,69 @@
+# Third-party notices
+
+Llamly is free software distributed under the GNU General Public License, version 2 or (at your option) any later version. The full license text is in `license.txt`. Everything it bundles is GPL-compatible and listed below. The interface assets are bundled locally in `assets/free/`; no runtime CDN, remote font or remote script is used.
+
+## Cowboy MCP (GPL-2.0-or-later)
+
+Parts of Llamly were modelled on [Cowboy MCP](https://wordpress.org/plugins/cowboy-mcp/) 1.7.1 by februality, licensed GPL-2.0-or-later. Llamly redistributes under the same license family (GPL-2.0-or-later). No Cowboy MCP file is shipped, loaded or required, and no source file was copied as a whole; the Llamly code was written in its own namespace (`Llamly\Free`), REST namespace (`llamly/v1`), option, table and hook prefixes (`llamly_free_`). Cowboy MCP is credited here because its design was studied closely and reused selectively:
+
+* **Connection forms and recipes** (`assets/free/js/admin.js`): the same ways to connect (remote OAuth for claude.ai, Claude Desktop, ChatGPT and Cursor; Bearer key for Claude Code, Codex, Cursor, Gemini CLI and OpenCode; the `mcp-remote` bridge for Claude Desktop with a local site), the client commands/config snippets and the claude.ai "add custom connector" link. Changed: an Antigravity CLI recipe was added in place of the Gemini CLI one (and the Gemini logo removed); keys belong to the WordPress user who created them instead of the first administrator, per-key scopes (full, read only, chosen categories), live "first request received" status, Portuguese copy.
+* **OAuth 2.1 server** (`src/Free/Auth/OAuthServer.php`, `OAuthRedirectPolicy.php`, `WellKnown.php`): discovery documents, dynamic client registration with a time-limited registration window, PKCE, redirect-host allowlist (including the local-site heuristic and Cursor's mixed redirect lists). Changed: hashed codes and tokens in dedicated tables, per-IP registration rate limit and client cap, consent screen with scope choice, refresh rotation and revocation, registration window that never disconnects existing clients.
+* **Streamable HTTP transport and gateways** (`src/Free/Mcp/*`): POST JSON/SSE negotiation, 202 for notifications, 405 for GET, 204 for DELETE with session ownership, and the two gateway tools `llamly_discover` / `llamly_run` modelled on `cowboy_discover` / `cowboy_run`. Changed: one dispatcher shared by MCP, gateways, Abilities and admin (schema, capability, scope, safe mode/permit, snapshot, revision check, journal, audit), no recursion through the gateway.
+* **Tool catalogue** (`src/Free/Tools/*`): tool names and argument shapes follow Cowboy's core WordPress tools for correspondence. Changed: every write is journaled with undo/redo and conflict detection; file, SQL, shell, WP-CLI, HTTP, plugin/theme management and Elementor writes are not included.
+* **Diagnostics, undo journal and database checkpoints** (`src/Free/Admin/Doctor.php`, `src/Free/History/*`, `src/Free/Checkpoint/*`): the concepts of a connection doctor, a per-change undo journal and database restore points. Changed: Llamly implements its own journal with per-object versions and redo, and its restore points live in Llamly tables (no `.sql.gz` files in uploads), use keyset pagination, a durable restore journal and preserve users, sessions, roles, Application Passwords and Llamly connections.
+
+Cowboy MCP license notice: "Cowboy MCP is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version."
+
+## Lucide icons
+
+`assets/free/js/icons.js` contains Lucide 1.52.0 icons (the interface icons) and the client marks listed in the next section, inlined as readable SVG strings; the SVG markup itself is the source. Lucide is distributed under the ISC License; the listed Feather-derived icons also retain the MIT License notice. Sources: [Lucide license](https://github.com/lucide-icons/lucide/blob/main/LICENSE) and [Lucide Static 1.52.0](https://unpkg.com/lucide-static@1.52.0/icons/).
+
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+Lucide's upstream license identifies which icon marks derive from Feather; the applicable Feather-derived icons in this bundle use the MIT notice below.
+
+MIT License
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Simple Icons and client marks
+
+The client marks identify which AI app a connection belongs to (nominative use only). They appear inlined in `assets/free/js/icons.js` and, for the OAuth consent screen, as `assets/free/assets/clients/{anthropic,claude-color,cursor,openai}.svg`. They are sourced from Simple Icons: Claude, Cursor and Anthropic use the Simple Icons 16.34.0 assets; OpenAI uses the last available asset noted by the approved design source, Simple Icons 15.22.0. The Simple Icons collection is released under CC0-1.0 (public domain dedication, GPL-compatible); its maintainers note that the marks themselves may be subject to the brand owners' trademark rules, which is why they are used only to identify the corresponding app. Brand names and marks remain with their respective owners; these assets do not imply endorsement. See the [Simple Icons disclaimer](https://github.com/simple-icons/simple-icons/blob/develop/DISCLAIMER.md).
+
+The OpenCode mark in `assets/free/js/icons.js` is the OpenCode provider mark, normalized from the [OpenCode repository](https://github.com/anomalyco/opencode/blob/dev/packages/ui/src/assets/icons/provider/opencode.svg). The source repository is MIT licensed; its notice follows.
+
+MIT License
+
+Copyright (c) 2025 opencode
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Freemius WordPress SDK 2.13.5 (GPL-3.0)
+
+`vendor/freemius/wordpress-sdk/` is the [Freemius WordPress SDK](https://github.com/Freemius/wordpress-sdk) 2.13.5 (tag `2.13.5`, commit `0875c4ee3c941572f44d60cb2a687c54295db3d7`), Copyright (c) 2015, Freemius, Inc., licensed under the GNU General Public License version 3. It is bundled unchanged, exactly as the upstream tag exports it, with its full license text in `vendor/freemius/wordpress-sdk/LICENSE.txt`; `tools/freemius-sdk.lock` in the source repository records the SHA256 of every file. Llamly uses it only for the optional, opt-in usage statistics and the Llamly Pro add-on (readme, External services). Because Llamly is GPL-2.0-or-later, the plugin as distributed with this SDK is covered by GPL-3.0.
+
+The SDK carries its own notices for the code it bundles: the Freemius PHP API client in `includes/sdk/` (GPL-2.0, `includes/sdk/LICENSE.txt`); `assets/js/pricing/freemius-pricing.js`, whose bundled libraries (React and others under the MIT License, Font Awesome Free 5.15.4: icons CC BY 4.0, fonts SIL OFL 1.1, code MIT) are listed in `assets/js/pricing/freemius-pricing.js.LICENSE.txt`; `assets/js/nojquery.ba-postmessage.js` by Ben Alman (dual MIT and GPL). Those files are kept as shipped upstream; files without their own notice are covered by the SDK's GPL-3.0.
+
+## Llamly marks
+
+`assets/free/assets/brand/llamly-mark.svg` is Llamly artwork supplied by the project owner and adapted for this interface. It is distributed with the plugin under the plugin's license. The Llamly name is used to identify this project.
+
+## Clients and bridges that are not bundled
+
+The connection recipes mention `mcp-remote` (run by the user's own `npx`, never shipped or downloaded by the plugin) and the AI apps themselves. Nothing from them is bundled.

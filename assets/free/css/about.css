@@ -1,0 +1,51 @@
+/* Llamly Free · About tab */
+.llamly .ll-main > section { display: block; }
+.about-hero { display: flex; gap: var(--ll-6); align-items: center; padding: var(--ll-8); }
+.about-hero__mark { width: 64px; height: 64px; flex: none; }
+.about-hero__text { display: grid; gap: var(--ll-2); }
+.about-hero h2 { font-size: var(--ll-fs-xl); }
+.about-hero__text p { max-width: 62ch; }
+.about-hero__actions { margin-top: var(--ll-3); gap: var(--ll-3); }
+.about-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--ll-4); }
+.about-step { display: flex; gap: var(--ll-4); align-items: flex-start; padding: var(--ll-6); box-shadow: none; }
+.about-step h3 { font-size: var(--ll-fs-lg); margin-bottom: 2px; }
+.about-step__n { width: 32px; height: 32px; flex: none; border-radius: 50%; background: var(--ll-emerald-soft);
+	border: 1px solid var(--ll-emerald-line); color: var(--ll-emerald-text); display: grid; place-items: center;
+	font-weight: 600; font-size: var(--ll-fs-sm); }
+.about-prompts { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--ll-3); }
+.about-prompt { display: flex; align-items: center; justify-content: space-between; gap: var(--ll-3); text-align: left;
+	min-height: 64px; padding: var(--ll-4); background: var(--ll-surface); border: 1px solid var(--ll-border);
+	border-radius: var(--ll-radius-lg); font: 400 var(--ll-fs-md)/1.4 var(--ll-font); color: var(--ll-text);
+	cursor: pointer; transition: border-color 120ms, background-color 120ms; }
+.about-prompt:hover { border-color: var(--ll-emerald-text); background: var(--ll-emerald-soft); }
+.about-prompt .ll-icon { color: var(--ll-text-3); }
+.about-prompt:hover .ll-icon { color: var(--ll-emerald-text); }
+.about-caps { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--ll-3); }
+.about-cap { display: flex; align-items: center; gap: var(--ll-2); padding: var(--ll-3) var(--ll-4);
+	background: var(--ll-surface); border: 1px solid var(--ll-border); border-radius: var(--ll-radius); min-height: 48px; }
+.about-cap__name { font-weight: 500; flex: 1; min-width: 0; }
+.about-cap__n { color: var(--ll-text-2); font-size: var(--ll-fs-sm); font-variant-numeric: tabular-nums; }
+.about-pro { padding: var(--ll-5) var(--ll-6); display: flex; flex-direction: column; align-items: flex-start; gap: var(--ll-3); }
+.about-pro p { margin: 0; }
+.about-links { display: flex; flex-wrap: wrap; gap: var(--ll-3) var(--ll-8); padding: var(--ll-5) var(--ll-6); border-bottom: 1px solid var(--ll-border); }
+.about-links a { display: inline-flex; align-items: center; gap: var(--ll-2); font-weight: 600; text-decoration: none; }
+.about-links a:hover { text-decoration: underline; }
+.about-links a .ll-icon:last-child { width: 14px; height: 14px; opacity: 0.6; }
+.about-sys { padding: var(--ll-5) var(--ll-6) var(--ll-6); display: grid; gap: var(--ll-4); }
+.about-sys__head { display: flex; align-items: center; justify-content: space-between; gap: var(--ll-3); flex-wrap: wrap; }
+.about-sys__head h3 { font-size: var(--ll-fs-md); }
+.about-dl { margin: 0; display: grid; grid-template-columns: 140px 1fr; gap: var(--ll-2) var(--ll-4); font-size: var(--ll-fs-sm); }
+.about-dl dt { color: var(--ll-text-2); }
+.about-dl dd { margin: 0; font-family: var(--ll-mono); word-break: break-all; }
+@media (max-width: 1100px) { .about-prompts { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 782px) {
+  .about-hero { flex-direction: column; align-items: flex-start; padding: var(--ll-5); }
+  .about-steps, .about-prompts { grid-template-columns: 1fr; }
+  .about-links, .about-sys { padding-left: var(--ll-4); padding-right: var(--ll-4); }
+  .about-dl { grid-template-columns: 1fr; gap: 0; }
+  .about-dl dd { margin-bottom: var(--ll-3); }
+}
+.about-hero__mark { object-fit: contain; }
+/* lead: hero with a stronger brand presence */
+.about-hero { background: linear-gradient(115deg, var(--ll-surface) 52%, var(--ll-emerald-soft) 100%); }
+.about-hero__mark { width: 96px; height: 96px; }
