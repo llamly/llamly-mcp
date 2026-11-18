@@ -18,7 +18,7 @@ It runs inside your WordPress site: **no relay, no third-party server in between
 
 ## Why Llamly
 
-- **Undo and redo.** Every change an agent makes is written to a journal first, so you can undo almost any change from the Activity screen or by asking your agent.
+- **Undo and redo.** Every change an agent makes is written to a journal first, so you can undo any change from the Activity screen or by asking your agent.
 - **You stay in charge.** Safe mode (on by default) requires the agent to confirm before deleting or undoing anything. An optional approval queue holds publishing until you approve it in wp-admin.
 - **Content, never administration.** The agent works with content permissions only. It never touches site settings, users, plugins, themes, or code, and never writes unfiltered HTML.
 - **Your data stays on your site.** Self-hosted, no account needed, and no outbound calls at runtime.
