@@ -12,7 +12,7 @@
 
 Llamly MCP is a free WordPress plugin that turns your own site into a remote MCP server (Model Context Protocol). ChatGPT, Claude, Claude Code, Codex, Cursor, OpenCode and other MCP clients can then write, edit and organize your content in plain language.
 
-It runs inside your WordPress site: **no relay, no Llamly server in between, no Llamly account and no AI provider API key.** You bring the AI subscription you already have.
+It runs inside your WordPress site: **no relay, no third-party server in between, no Llamly account and no AI provider API key.** You bring the AI subscription you already have.
 
 > This repository holds the MCP registry metadata and install docs. The plugin itself is distributed on [WordPress.org](https://wordpress.org/plugins/llamly/) (GPLv2 or later).
 
