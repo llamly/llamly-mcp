@@ -32,7 +32,18 @@ It runs inside your WordPress site: **no relay, no third-party server in between
 - **Site structure:** manage categories, tags, taxonomies, menus, navigation, and comments.
 - **Elementor:** inspect pages, templates, widgets, and global styles (read-only).
 
-Try: *"publish the three drafts about our new service"*, *"find every image without alt text and fill it in"*, *"move Contact to the end of the main menu"*, *"undo the last change you made"*.
+Try:
+
+- "Publish the three drafts about our new service."
+- "Our price went from $49 to $59. Update it on every page that mentions it."
+- "Find every image without alt text and fill it in."
+- "Add a FAQ section to the pricing page, answering the five questions clients ask most."
+- "Turn these meeting notes into a blog post draft, with headings, a category and tags."
+- "Create a Team page with the same layout as the About page."
+- "Change the button color across the site to our new brand blue."
+- "Approve the real comments from this week and trash the spam."
+- "Move Contact to the end of the main menu."
+- "Undo the last change you made."
 
 ## Install
 
