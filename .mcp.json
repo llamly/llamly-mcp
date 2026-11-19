@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "llamly": {
+      "type": "http",
+      "url": "https://YOUR-SITE.com/wp-json/llamly/v1/endpoint",
+      "headers": {
+        "Authorization": "Bearer ${LLAMLY_KEY}"
+      }
+    }
+  }
+}
